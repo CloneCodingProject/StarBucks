@@ -1,0 +1,2071 @@
+
+/* 공통 부분 */
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    letter-spacing: -1px;
+    padding-top: 120px;
+    overflow-x: hidden;
+}
+ul, ol li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ---------------------------헤더 시작--------------------------- */
+#header_area{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #f6f5ef;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+#header_inner{
+    margin: 0 auto;
+    height: 120px;
+    max-width: 1100px;
+}
+#header_inner h1{
+    background: url(../IMAGES/MAIN/LOGO/logo.png) no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 20px;
+    float: left;
+}
+#header_inner h1 a{
+    display: block;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#header_cont{
+    float: right;
+}
+#up_nav li a{
+    color: #555;
+}
+#up_nav{
+    text-align: right;
+    float: right;
+}
+#up_nav li{
+    float: left;
+    /* font-size: 13px; */
+    font:normal 13px Avenir, Arial, georgia;
+    letter-spacing: 0;
+    padding-top: 20px;
+}
+#up_nav li::after{
+    content: "|";
+    color: rgba(85, 85, 85, 0.158);
+    padding: 20px;
+}
+#up_nav li:nth-child(4)::after{
+    content: none;
+    
+}
+#up_nav li:nth-child(4){
+    padding-right: 10px;
+}
+#up_nav li:last-child::after{
+    content: none;
+}
+#gnb{
+    float: right;
+}
+
+#gnb li{
+    display: inline-block;
+    padding-top: 30px;
+    color: #333;
+    text-align: center;
+    /* font-size: 13px; */
+}
+#gnb li:first-child{
+    width: 89px;
+}
+#gnb li:nth-child(2){
+    width: 73px;
+}
+#gnb li:nth-child(3){
+    width: 79px;
+}
+#gnb li:nth-child(4){
+    width: 153px;
+}
+#gnb li:nth-child(5){
+    width: 225px;
+}
+#gnb li:last-child{
+    width: 131px;
+    padding-right: 0;
+}
+#gnb li a{
+    color: #333;
+    display: block;
+    padding-top: 10px;
+    font:normal 13px Avenir, Arial, georgia;
+    letter-spacing: 0;
+    height: 45px;
+}
+#gnb li a:last-child{
+    padding-right: 0;
+}
+#gnb li a:hover{
+    background-color: #2c2a29;
+    color: #669900;
+    text-decoration: underline;
+}
+#store_submenu {
+    background-color: #2c2a29;
+    width: 100%;
+    margin: 0 auto;
+}
+#sublist_inner {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+#submenu_list {
+    padding-bottom: 35px;
+}
+#submenu_list ul {
+    width: 20%;
+    float: left;
+}
+#submenu_list ul .li_tit {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#submenu_list ul .li_tit a{
+    color: #fff;
+    font-size: 14px;
+}
+
+#submenu_list ul li a {
+    color: #999;
+    font-size: 12px;
+}
+#submenu_list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#submenu_text {
+    width: 100%;
+    background: url(../IMAGES/MAIN/LOGO/gnb_sub_txbg.jpg);
+    margin: 0 auto;
+}
+#subtext_inner {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+#subtext_box {
+    padding: 40px 0;
+}
+#subtext_box h3 a {
+    font-size: 14px;
+    color: #999;
+}
+#subtext_box p {
+    color: #64a70b;
+    font-size: 14px;
+}
+#store_submenu {
+    display: none;
+}
+/* -------------------STORE main 페이지 시작(index.html)-----------------*/
+#tit_area{
+    width:100%;
+    height: 98px;
+    margin: 0 auto;
+}
+#tit_inner{
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 98px;
+    position: relative;
+}
+#tit_inner h2{
+    line-height: 98px;
+    font-size: 32px;
+    font-weight: 500;
+}
+#tit_link{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#tit_link{
+    float: right;
+}
+#tit_link h3{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 100;
+}
+#tit_link h3:first-child{
+    background: url(../IMAGES/MAIN/LOGO/icon_home.png) no-repeat;
+
+}
+#tit_link h3 a{
+    width: 20px;
+    display: block;
+    text-indent: -9999px;
+}
+#tit_link > a{
+    position: absolute;
+    top:2px;
+    padding-left: 5px;
+    color: #333;
+}
+#tit_link > a:hover{
+    text-decoration: underline;
+}
+/* -------------------STORE main 페이지 시작(index.html)-----------------*/
+
+/* -------------STORE 드라이브 스루 매장 페이지 시작(dt.html)-----------------*/
+#dt_tit_area{
+    width:100%;
+    height: 98px;
+    margin: 0 auto;
+}
+#dt_tit_inner{
+    margin: 0 auto;
+    height: 98px;
+    position: relative;
+    max-width: 1100px;
+}
+#dt_tit_inner img{
+    padding: 30px 0;
+}
+#dt_tit_link{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#dt_tit_link{
+    float: right;
+}
+#dt_tit_link h3{
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 100;
+}
+#dt_tit_link > a{
+    font-size: 13px;
+}
+#dt_tit_link h3:first-child{
+    background: url(../IMAGES/MAIN/LOGO/icon_home.png) no-repeat;
+}
+#dt_tit_link h3 a{
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-indent: -9999px;
+}
+.sub_link{
+    color: #666;
+}
+.sub_link:hover{
+    text-decoration: underline;
+}
+#dt_tit_link > a:last-child{
+    color: #222;
+}
+/* -------------STORE 드라이브 스루 매장 페이지 끝(index.html)-----------------*/
+
+/* -------------STORE 스타벅스 리저브 매장 페이지 시작(index.html)-----------------*/
+#res_tit_area{
+    width:100%;
+    height: 98px;
+    margin: 0 auto;
+}
+#res_tit_inner{
+    margin: 0 auto;
+    height: 98px;
+    position: relative;
+    max-width: 1100px;
+}
+#res_tit_inner img{
+    padding: 30px;
+}
+#res_tit_link{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#res_tit_link{
+    float: right;
+}
+#res_tit_link h3{
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 100;
+}
+#res_tit_link > a{
+    font-size: 13px;
+}
+#res_tit_link h3:first-child{
+    background: url(../IMAGES/MAIN/LOGO/icon_home.png) no-repeat;
+}
+#res_tit_link h3 a{
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-indent: -9999px;
+}
+
+#res_tit_link > a:last-child{
+    color: #222;
+}
+/* -------------STORE 스타벅스 리저브 매장 페이지 끝(index.html)-----------------*/
+
+/* -------------STORE 커뮤니티 스토어 페이지 시작(index.html)-----------------*/
+#com_tit_area{
+    width:100%;
+    height: 98px;
+    margin: 0 auto;
+}
+#com_tit_inner{
+    margin: 0 auto;
+    height: 98px;
+    position: relative;
+    max-width: 1100px;
+}
+#com_tit_inner img{
+    padding: 30px 0;
+}
+#com_tit_link{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#com_tit_link{
+    float: right;
+}
+#com_tit_link h3{
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 100;
+}
+#com_tit_link > a{
+    font-size: 13px;
+}
+#com_tit_link h3:first-child{
+    background: url(../IMAGES/MAIN/LOGO/icon_home.png) no-repeat;
+}
+#com_tit_link h3 a{
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-indent: -9999px;
+}
+.sub_link{
+    color: #666;
+}
+.sub_link:hover{
+    text-decoration: underline;
+}
+#com_tit_link > a:last-child{
+    color: #222;
+}
+/* -------------STORE 커뮤니티 스토어 페이지 끝(index.html)-----------------*/
+
+/* -------------STORE 티바나 바 매장 페이지 시작(index.html)-----------------*/
+#tbn_tit_area{
+    width:100%;
+    height: 98px;
+    margin: 0 auto;
+}
+#tbn_tit_inner{
+    margin: 0 auto;
+    height: 98px;
+    position: relative;
+    max-width: 1100px;
+}
+#tbn_tit_inner img{
+    padding: 30px 0;
+}
+#tbn_tit_link{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#tbn_tit_link{
+    float: right;
+}
+#tbn_tit_link h3{
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 100;
+}
+#tbn_tit_link > a{
+    font-size: 13px;
+}
+#tbn_tit_link h3:first-child{
+    background: url(../IMAGES/MAIN/LOGO/icon_home.png) no-repeat;
+}
+#tbn_tit_link h3 a{
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-indent: -9999px;
+}
+.sub_link{
+    color: #666;
+}
+.sub_link:hover{
+    text-decoration: underline;
+}
+#tbn_tit_link > a:last-child{
+    color: #222;
+}
+/* -------------STORE 티바나 바 매장 페이지 끝(index.html)-----------------*/
+
+/* ---------------------------헤더 끝--------------------------- */
+
+/* ---------------------------인포 시작--------------------------- */
+
+/* -------------------STORE main 페이지 시작(index.html)-----------------*/
+#info_area{
+    width: 100%;
+    height: 70px;
+    background: url(../IMAGES/MAIN/INFO/newsArea_bg2.jpg) no-repeat;
+    background-size: 100% 70px;
+}
+#info_inner{
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 70px;
+}
+#info_left{
+    box-sizing: border-box;
+    width: 65%;
+    float: left;
+    position: relative;
+}
+#info_right{
+    box-sizing: border-box;
+    width: 35%;
+    height: 70px;
+    float: right;
+    background: url(../IMAGES/MAIN/INFO/useInfo_bg.jpg) no-repeat;
+    position: relative;
+}
+#info_left img{
+    float: left;
+    vertical-align: middle;
+    padding: 26px 10px 0 0;
+}
+.m_infoimg {
+    display: none;
+}
+.m_infotxt{
+    display: none;
+}
+#info_left a{
+    display: block;
+    float: left;
+    padding: 25px 0;
+    color: #ccc;
+}
+#info_left a:hover{
+    text-decoration: underline;
+}
+#info_left h2{
+    float: right;
+    background: url(../IMAGES/MAIN/LOGO/icon_coffee_notice_more.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#info_left h2 a{
+    width: 36px;
+    height: 36px;
+    display: block;
+    text-indent: -9999px;
+}
+#info_right img:first-child{
+    padding: 11px 15px 0 15px;
+}
+.info_txt{
+    padding-bottom: 15px;
+}
+#info_right h2{
+    float: right;
+    background: url(../IMAGES/MAIN/LOGO/icon_coffee_notice_more.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#info_right h2 a{
+    width: 36px;
+    height: 36px;
+    display: block;
+    text-indent: -9999px;
+}
+/* -------------------STORE main 페이지 끝(index.html)-----------------*/
+
+/* ---------------------------인포 끝--------------------------- */
+
+/* ---------------------------본문 시작--------------------------- */
+
+/* -------------------STORE main 페이지 시작(index.html)-----------------*/
+.m_btxt {
+    display: none;
+}
+#store_area{
+    width: 100%;
+    height:430px;
+    background: url(../IMAGES/MAIN/STORE/store_bn1_171109.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+#store_inner {
+    margin: 0 auto;
+    height: 430px;
+    max-width: 1100px;
+}
+#store_cont{
+    float: right;
+}
+
+#store_cont img{
+    display: block;
+    padding: 100px 50px 0 0;
+}
+#store_cont a{
+    display: block;
+    width: 121px;
+    height: 34px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 25px;
+}
+
+#dt_area{
+    width: 100%;
+    height: 430px;
+    
+    background: url(../IMAGES/MAIN/STORE/store_bn2_img01.jpg) 80% 50% no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#dt_inner {
+    margin: 0 auto;
+    height: 430px;
+    max-width: 1100px;
+}
+#dt_cont{
+    float: left;
+}
+#dt_cont img{
+    display: block;
+    padding-top: 100px;
+}
+#dt_cont a{
+    display: block;
+    width: 121px;
+    height: 34px;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: #000;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+#res_area{
+    width: 100%;
+    height: 430px;
+    margin: 0 auto;
+    background: url(../IMAGES/MAIN/STORE/store_bn3_img01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#res_inner {
+    margin: 0 auto;
+    height: 430px;
+    max-width: 1100px;
+}
+#res_cont{
+    float: right;
+}
+    #res_cont img{
+    display: block;
+    padding: 100px 50px 0 0;
+}
+#res_cont a{
+    display: block;
+    width: 121px;
+    height: 34px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+#com_area{
+    width: 100%;
+    height: 430px;
+    margin: 0 auto;
+    background: url(../IMAGES/MAIN/STORE/store_bn4_img01.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#com_inner {
+    margin: 0 auto;
+    height: 430px;
+    max-width: 1100px;
+}
+#com_cont{
+    float: left;
+    
+}
+#com_cont img{
+    display: block;
+    padding-top: 100px;
+}
+#com_cont a{
+    display: block;
+    width: 121px;
+    height: 34px;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: #000;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 25px;
+}
+/* -------------------STORE main 페이지 끝(index.html)-----------------*/
+
+/* -------------STORE 드라이브 스루 매장 페이지 시작(dt.html)-----------------*/
+#dt_sec1{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#dtSec1_inner{
+    margin: 40px auto;
+    max-width: 1100px;
+}
+.seccont_tit{
+    font-size: 20px;
+    color: #063;
+    display: block;
+    padding: 20px 0;
+}
+#dtSec1_inner > p {
+    font-size: 14px;
+    color: #666;
+}
+#dtSec1_inner > p > span{
+    color: #444;
+    font-weight: 700;
+}
+#dt_bg{
+    background: url(../IMAGES/DT/STORE/drive_through_bg.jpg) no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    height: 663px;
+}
+#dt_inner{
+    margin: 0 auto;
+    max-width: 1100px;  
+}
+#dt_track{
+    background: url(../IMAGES/DT/STORE/drive_through_rail2.png) no-repeat;
+    position: relative;
+    width: 1414px;
+    height: 663px;
+    background-size: cover;
+    margin-left: -170px;
+}
+#dt_use{
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+#dt_img1{
+    position: absolute;
+    top: 140px;
+    left: 350px;
+}
+#step1{
+    position: absolute;
+    top: 185px;
+    left: 550px;
+}
+#step1_info{
+    position: absolute;
+    top: 112px;
+    left: 513px;
+}
+#dt_img2{
+    position: absolute;
+    top: 80px;
+    right: 370px;
+}
+#step2{
+    position: absolute;
+    top: 185px;
+    right: 325px;
+}
+#step2_info{
+    position: absolute;
+    top: 240px;
+    right: 230px;
+}
+#dt_img3{
+    position: absolute;
+    bottom: 60px;
+    left: 530px;
+}
+#step3{
+    position: absolute;
+    bottom: 210px;
+    right: 640px;
+}
+#step3_info{
+    position: absolute;
+    bottom: 25px;
+    right: 365px;
+}
+#dt_home{
+    position: absolute;
+    bottom: -5px;
+    right: 120px;
+}
+#rig_cloud{
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    animation: right1 0.7s linear 2s infinite alternate backwards;
+    -webkit-animation: right1 0.7s linear 2s infinite alternate;
+}
+#rig_cloud2{
+    position: absolute;
+    top: 110px;
+    right: 285px;
+    animation: right2 0.7s linear 2s infinite alternate;
+    -webkit-animation: right2 0.7s linear 2s infinite alternate;
+}
+#left_cloud{
+    position: absolute;
+    left: 10px;
+    bottom: 280px;
+    animation: left 0.7s linear 2s infinite alternate;
+    -webkit-animation: left 0.7s linear 10s infinite alternate;
+}
+@keyframes right1 {
+    form{
+        top: 40px;
+    }
+    to{
+        top: 45px;
+    }
+}
+@-webkit-keyframes right1 {
+    form{
+        top: 40px;
+    }
+    to{
+        top: 45px;
+    }
+}
+@keyframes right2 {
+    form{
+        top: 110px;
+    }
+    to{
+        top: 115px;
+    }
+}
+@-webkit-keyframes right2 {
+    form{
+        top: 110px;
+    }
+    to{
+        top: 115px;
+    }
+}
+@keyframes left {
+    form{
+        bottom: 280px;
+    }
+    to{
+        bottom: 275px;
+    }
+}
+@-webkit-keyframes left {
+    form{
+        bottom: 280px;
+    }
+    to{
+        bottom: 275px;
+    }
+}
+
+#dt_sec2{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    background-color: #f4f4f2;
+}
+#m_dt_track {
+    display: none;
+}
+#dtsec2_inner{
+    margin: 0 auto;
+    background: url(../IMAGES/DT/STORE/drive_through_bg.png) no-repeat;
+    max-width: 1100px;
+}
+#dtsec2_inner > p {
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 40px;
+    margin-bottom: 25px;
+}
+#dtsec2_inner img {
+    width: 40%;
+}
+#dtsec2_cont{
+    float: right;
+    padding-left: 30px;
+    display: block;
+    white-space: nowrap;
+    width: 55%;
+}
+#dtsec2_cont > p:first-child{
+    color: #222;
+    font-weight: bold;
+}
+#dtsec2_cont > p:last-child{
+    color: #666;
+    font-size: 14px;
+}
+
+#dtstore_ber{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #063;
+
+}
+#dtstore_inner{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#dtstore_inner ul li{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    padding-right: 10px;
+}
+
+#event_area{
+    width: 100%;
+    margin: 0 auto;
+}
+#event_inner{
+    margin: 0 auto;
+    max-width: 1100px;
+
+}
+#event_inner h3{
+    text-align: center;
+    margin: 30px;
+}
+#event_inner > a{
+    display: block;
+}
+.left_arrow{
+    width: 26px;
+    height: 42px;
+    background: url(../IMAGES/DT/EVENT/slide_arrow_l.png) no-repeat;
+    float: left;
+    text-indent: -9999px;
+    margin-top: 120px;
+}
+.right_arrow{
+    width: 26px;
+    height: 42px;
+    background: url(../IMAGES/DT/EVENT/slide_arrow_r.png) no-repeat;
+    float: right;
+    text-indent: -9999px;
+    margin-top: 120px;
+}
+#event_inner ul{
+    float: left;
+}
+#event_inner ul li{
+    float: left;
+    margin: 0 40px;
+}
+#event_inner ul li p{
+    margin: 20px;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+#event_inner ul li p span{
+    font-size: 12px;
+    color: #666;
+}
+#slide_butt{
+    clear: both;
+    margin: 0 auto;
+}
+#slide_butt a{
+    display: block;
+    float: left;
+    margin-right: 7px;
+}
+.play_butt{
+    background: url(../IMAGES/DT/EVENT/bnr_slider_play.png) no-repeat;
+    background-position: right;
+    width: 9px;
+    height: 12px;
+    text-indent: -9999px;
+    margin-left: 47%;
+    margin-bottom: 40px;
+}
+.cir_butt{
+    background: url(../IMAGES/DT/EVENT/bnr_slider_pager.png) no-repeat;
+    background-position: right;
+    width: 13px;
+    height: 13px;
+    text-indent: -9999px;
+}
+.docu_butt{
+    background-position: left;
+}
+
+/* -------------STORE 드라이브 스루 매장 페이지 끝(dt.html)-----------------*/
+
+/* -----------STORE 스타벅스 리저브 매장 페이지 시작(reserve.html)-----------*/
+#res_sec1{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#resSec1_inner{
+    margin: 40px auto;
+    max-width: 1100px;
+    text-align: center;
+}
+#resSec1_inner h3{
+    padding: 40px 0 0 0;
+}
+.rescont_tit{
+    font-size: 20px;
+    color: #b06546;
+    display: block;
+    padding: 20px 0;
+}
+#resSec1_inner > p {
+    font-size: 14px;
+    color: #666;
+}
+#res_sec2{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f7f6f3;
+    overflow: hidden;
+}
+#resSec2_inner{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#resSec2_cont{
+    width: 620px;
+    float: left;
+}
+#resSec2_cont h3{
+    font-size: 16px;
+    color: #222;
+}
+#resSec2_cont > h3:first-child{
+    background: url(../IMAGES/RESERVE/STORE/reserve_store_tit_bg.png) no-repeat;
+    background-position: left bottom;
+    padding-top: 60px;
+    padding-bottom: 16px;
+}
+#resSec2_cont > h3:nth-child(2){
+    padding-top: 40px;
+}
+#resSec2_cont > p{
+    font-size: 14px;
+    color: #666;
+    line-height: 23px;
+}
+#resSec2_img{
+    width: 480px;
+    height: 350px;
+    float: right;
+    background: url(../IMAGES/RESERVE/STORE/3vxvi1_20211227142959669.png) no-repeat;
+    background-position: 0 -50px;
+}
+#res_sec3 {
+    width: 100%;
+    margin: 0 auto;
+}
+#resSec3_inner {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#resSec3_inner h3 {
+    padding: 30px 0 30px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+#resSec3_cont1 {
+    padding: 60px 0;
+    height: 258px;
+}
+#rescont1_img {
+    float: left;
+}
+#rescont1{
+    float: left;
+    padding-left: 30px;
+    letter-spacing: -1.5px;
+}
+#rescont1 h4 {
+    color: #222;
+    padding-top:10px
+}
+#rescont1 .rescont_tit {
+    padding: 10px 0;
+}
+#rescont1 > p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+#resSec3_cont2 {
+    height: 258px;
+}
+#rescont2_img {
+    float: left;
+}
+
+#rescont2 > p {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+#rescont2 {
+    float: left;
+    padding-left: 30px;
+    letter-spacing: -1.5px;
+}
+#rescont2 h4 {
+    padding-bottom: 10px;
+    color: #222;
+}
+#rescont2 .rescont_tit {
+    padding: 10px 0;
+}
+#rescont2 > p:last-child{
+    padding-top: 10px;
+}
+#resSec3_cont2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#res_link {
+    margin: 30px auto;
+    width: 317px;
+    height: 45px;
+    background-color: #754737;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+}
+#res_link a{
+    display: block;
+    color: #fff;
+    width: 317px;
+    height: 45px;
+    font-size: 14px;
+}
+#res_link a:hover {
+    text-decoration: underline;
+}
+#resSec3_inner > p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+#res_sec4{
+    width: 100%;
+    margin: 120px auto 0 auto;
+    background: url(../IMAGES/RESERVE/STORE/reserve_beverage_bg.png);
+}
+#resSec4_inner {
+    margin: 0 auto;
+    max-width: 1100px;
+    text-align: center;
+}
+#resSec4_inner img{
+    padding: 50px 0 30px 0;
+}
+#resSec4_inner h5{
+    color: #af6445;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+#resSec4_inner p {
+    font-size: 14px;
+    color: #ddd;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 50px;
+}
+#resstore_ber{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+
+}
+#resstore_inner{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#resstore_inner ul li{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    padding-right:10px;
+}
+#resstore_inner ul li:nth-child(2) {
+    color: #b06546;
+    font-family:'Arial';
+    font-weight: 700;
+    letter-spacing: 0;
+    font-size: 18px;
+}
+#resstore_inner ul li:last-child {
+    color: #b2b2b2;
+    font-size: 14px;
+}
+#resstore_inner ul li:last-child::before {
+    content: "|";
+    color: #575454;
+    padding-right: 10px;
+}
+#resstore_inner ul li span{
+    color: #fff;
+}
+/* -----------STORE 스타벅스 리저브 매장 페이지 끝(reserve.html)-----------*/
+
+/* -----------STORE 커뮤니티 스토어 매장 페이지 시작(reserve.html)-----------*/
+#com_sec1{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#comSec1_inner{
+    margin: 20px auto;
+    max-width: 1100px;
+}
+.seccont_tit{
+    font-size: 20px;
+    color: #063;
+    display: block;
+    padding: 20px 0;
+}
+#comSec1_inner > p {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    line-height: 1.6;
+    letter-spacing: -1.6px;
+}
+#comSec1_inner > p > span{
+    letter-spacing: 0;
+}
+#com_sec2{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #f4f4f2;
+}
+#comsec2_inner{
+    margin: 0 auto;
+    background: url(../IMAGES/COMMUNITY/STORE/wondu_bg.png) no-repeat;
+    max-width: 1100px;
+    background-position: 0 65px;
+}
+#comsec2_inner > p {
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 40px;
+    margin-bottom: 25px;
+}
+#comsec2_cont1{
+    float: right;
+    padding-left: 30px;
+    display: block;
+    white-space: nowrap;
+    width: 520px;
+}
+#comsec2_cont1 p{
+    letter-spacing: -1.5px;
+}
+#comsec2_cont1 > p:first-child{
+    color: #222;
+    font-weight: bold;
+}
+#comsec2_cont1 > p:last-child{
+    color: #666;
+    font-size: 14px;
+}
+#comsec2_box2 {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+#comsec2_cont2{
+    float: left;
+    display: block;
+    white-space: nowrap;
+    width: 520px;
+}
+#comsec2_cont2 > .seccont_tit{
+    padding-top: 0;
+}
+.cont_img{
+    float: right;
+}
+#comsec2_cont2 > p {
+    color: #666;
+    font-size: 14px;
+}
+#comstore_ber{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #063;
+
+}
+#comstore_inner{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#comstore_inner ul li{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    padding-right: 10px;
+}
+/* -----------STORE 커뮤니티 스토어 매장 페이지 끝(reserve.html)-----------*/
+
+/* -----------STORE 티바나 바 매장 페이지 시작(reserve.html)-----------*/
+#tbn_sec1{
+    background: url(../IMAGES/TEABANA/STORE/starField_visual_bg.jpg) no-repeat;
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
+}
+#tbn_sec1 img{
+    display: block;
+}
+#tbnsec1_inner{
+    margin: 0 auto;
+}
+#tbnsec1_inner img:first-child {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -260px;
+    width: 533px;
+    height: 252px;
+}
+#tbnsec1_inner img:last-child {
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -365px;
+    height: 396px;
+    width: 725px;
+}
+#between_sec {
+    background-color: #1d2683;
+    height: 40px;
+    width: 100%;
+}
+#tbn_sec2 {
+    background: url(../IMAGES/TEABANA/STORE/store_teavana_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1684px;
+    width: 100%;
+    overflow: hidden;
+}
+#tbnsec2_inner {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+#tbnsec2_art1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#tbnsec2_art1 img {
+    max-width: 100%;
+    width: 800px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: -365px;
+}
+.tbnsec2_cont {
+    line-height: 1.6;
+}
+#tbnsec2_art1 .tbnsec2_cont {
+    white-space: nowrap;
+}
+.tbnsec2_cont > div {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #1d2682;
+    border-radius: 12px;
+    background-color: #1d2682;
+    display: inline-block;
+    position: relative;
+    top: 11px;
+    left: 5px;
+    box-sizing: border-box;
+}
+.sec2cont_tit {
+    display: inline;
+    border-bottom: 1px solid #1d2682;
+    color: #1d2682;
+    padding: 0 15px 0 5px;
+}
+.tbnsec2_cont > p:last-child {
+    color: #666;
+    font-size: 14px;
+}
+#tbnsec2_art1 > .tbnsec2_cont {
+    float: right;
+    position: relative;
+    top: -350px;
+    left: -35px;
+}
+#tbnsec2_art2 img {
+    float: right;
+    width: 940px;
+    display: block;
+    position: relative;
+    top: -755px;
+    margin-right: -440px;
+}
+#tbnsec2_art2 > .tbnsec2_cont {
+    position: relative;
+    left: 155px;
+    top: -60px;
+}
+#tbnsec2_art2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#tbnsec2_art2 {
+    height: 165px;
+}
+#tbnsec2_art3 > img {
+    position: relative;
+    left: 50px;
+}
+#tbnsec2_art3{
+    position: relative;
+}
+#tbnsec2_art3 > .tbnsec2_cont {
+    position: absolute;
+    top: 220px;
+    right: 100px;
+}
+#tbnsec2_art4 > .tbnsec2_cont > .sec2cont_tit {
+    padding-right: 280px;
+    white-space: nowrap;
+}
+#tbnsec2_art4 > .tbnsec2_cont > div {
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+#tbnsec2_art4 > .tbnsec2_cont{
+    position: relative;
+    top: 125px;
+    left: 55px;
+}
+#tbnsec2_art4 > .tbnsec2_cont > .seccont_tit{
+    letter-spacing: -2.3px;
+}
+#tbnsec2_art4 > .tbnsec2_cont p:last-child{
+    letter-spacing: -1.7px;
+}
+#tbnsec2_art4 > .tbnsec2_cont > a {
+    background: url(../IMAGES/TEABANA/STORE/sf_btn_more.png) no-repeat;
+    display: block;
+    float: right;
+    width: 53px;
+    height: 53px;
+    text-indent: -9999px;
+    position: relative;
+    right: 53px;
+    z-index: 2;
+}
+#tbnsec2_art4 img {
+    display: block;
+    float: right;
+    position: relative;
+    top: -535px;
+    right: -113px;
+    z-index: 1;
+}
+#tbnsec2_art4::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#tbnstore_ber{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #006633;
+
+}
+
+#tbnstore_inner ul {
+    padding: 25px 0;
+}
+#tbnstore_inner ul li{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    padding-right:10px;
+}
+#tbnstore_inner ul li img {
+    width: 43px;
+}
+#tbnstore_inner ul li:nth-child(2) {
+    color: #fff;
+    font-family:'Arial';
+    letter-spacing: 0;
+    font-size: 18px;
+}
+#tbnstore_inner ul li:last-child {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 30px;
+}
+#resstore_inner ul li:last-child::before {
+    content: "|";
+    color: #575454;
+    padding-right: 10px;
+}
+#tbnstore_inner ul:first-child {
+    float: left;
+    position: relative;
+    left: 50%;
+    margin-left: -570px;
+}
+#tbnstore_inner ul:last-child {
+    float: right;
+    position: relative;
+    right: 50%;
+    margin-right: -510px;
+}
+#tbnstore_inner ul li label {
+    font-size: 16px;
+}
+#tbnstore_inner ul li select{
+    width: 210px;
+    padding: 10px;
+    border-radius: 3px;
+    color: #444;
+    font-family: 'ngb';
+    box-sizing: border-box;
+}
+#tbnstore_ber::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* -----------STORE 티바나 바 매장 페이지 끝(reserve.html)-----------*/
+
+/* ---------------------------본문 끝--------------------------- */
+
+/* ---------------------------푸터 시작--------------------------- */
+footer{
+    width: 100%;
+    background-color: #2c2a29;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+#footer_inner{
+    max-width: 1115px;
+    margin: 0 auto;
+}
+#footer_inner ul{
+    margin-bottom: 60px;
+}
+#footer_inner ul li{
+    padding: 3px 0;
+}
+#footer_inner ul li a{
+    color: #fff;
+    font-size: 12px;
+}
+#footer_inner ul .li_tit a{
+    font-size: 14px;
+}
+.li_tit{
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+#footer_inner ul{
+    width: 220px;
+    float: left;
+}
+#footer_inner ul:last-child{
+    padding-right: 0;
+}
+#footer_inner img{
+    width: 14px;
+    overflow: hidden;
+    float: right;
+    margin-top: 40px;
+}
+
+#awards_area{
+    width: 100%;
+    overflow: hidden;
+    background-color: #282828;
+}
+#awards_inner{
+    margin: 0 auto;
+    max-width: 1254px;
+}
+#awards_inner ul li{
+    display: block;
+    float: left;
+    width: 14%;
+    padding: 30px 0;
+    margin: 0 10px;
+}
+#awards_inner ul li:nth-child(4) img{
+    width: 191px;
+}
+#awards_inner ul li:nth-child(5) img{
+    width: 191px;
+}
+#etc_area{
+    width: 100%;
+    background-color: #2c2a29;
+    text-align: center;
+}
+#etc_area ul:first-child {
+    padding-top: 30px;
+}
+#etc_area ul:first-child li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #393939;
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+}
+#etc_area ul li a{
+    color: #ccc;
+    font-size: 12px;
+    
+}
+#etc_area ul li:first-child a {
+    color: #00b050;
+}
+#etc_box {
+    padding: 10px 0 20px 0;
+}
+#etc_box a {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-right: 5px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+#etc_box a:hover{
+    text-decoration: underline;
+}
+#copyright_area {
+    width: 100%;
+    text-align: center;
+}
+#copyright_area ul{
+    margin-bottom: 20px;
+}
+#copyright_area ul li {
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    padding: 0 10px;
+    letter-spacing: 0;
+}
+#copyright_area span{
+    font-family: arial, HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 0;;
+}
+/* -------------------STORE main 페이지 반응형 시작(index.html)-----------------*/
+@media screen and (max-width:1099px) {
+    #tit_inner {
+        max-width: 961px;
+    }
+    #info_inner {
+        max-width: 961px;
+    }
+    
+    #info_right img:first-child {
+        width: 15%;
+        padding-top: 26px;
+    }
+    #info_right h2 {
+        right: 0;
+    }
+    #store_area {
+        height: 300px;
+    }
+    #store_inner {
+        height: 300px;
+        max-width: 961px;
+    }
+    #store_cont img {
+        padding-top: 50px
+    }
+    #dt_area {
+        height: 300px;
+    }
+    #dt_inner {
+        height: 300px;
+        max-width: 961px;
+    }
+    #dt_cont img {
+        padding-top: 50px;
+    }
+    #res_area {
+        height: 300px;
+    }
+    #res_inner {
+        height: 300px;
+        max-width: 961px;
+    }
+    #res_cont img {
+        padding-top: 50px;
+    }
+    #com_area {
+        height: 300px;
+    }
+    #com_inner {
+        height: 300px;
+        max-width: 961px;
+    }
+    #com_cont img {
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width:960px) and (min-width:641px) {
+    #tit_inner {
+        max-width: 641px;
+    }
+    #tit_link {
+        display: none;
+    }
+    #info_inner {
+        margin: 0 1%;
+    }
+    #info_left {
+        width: 66%;
+    }
+    
+    #eventlink_box {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 70%;
+    }
+    #eventlink_box a {
+        font-size: 14px;
+    }
+    #info_right {
+        width: 32%;
+    }
+    .info_txt {
+        display: block;
+        float: left;
+        height: 27px;
+        padding: 20px 0 0 20px;
+    }
+    #info_right img:first-child {
+        display: block;
+        padding: 0;
+        width: 7%;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+    
+    #info_left h2 {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        
+    }
+    #info-left h2 a {
+        width: 30px;
+        height: 30px;
+        z-index: 5;
+    }
+    #info_right h2 {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+    }
+    #info_right h2 a {
+        width: 30px;
+        height: 30px;
+    }
+    #store_area {
+        height: 200px;
+    }
+    #store_inner {
+        height: 200px;
+        max-width: 641px;
+    }
+    #store_cont img {
+        padding-top: 50px;
+        height: 83px;
+    }
+    #store_cont a {
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    #dt_area {
+        height: 200px;
+    }
+    #dt_inner {
+        height: 200px;
+        max-width: 641px;
+    }
+    #dt_cont img {
+        padding-top: 50px;
+        height: 83px;
+    }
+    #dt_cont a {
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    #res_area {
+        height: 200px;
+    }
+    #res_inner {
+        height: 200px;
+        max-width: 641px;
+    }
+    #res_cont img {
+        padding-top: 50px;
+        height: 83px;
+    }
+    #res_cont a {
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    #com_area {
+        height: 200px;
+    }
+    #com_inner {
+        height: 200px;
+        max-width: 641px;
+    }
+    #com_cont img {
+        padding-top: 50px;
+        height: 83px;
+    }
+    #com_cont a {
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 640px) {
+    
+    #tit_link {
+        display: none;
+    }
+    #info_area {
+        height: auto;
+        overflow: hidden;
+        background: none;
+    }
+    #info_inner {
+        margin: 0;
+    }
+    #eventlink_box {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 70%;
+    }
+    #info_left {
+        width: 100%;
+        display: block;
+        clear: both;
+        background-color: #111;
+    }
+    #info_right {
+        width: 100%;
+        display: block;
+        clear: both;
+        position: relative;
+    }
+    .info_img {
+        display: none;
+    }
+    .m_infoimg {
+        display: block;
+    }
+    #info_left img {
+        padding: 20px 10px 0 10px;
+    }
+    #info_left h2 {
+        width: 36px;
+        height: 36px;
+    }
+    #info_right h2 {
+        width: 36px;
+        height: 36px;
+    }
+    .info_app{
+        display: none;
+    }
+    .info_txt {
+        display: none;
+    }
+    .m_infotxt {
+        width: 240px;
+        display: block;
+        padding: 25px 0 0 10px;
+    }
+    #info_right h2 {
+        right: 15px;
+    }
+    .btxt{
+        display: none;
+    }
+    .m_btxt {
+        display: block;
+    }
+    #store_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bn1_171109.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #store_cont {
+        float: none;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    .m_btxt img {
+        width: 300px;
+        height: 123px;
+    }
+    #store_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+    #dt_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bimg2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #dt_cont {
+        float: none;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    #dt_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+    #res_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bimg3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #res_cont {
+        float: none;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    #res_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+    #com_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bimg4.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #com_cont {
+        float: none;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    #com_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+}
+/* -------------------STORE main 페이지 반응형 끝(index.html)-----------------*/
+
+/* -------------------STORE dt 페이지 반응형 시작(index.html)-----------------*/
+@media screen and (max-width:1099px) {
+    #dtSec1_inner {
+        max-width: 961px;
+    }
+    #dt_inner {
+        max-width: 961px;
+    }
+    #dtsec2_inner {
+        max-width: 961px;
+    }
+    #dtsec2_cont {
+        white-space: normal;
+    }
+    #dtSec1_inner img {
+        width: 100%;
+        padding: 0 18px;
+    }
+    #dtsec2_inner > img {
+        width: 48%;
+    }
+    #dtsec2_cont {
+        width: 48%;
+    }
+    #dtstore_inner {
+        max-width: 961px;
+    }
+    #dtstore_inner ul li img {
+        width: 212px;
+        height: 66px;
+    }
+    #dtstore_inner ul li {
+        font-size: 14px;
+    }
+    #event_inner {
+        max-width: 961px;
+    }
+    .left_arrow, .right_arrow {
+        width: 16px;
+        height: 27px;
+        background-size: cover
+    }
+    #event_inner ul {
+        margin: 0 auto;
+    }
+    #event_inner ul li {
+        margin: 0 13px 0 30px;
+    }
+}
+@media screen and (max-width:960px) and (min-width:641px) {
+    #dt_tit_link {
+        display: none;
+    }
+    #dt_inner {
+        display: none;
+    }
+    #m_dt_track {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: block;
+    }
+}
