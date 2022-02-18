@@ -890,6 +890,9 @@ a{
     padding-right: 10px;
 }
 
+.m_ber{
+    display: none !important;
+}
 #event_area{
     width: 100%;
     margin: 0 auto;
@@ -1005,7 +1008,7 @@ a{
     max-width: 1100px;
 }
 #resSec2_cont{
-    width: 620px;
+    width: 60%;
     float: left;
 }
 #resSec2_cont h3{
@@ -1027,11 +1030,14 @@ a{
     line-height: 23px;
 }
 #resSec2_img{
-    width: 480px;
+    width: 40%;
     height: 350px;
     float: right;
     background: url(../IMAGES/RESERVE/STORE/3vxvi1_20211227142959669.png) no-repeat;
     background-position: 0 -50px;
+}
+#resSec2_img img {
+    max-width: 100%;
 }
 #res_sec3 {
     width: 100%;
@@ -1040,6 +1046,9 @@ a{
 #resSec3_inner {
     margin: 0 auto;
     max-width: 1200px;
+}
+#resSec3_inner .m_pic {
+    display: none;
 }
 #resSec3_inner h3 {
     padding: 30px 0 30px 0;
@@ -1051,8 +1060,16 @@ a{
     padding: 60px 0;
     height: 258px;
 }
+#rescont1_img .m_pic {
+    display: none;
+}
 #rescont1_img {
     float: left;
+    background: url(../IMAGES/RESERVE/STORE/reserveStore_bottom01_bg.png) no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 258px;
+    border-radius: 5px;
 }
 #rescont1{
     float: left;
@@ -1074,9 +1091,18 @@ a{
 #resSec3_cont2 {
     height: 258px;
 }
+#rescont2_img .m_pic {
+    display: none;
+}
 #rescont2_img {
     float: left;
+    background:  url(../IMAGES/RESERVE/STORE/reserveStore_bottom02_1_bg.png) no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 258px;
+    border-radius: 5px;
 }
+
 
 #rescont2 > p {
     font-size: 14px;
@@ -1146,7 +1172,10 @@ a{
     font-size: 17px;
     padding-bottom: 20px;
 }
-#resSec4_inner p {
+#resSec4_inner .m_txt {
+    display: none;
+}
+#resSec4_inner .w_txt {
     font-size: 14px;
     color: #ddd;
     font-weight: 400;
@@ -2033,7 +2062,7 @@ footer{
     #dtstore_inner {
         max-width: 961px;
     }
-    #dtstore_inner ul li img {
+    #dtstore_inner ul .w_ber img {
         width: 212px;
         height: 66px;
     }
@@ -2055,6 +2084,197 @@ footer{
         margin: 0 13px 0 30px;
     }
 }
+@media screen and (max-width:960px) and (min-width:801px) {
+    #dt_bg {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-size: cover;
+    }
+    #m_dt_use {
+        margin: 0 auto;
+        width: 350px;
+        padding: 30px;
+    }
+    #m_dt_use img{ 
+        width: 350px;
+        margin: 0 auto;
+    }
+    #m_dt {
+        width: 33.3%;
+        float: left;
+        padding-bottom: 150px;
+    }
+    #m_dt dt img{
+        max-width: 100%;
+        
+    }
+    #m_dt dd img{
+        max-width: 100%;
+    }
+    #m_dt dt {
+        margin: 0 1%;
+    }
+    #m_dt dd {
+        margin: 0 2%;
+    }
+    #dt_home {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        height: 96px;
+        z-index: 10;
+    }
+    #mountain {
+        background: url(../IMAGES/DT/STORE/m_mountain_bg.png) no-repeat;
+        width: 108px;
+        height: 53px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    #left_cloud{
+        position: absolute;
+        left: 10px;
+        bottom: 140px;
+        animation: none;
+        width: 12%;
+    }
+    #left_cloud img {
+        max-width: 100%;
+    }
+    #rig_cloud {
+        position: absolute;
+        right: 0;
+        width: 12%;
+        animation: none;
+    }
+    #rig_cloud img {
+        max-width: 100%;
+    }
+    #rig_cloud2 {
+        position: absolute;
+        right:80px;
+        top: 100px;
+        width: 12%;
+        animation: none;
+    }
+    #rig_cloud2 img {
+        max-width:100%
+    }
+    #car img{
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+        left: -100px;
+        animation: drive 7s linear 5s infinite normal;
+        animation-delay: 5s;
+    }
+    @keyframes drive {
+        form{
+            left: -100px;
+        }
+        to{
+            left: 1000px;
+        }
+    }
+}
+@media screen and (max-width:800px) and (min-width:641px) {
+    #dt_bg {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #m_dt_use {
+        padding-top: 30px;
+        width: 570px;
+        margin: 0 auto;
+    }
+    #m_dt {
+        margin: 30px auto;
+        width: 55%;
+    }
+    #m_dt dt {
+        margin-bottom: 15px;
+    }
+    #m_dt dt img{
+        max-width: 100%;
+        
+    }
+    #m_dt dd img{
+        max-width: 100%;
+    }
+    #m_dt_track #m_dt:nth-of-type(3) {
+        margin-bottom: 150px;
+    }
+    #dt_home {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 96px;
+        z-index: 10;
+    }
+    #mountain {
+        background: url(../IMAGES/DT/STORE/m_mountain_bg.png) no-repeat;
+        width: 108px;
+        height: 53px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    #left_cloud{
+        position: absolute;
+        left: 10px;
+        bottom: 35%;
+        animation: none;
+        
+    }
+    #left_cloud img {
+        max-width: 100%;
+    }
+    #rig_cloud {
+        position: absolute;
+        top: 150px;
+        right: 0;
+        animation: none;
+    }
+    #rig_cloud img {
+        max-width: 100%;
+    }
+    #rig_cloud2 {
+        position: absolute;
+        right:150px;
+        top: 220px;
+        animation: none;
+    }
+    #rig_cloud2 img {
+        max-width:100%
+    }
+    #car img{
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+        left: -100px;
+        animation: drive 7s linear 5s infinite normal;
+        animation-delay: 5s;
+    }
+    @keyframes drive {
+        form{
+            left: -100px;
+        }
+        to{
+            left: 900px;
+        }
+    }
+    #dtsec2_cont{
+        padding-left: 2%;
+    }
+}
 @media screen and (max-width:960px) and (min-width:641px) {
     #dt_tit_link {
         display: none;
@@ -2067,5 +2287,517 @@ footer{
         height: auto;
         overflow: hidden;
         display: block;
+    }
+    #event_inner {
+        width: 630px;
+        margin: 0 auto;
+    }
+    #event_inner ul li{
+        width: 150px;
+    }
+    #event_inner ul li img {
+        max-width: 100%;
+    }
+    #dtsec2_inner {
+        overflow: hidden;
+    }
+    .seccont_tit p br{
+        display: none;
+    }
+    #dtsec2_cont p:nth-child(3) br{
+        display: none;
+    }
+}
+@media screen and (max-width:640px) {
+    #dt_tit_link {
+        display: none;
+    }
+    #dt_inner {
+        display: none;
+    }
+    #m_dt_track {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: block;
+    }
+    #dt_bg {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #m_dt_use {
+        padding-top: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #m_dt_use img{
+        max-width: 100%;
+    }
+    #m_dt {
+        margin: 30px auto;
+        width: 437px;
+    }
+    #m_dt dt {
+        margin-bottom: 15px;
+    }
+    #m_dt dt img{
+        max-width: 100%;
+        
+    }
+    #m_dt dd img{
+        max-width: 100%;
+    }
+    #m_dt_track #m_dt:nth-of-type(3) {
+        margin-bottom: 150px;
+    }
+    #dt_home {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 96px;
+        z-index: 10;
+    }
+    #mountain {
+        background: url(../IMAGES/DT/STORE/m_mountain_bg.png) no-repeat;
+        width: 108px;
+        height: 53px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    #left_cloud{
+        position: absolute;
+        left: 10px;
+        bottom: 35%;
+        animation: none;
+        width: 18%;
+    }
+    #left_cloud img {
+        max-width: 100%;
+    }
+    #rig_cloud {
+        position: absolute;
+        top: 150px;
+        right: -20px;
+        animation: none;
+    }
+    #rig_cloud img {
+        max-width: 100%;
+    }
+    #rig_cloud2 {
+        position: absolute;
+        right:120px;
+        top: 220px;
+        animation: none;
+    }
+    #rig_cloud2 img {
+        max-width:100%
+    }
+    #car img{
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+        left: -100px;
+        animation: drive 8s linear 5s infinite normal;
+        animation-delay: 5s;
+    }
+    @keyframes drive {
+        form{
+            left: -100px;
+        }
+        to{
+            left: 800px;
+        }
+    }
+
+    #dtsec2_inner {
+        width: 98%;
+        margin: 0 auto;
+    }
+    #dtsec2_inner {
+        background: url(../IMAGES/DT/STORE/drive_through_bg.png) no-repeat;
+        background-position: 0 100px;
+        height: auto;
+        overflow: hidden;
+    }
+    #dtsec2_inner img {
+        width: 100%;
+    }
+    #dtsec2_cont {
+        width: 100%;
+    }
+    #dtsec2_cont p:nth-child(1) {
+        padding-top: 10px;
+    }
+    .seccont_tit p br{
+        display: none;
+    }
+    #dtsec2_cont p:nth-child(3) br{
+        display: none;
+    }
+    .w_ber {
+        display: none !important; 
+    }
+    .m_ber{
+        display: block !important;
+        width: 353px;
+        padding-top: 20px;
+    }
+    .m_ber img {
+        max-width: 100%;
+    }
+    #dtstore_inner ul li:last-child {
+        padding: 0 0 20px 55px;
+    }
+    #event_inner {
+        width: 440px;
+    }
+    #event_inner ul li {
+        width: 90px;
+    }
+    #event_inner ul li img {
+        max-width: 100%;
+    }
+    #event_inner ul li p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 100px 0 50px 0;
+    }
+}
+/* -----------STORE 스타벅스 리저브 매장 페이지 반응형 시작(reserve.html)-----------*/
+@media screen and (max-width:1099px) and (min-width:961px) {
+    #resSec1_inner {
+        margin: 0 2%;
+    }
+    #resSec1_inner > img {
+        max-width: 100%;
+    }
+    #resSec1_inner > p br{
+        display: none;
+    }
+    #resSec2_inner {
+        margin: 0 1%;
+    }
+    #resSec2_cont {
+        width: 51%;
+        white-space: normal;
+    }
+    #resSec2_cont h3:first-child {
+        margin-left: 0;
+    }
+    #resSec2_img {
+        background-size: cover;
+        background-position: center;
+    }
+    #resSec3_inner {
+        margin: 0 1%;
+    }
+    #resSec3_inner > img {
+        width: 100%;
+    }
+    #rescont1_img {
+        width: 50%;
+        height: 334px;
+    }
+    #rescont1{
+        white-space: normal;
+        width: 46%;
+    }
+    #resSec3_cont1 {
+        height: auto;
+        overflow: hidden;
+    }
+    #resSec3_cont1::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    #rescont2_img {
+        width: 50%;
+        height: 300px;
+    }
+    #rescont2{
+        white-space: normal;
+        width: 46%;
+    }
+    #resSec3_cont2 {
+        height: auto;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:960px) and (min-width:641px) {
+    #res_tit_inner img{
+        padding-left: 3%;
+    }
+    #res_tit_link {
+        display: none;
+    }
+    #resSec1_inner {
+        margin: 40px 3%;
+    }
+    #resSec1_inner > img {
+        width: 100%;
+    }
+    #resSec1_inner p br {
+        display: none;
+    }
+    #resSec1_inner p:nth-child(4) {
+        line-height: 20px;
+        color: #444;
+    }
+    #resSec2_inner {
+        margin: 0 2%;
+    }
+    #resSec2_cont {
+        width: 51%;
+        white-space: normal;
+    }
+    #resSec2_cont h3:first-child {
+        margin-left: 0;
+    }
+    #resSec2_img {
+        width: 45%;
+        background-size: contain;
+        background-position: center;
+    }
+    #resSec3_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #resSec3_inner > img {
+        width: 100%;
+    }
+    #rescont1_img {
+        width: 50%;
+        height: 334px;
+        background-position: top center;
+        background-size: contain;
+    }
+    #rescont1 > h4{
+        padding-top: 0;
+    }
+    #rescont1{
+        white-space: normal;
+        width: 45%;
+        padding-left: 2%;
+    }
+    #resSec3_cont1 {
+        height: auto;
+        overflow: hidden;
+    }
+    #resSec3_cont1::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    #rescont2_img {
+        width: 50%;
+        height: 300px;
+        background-position: top center;
+        background-size: contain;
+    }
+    #rescont2{
+        white-space: normal;
+        width: 46%;
+        padding-left: 2%;
+    }
+    #resSec3_cont2 {
+        height: auto;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:640px) {
+    #res_tit_inner img{
+        padding-left: 3%;
+        width: 94%;
+    }
+    #res_tit_link {
+        display: none;
+    }
+    #resSec1_inner {
+        margin: 0 3% 40px 3%;
+    }
+    #resSec1_inner > img {
+        width: 100%;
+    }
+    #resSec1_inner > h3 {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    #resSec1_inner .rescont_tit {
+        font-size: 16px;
+    }
+    #resSec1_inner p br {
+        display: none;
+    }
+    #resSec1_inner p:nth-child(4) {
+        line-height: 20px;
+        color: #444;
+        font-size: 12px;
+    }
+    #resSec2_cont {
+        float: none;
+        width: 94%;
+        margin: 0 3%;
+    }
+    #resSec2_cont h3:first-child {
+        text-align: center;
+        background-position: bottom center;
+    }
+    #resSec2_cont h3:nth-child(2) {
+        font-size: 14px;
+    }
+    #resSec2_cont .rescont_tit {
+        font-size: 16px;
+    }
+    #resSec2_cont p:last-child br {
+        display: none;
+    }
+    #resSec2_cont p:nth-child(4) {
+        font-size: 12px;
+    }
+    #resSec2_img {
+        float: none;
+        width: 94%;
+        margin: 0 3%;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 90px;
+    }
+    #resSec3_inner > .w_pic {
+        display: none;
+    }
+    #resSec3_inner > .m_pic {
+        display: block;
+        width: 94%;
+        margin: 0 3%;
+    }
+    #resSec3_cont1 {
+        height: auto;
+        overflow: hidden;
+    }
+    #rescont1_img {
+        width: 94%;
+        margin: 0 3%;
+        background: none;
+        height: auto;
+    }
+    #rescont1_img > .m_pic {
+        display: block;
+        max-width: 100%;
+    }
+    #rescont1 {
+        width: 94%;
+        margin: 0 3%;
+        padding-left: 0;
+
+    }
+    #rescont1 > h4 {
+        text-align: center;
+    }
+    #rescont1 .rescont_tit {
+        font-size: 16px;
+        text-align: center;
+    }
+    #rescont1 p:nth-child(3) br {
+        display: none;
+    }
+    #rescont1 p:nth-child(3) {
+        font-size: 12px;
+        text-align: center;
+    }
+    #resSec3_cont2 {
+        height: auto;
+        overflow: hidden;
+
+    }
+    #rescont2_img {
+        background: none;
+        float: none;
+        width: 94%;
+        margin: 0 3%;
+        height: auto;
+    }
+    #rescont2_img .m_pic {
+        display: block;
+        max-width: 100%;
+    }
+    #rescont2 {
+        float: none;
+    }
+    #rescont2 {
+        width: 94%;
+        margin: 0 3%;
+        padding-left: 0;
+
+    }
+    #rescont2 > h4 {
+        text-align: center;
+        padding-top: 10px;
+    }
+    #rescont2 > p {
+        font-size: 12px;
+        text-align: center;
+    }
+    #rescont2 .rescont_tit {
+        font-size: 16px;
+        text-align: center;
+    }
+    #res_link {
+        width: 250px;
+        margin-top: 80px
+    }
+    #res_link a {
+        width: 250px;
+    }
+    #resSec3_inner .p_center {
+        width: 94%;
+        margin: 0 3%;
+        font-size: 13px;
+    }
+    #res_sec4 {
+        margin-top: 60px;
+    }
+    #resSec4_inner .w_txt {
+        display: none;
+    }
+    #resSec4_inner .m_txt {
+        display: block;
+        font-size: 14px;
+        color: #ddd;
+        font-weight: 400;
+        line-height: 21px;
+        padding-bottom: 50px;
+    }
+    #resstore_inner {
+        height: auto;
+        overflow: hidden;
+        width: 94%;
+        margin: 0 3%;
+        padding: 17px 0;
+    }
+    #resstore_inner ul li:first-child {
+        display: block;
+        float: left;
+    }
+    #resstore_inner ul li:nth-child(2) {
+        font-size: 16px;
+        width: 70%;
+    }
+    #resstore_inner ul li:last-child::before {
+        display: none;
+    } 
+    #resstore_inner ul li:nth-child(3) {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:400px) {
+    #resstore_inner ul li:nth-child(3) {
+        font-size: 12px;
     }
 }
