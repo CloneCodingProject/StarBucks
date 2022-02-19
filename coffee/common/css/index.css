@@ -1,0 +1,2550 @@
+/* 공통 부분 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+a:hover, a:focus{
+    text-decoration: underline;
+}
+body{
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    letter-spacing: -1px;
+    padding-top: 120px;
+}
+ul, ol li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666;
+    text-decoration: none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 100%;
+}
+#img{
+    vertical-align: top;
+    max-width: 100%;
+}
+dt{
+    display: block;
+}
+div{
+    display: block;
+}
+strong{
+    font-weight: bold;
+}
+sup{
+    vertical-align: super;
+    font-size: 12px;
+}
+/* --------------------------- header start --------------------------- */
+#header_area{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #f6f5ef;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+#header_inner{
+    margin: 0 auto;
+    height: 120px;
+    width: 1100px;
+}
+#header_inner h1{
+    background: url(../img/header/starbucks_logo.png) no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 20px;
+    float: left;
+}
+#header_inner h1 a{
+    display: block;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#header_cont{
+    float: right;
+}
+#header_cont{
+    position:relative;
+}
+p.btn_search{
+    height: 32px;
+    right: -50px;
+    top: 9px;
+    width: 32px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+}
+#util_nav{
+    text-align: right;
+    float: right;
+}
+#util_nav li{
+    float: left;
+    letter-spacing: 0;
+    padding-top: 20px;
+}
+p.btn_search a{
+    height: 34px;
+    width: 34px;
+    display: block;
+    position:relative;
+    right: 0;
+    top:0;
+}
+p.btn_search a img.btn_img{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+#util_nav li a{
+    color: #555;
+}
+#util_nav{
+    text-align: right;
+    float: right;
+}
+#util_nav li{
+    float: left;
+    /* font-size: 13px; */
+    font:normal 13px Avenir, Arial, georgia;
+    letter-spacing: 0;
+    padding-top: 20px;
+}
+#util_nav li::after{
+    content: "|";
+    color: rgba(85, 85, 85, 0.158);
+    padding: 20px;
+}
+#util_nav li:nth-child(4)::after{
+    content: none;
+    
+}
+#util_nav li:nth-child(4){
+    padding-right: 10px;
+}
+#util_nav li:last-child::after{
+    content: none;
+}
+#gnb{
+    float: right;
+}
+#gnb li{
+    display: inline-block;
+    padding-top: 30px;
+    color: #333;
+    text-align: center;
+    /* font-size: 13px; */
+}
+#gnb li:first-child{
+    width: 89px;
+}
+#gnb li:nth-child(2){
+    width: 73px;
+}
+#gnb li:nth-child(3){
+    width: 79px;
+}
+#gnb li:nth-child(4){
+    width: 153px;
+}
+#gnb li:nth-child(5){
+    width: 225px;
+}
+#gnb li:last-child{
+    width: 131px;
+    padding-right: 0;
+}
+#gnb li a{
+    color: #333;
+    display: block;
+    padding-top: 10px;
+    font:normal 13px Avenir, Arial, georgia;
+    letter-spacing: 0;
+    height: 45px;
+}
+#gnb li a:last-child{
+    padding-right: 0;
+}
+#gnb li a.gnb_ttl:hover{
+    background-color: #2c2a29;
+    color: #669900;
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------- */
+/* -------------------- */
+div.sub_gnb_coffee{
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    background: #2C2A29;
+    right: 0%;
+    height: 400px;
+}
+div.sub_gnb_inner{
+    margin: 0 auto;
+    width: 1100px;
+    height: 400px;
+    /* position: relative; */
+}
+
+/* sub_gnb start */
+
+/* #gnb div.coffee_sub_gnb{
+    position: absolute;
+    display: block;
+} */
+.sub_gnb_coffee{
+    position: absolute;
+    display: none;
+}
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul li a{
+    color: #fff;
+}
+
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul{
+    float: left;
+    width: 200px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul li{
+    padding-top: 0;
+    width: 240px;
+    height:23px;
+}
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul li.gnb_sub_ttl{
+    padding-bottom: 12px;
+}
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul li a{
+    padding-top: 0;
+    text-align: left;
+    font-size: 14px;
+    color: #999;
+}
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul li.gnb_sub_ttl a{
+    color: #fff;
+}
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul:nth-child(6){
+    position: absolute;
+    top: 200px;
+}
+#gnb div.coffee_sub_gnb div.sub_gnb_inner ul:nth-child(5){
+    width: 208px;
+    padding-right: 0;
+}
+/* ------------ */
+div.gnb_sub_bottom{
+    background: url("../../common/img/gnb_sub_txbg.jpg");
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 20px 0;   
+}
+div.gnb_sub_bottom_inner{
+    width: 1100px;
+    margin: 0 auto;
+}
+div.gnb_sub_bottom_left{
+    line-height: 18px;
+    width: 720px;
+    float: left;
+}
+div.gnb_sub_bottom_left h3{
+    margin-top: 25px;
+    height: 30px;
+    position: relative;
+    right: 289px;
+}
+div.gnb_sub_bottom_left h3 a.bottom_l_txt{
+    /* width: 150px;
+    height: 10px; */
+    color: #fff !important;
+}
+div.gnb_sub_bottom_left p.gnb_sub_bottom_txt {
+    font-size: 12px;
+    color: #64a70b;
+    float: left;
+    /* width: 100%; */
+}
+
+/*--------------------------- header end -------------------------------*/
+
+/* ------------------- 1. index.html start-----------------*/
+
+/* sub_tit_wrap start */
+.sub_tit_wrap{
+    width: 100%;
+    height: 98px;
+    background: #ffffff;
+}
+.sub_tit_wrap div.sub_tit_inner{
+    width: 1100px;
+    height: 91px;
+    margin: 0 auto;
+    position: relative;
+}
+.sub_tit_wrap h2{
+    font: bold 36px;
+    color: #222222;
+    padding-top: 30px;
+    position: relative;
+}
+ul.smap{
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+ul.smap a{
+    font-size: 12px;
+    color: #666666;
+}
+ul.smap li{
+    vertical-align: middle;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 2.5px;
+}
+ul.smap img.arrow{
+    position: relative;
+    top: 2px;
+}
+ul.smap a.this{
+    font-size: 12px;
+    color: #222222;
+}
+/* ------------------- sub_tit_wrap end ------------------- */
+/* coffee_slide start */
+section.coffee_slide_wrap{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    background: url("../../common/img/coffee/0_index/NICARAGUA.jpg") 45% 50% no-repeat;
+    background-size: cover;
+}
+div.coffee_wrap_inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+div.btn ul li.btn_l{
+    position: absolute;
+    top: 198px;
+    display: inline-block;
+    right: 1200px;
+}
+div.btn ul li.btn_r{
+    position: absolute;
+    top: 198px;
+    display: inline-block;
+    right: -145px;
+}
+div.btn_control{
+    position: absolute;
+    /* display: inline-block; */
+    width: 100%;
+    left: 500px;
+    top:380px;
+
+}
+ul.btn_control_s_o li{
+    margin-left: 8px;
+}
+/* coffee_slide end */
+/* ------------------- 나에게 어울리는 커피는? start ------------------- */
+section.coffee_choice_wrap{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    background: url("../../common/img/coffee/0_index/coffee/coffee_choice_wrap_bg.jpg") 20% 50% no-repeat;
+    background-size: cover;
+}
+div.btn_control ul li{
+    float: left;
+
+}
+img.m_pic{
+    display: none;
+    margin: 0 auto;
+}
+.m_pic{
+    display: none;
+}
+p.coffee_choice_txt{
+    left: 697px;
+    position: absolute;
+    top: 100px;
+    width: 343px;
+}
+.w_pic{
+    display: block;
+}
+div.coffee_choice_btn{
+    border: 2px solid #fff;
+    border-radius: 3px;
+    height: 34px;
+    left: 697px;
+    line-height: 34px;
+    position: absolute;
+    top: 275px;
+    width: 121px;
+    z-index: 5;
+}
+div.coffee_choice_btn a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+div.coffee_choice_btn a:hover{
+    background-color: #fff;
+    color: black;
+    text-decoration: underline;
+}
+
+/* ------------------- 나에게 어울리는 커피는? end ------------------- */
+/* ------------------- 스타벅스 리저브 start ------------------- */
+section.coffee_reserve_wrap{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    background: url("../../common/img/coffee/0_index/coffee/coffee_reserve_wrap_bg.jpg") 80% 50% no-repeat;
+    background-size: cover;
+}
+p.coffee_reserve_txt{
+    left: 0;
+    position: absolute;
+    top: 107px;
+    width: 446px;
+}
+div.coffee_reserve_btn a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+div.coffee_reserve_btn{
+    border: 2px solid #222;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    left: 0;
+    top: 282px;
+    width: 121px;
+    z-index: 4;
+}
+div.coffee_reserve_btn a{
+    color: #222;
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+/* ------------------- 스타벅스 리저브 end ------------------- */
+/* ------------------- 에스프레소 음료 start ------------------- */
+section.coffee_espresso_wrap{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    background: url("../../common/img/coffee/0_index/coffee/coffee_espresso_wrap_bg.jpg") 20% 50% no-repeat;
+    background-size: cover;
+}
+img.m_pic{
+    display: none;
+    margin: 0 auto;
+}
+.m_pic{
+    display: none;
+}
+p.coffee_espresso_txt{
+    left: 697px;
+    position: absolute;
+    top: 116px;
+    width: 379px;
+}
+.w_pic{
+    display: block;
+}
+div.coffee_espresso_btn{
+    border: 2px solid #fff;
+    border-radius: 3px;
+    height: 34px;
+    left: 697px;
+    line-height: 34px;
+    position: absolute;
+    top: 275px;
+    width: 121px;
+    z-index: 5;
+}
+div.coffee_espresso_btn a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+div.coffee_espresso_btn a:hover{
+    background-color: #fff;
+    color: black;
+    text-decoration: underline;
+}
+/* ------------------- 에스프레소 음료 end ------------------- */
+/* ------------------- 최상의 커피를 즐기는 법 start ------------------- */
+section.coffee_best_wrap{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    background: url("../../common/img/coffee/0_index/coffee/coffee_best_wrap_bg.jpg") 80% 50% no-repeat;
+    background-size: cover;
+}
+
+p.coffee_best_txt{
+    left: 0;
+    position: absolute;
+    top: 119px;
+    width: 331px;
+}
+div.coffee_best_btn a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+div.coffee_best_btn{
+    border: 2px solid #222;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    left: 0;
+    top: 282px;
+    width: 121px;
+    z-index: 4;
+}
+div.coffee_best_btn a{
+    color: #222;
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+/* ------------------- 최상의 커피를 즐기는 법 end ------------------- */
+/* ------------------- 커피 이야기 start ------------------- */
+section.coffee_hs_wrap{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    background: url("../../common/img/coffee/0_index/coffee/coffee_hs_wrap_bg.jpg") 20% 50% no-repeat;
+    background-size: cover;
+}
+
+img.m_pic{
+    display: none;
+    margin: 0 auto;
+}
+.m_pic{
+    display: none;
+}
+p.coffee_hs_txt{
+    left: 697px;
+    position: absolute;
+    top: 116px;
+    width: 379px;
+}
+.w_pic{
+    display: block;
+}
+div.coffee_hs_btn{
+    border: 2px solid #fff;
+    border-radius: 3px;
+    height: 34px;
+    left: 697px;
+    line-height: 34px;
+    position: absolute;
+    top: 275px;
+    width: 121px;
+    z-index: 5;
+}
+div.coffee_hs_btn a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+div.coffee_hs_btn a:hover{
+    background-color: #fff;
+    color: black;
+    text-decoration: underline;
+}
+/* ------------------- 커피 이야기 end ------------------- */
+/* -------------------1. index.html end-----------------*/
+/* -------------------2. product_list.html start-----------------*/
+div.product_kind_wrap{
+    padding: 30px 30px 0 30px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 3px;
+}
+div.product_kind_wrap p.tit{
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.product_kind_wrap div.product_kind_btn{
+    position: absolute;
+    right: 30px;
+    top: 17px;
+}
+div.product_toggle_wrap{
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+dl.product_kind_tab dt.dt1{
+    left: 0;
+}
+dl.product_kind_tab dt{
+    position: absolute;
+    top: 30px;
+}
+dl.product_kind_tab dt a.selected{
+    display: inline-block;
+    background: #006633;
+    color: #fff;
+    width: 200px;
+    height: 34px;
+    line-height: 2;
+    text-align: center;
+}
+
+/* ☆ 다시 보기  dl.product_kind_tab dt a.selected */
+dl.product_kind_tab dd.dd1{
+    display: block;
+}
+dl.product_kind_tab dd{
+    padding-top: 55px;
+}
+.hid{
+    position: absolute;
+    left: -9999px;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+div.product_select_wrap{
+    position:relative;
+}
+div.product_kind_wrap div.product_select_wrap ul{
+    width: 1040px;
+    display: inline-block;
+}
+div.product_kind_wrap div.product_select_wrap ul li{
+    font-size: 12px;
+    color: #666;
+    float: left;
+    margin-right: 30px;
+    font-weight: normal;
+    
+}
+input[type="checkbox"]{
+    height: 12px;
+    width: 12px;
+}
+.ez-hide{
+    opacity: 1;
+}
+
+dl.product_kind_tab dt.dt2{
+    left: 210px;
+}
+dl.product_kind_tab dt a{
+    background: #f4f4f1;
+    color: #222;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    width: 200px;
+}dl.product_kind_tab dt.dt3{
+    left: 420px;
+}
+/* 상세분류 전까지 완료 */
+div.product_list > dl > dt.icon_blond{
+    background: #f4f4f2 url(../../common/img/coffee/1_coffee/icon_blond.png) 20px center no-repeat;
+}
+div.product_list > dl > dt{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+div.product_list > dl > dt > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-left: 50px;
+}
+div.product_list > dl > dd{
+    margin-bottom: 40px;
+    display: inline-block;
+}
+div.product_list > dl > dd > ul{
+    width: 1120px;
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+div.product_list > dl > dd > ul > li{
+    width: 260px;
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+div.product_list > dl > dd > ul li dl{
+    width: 260px;
+}
+div.product_list > dl > dd > ul li dt{
+    width: 260px;
+    height: 245px;
+    position: relative;
+    overflow: hidden ;
+}
+div.product_list > dl > dd > ul li dt > a > img:hover{
+    transform: scale(1.1, 1.1);
+}
+div.product_list > dl > dd > ul li dt > a > img{
+    transition: 1s;
+    width: 259px;
+    height: 271px;
+}
+div.product_list > dl > dd > ul li dt ul{
+    position: absolute;
+    left: 9px;
+    bottom: 10px;
+}
+div.product_list > dl > dd > ul li dt ul li{
+    float: left;
+    margin-right: 4px;
+}
+div.product_list > dl > dd > ul li dd{
+    font-size: 14px;
+    color: #444;
+    white-space: nowrap;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background:#fff;
+}
+div.product_list > dl > dt.icon_medium{
+    background: #f4f4f2 url(../../common/img/coffee/1_coffee/icon_medium.png) no-repeat 20px center;
+}
+div.product_list > dl > dt.icon_dark{
+    background: #f4f4f2 url(../../common/img/coffee/1_coffee/icon_dark.png) no-repeat 20px center;
+}
+div.product_list > dl > dt.icon_flavor{
+    background: #f4f4f2 url(../../common/img/coffee/1_coffee/icon_flavor.png) no-repeat 20px center;
+}
+div.product_list > dl > dt.icon_reserve_bean{
+    background: #f4f4f2 url(../../common/img/coffee/1_coffee/icon_reserve_bean.png) no-repeat 20px center
+}
+div.product_list > dl > dt.icon_flavor_latte{
+    background: #f4f4f2 url(../../common/img/coffee/1_coffee/icon_flavor_latte.png) no-repeat 20px center;
+}
+#cf_select_wrap, #cf_select_wrap2, #cf_select_wrap3{
+    width: 249px;
+    position: absolute;
+    right: 0;
+    top: 23px;
+}
+p.cf_s_p{
+    position: relative;
+}
+#cf_select_wrap .select, #cf_select_wrap2 .select, #cf_select_wrap3 .select{
+    width: 236px;
+    padding-right: 10px;
+    height: 38px;
+    background: url(../../common/img/coffee/1_coffee/sbox_arrow_down.png) #fff center 96% no-repeat;
+    border: 1px solid #ddd;
+    text-indent: 10px;
+    text-align: left;
+    font-size: 16px;
+    color:  #444;
+    overflow: hidden;
+}
+p.cf_s_p span.cf_s_span{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    font-size: 14px;
+    color: #444;
+}
+div.cloverExtraction_ber{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+}
+/* -------------------2. product_list.html end-----------------*/
+
+/* -------------------3. reserve_info.html start-----------------*/
+div.summary_full p.big_img{
+    padding-bottom: 30px;
+}
+div.summary_full div.reserve_coffee_cont_top h3{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #222;
+    margin: 0 15px 12px 15px;
+}
+div.reserve_coffee_cont_top p.cfrsTit1{
+    text-align: center;
+    font-size: 16px;
+    color: #b06546;
+    font-style: italic;
+    padding: 10px 0 20px 0;
+    line-height: 1.2em;
+}
+div.summary_full p.t1{
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    letter-spacing: -.1px;
+}
+div.summary_full p.t2{
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0 15px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.reserve_info_wrap{
+    border: 1px solid #e5e5e5;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+p.reserve_info_ttl{
+    margin: 0 auto 25px;
+    width: 396px;
+}
+.reserve_info_txt{
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 30px;
+}
+div.icon_reserve{
+    position: relative;
+    width: 534px;
+    margin: 0 auto 40px;
+}
+div.icon_reserve img{
+    width: 100%;   
+}
+.reserve_info_warn{
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+}
+br.w880{
+    display: none;
+}
+.btn_reserve_more a{
+    background: #754737;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto;
+    width: 315px;
+}
+.btn_reserve_more{
+    margin-bottom: 30px;
+}
+div.content_bottom{
+    height: 800px;
+    background: #f4f4f2;
+    width: 100%;
+    padding: 40px 0 70px 0;
+}
+div.reserve_ing_tit{
+    width: 1100px;
+    height: 60px;
+    line-height: 60px;
+    background: #222;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+div.reserve_ing_tit p{
+    padding-left: 20px;
+    font-weight: bold;
+}
+div.product_list_wrap ul.product_list{
+    width: 1120px;
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+div.product_list_wrap ul.product_list > li{
+    width: 260px;
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+div.product_list_wrap ul.product_list li dl{
+    width: 260px;
+}
+div.product_list_wrap ul.product_list li dt{
+    width: 260px;
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+}
+div.product_list_wrap ul.product_list li dt > a > img:hover{
+        transform: scale(1.1, 1.1);
+}
+div.product_list_wrap ul.product_list li dt > a > img{
+    transition: transform 1s;
+    width: 259px;
+    height: 271px;
+}
+div.product_list_wrap ul.product_list li dt ul.icon {
+    position: absolute;
+    left: 9px;
+    bottom: 10px;
+}
+div.product_list_wrap ul.product_list li dt ul.icon li{
+    float: left;
+    margin-right: 4px;
+}
+div.product_list_wrap ul.product_list li dd{
+    position: relative;
+    font-size: 14px;
+    color: #444;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+}
+/* ☆ 수정(글씨 위치 조정) */
+/* RESERVE MAGAZINE start */
+.wn_cont{
+    left: 50%;
+    margin: 0 0 0 -550px;
+    position: relative;
+    width: 1100px;
+}
+section.magazine_wrap{
+    position: relative;
+
+}
+section.magazine_wrap div.box_bg{
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    height: 71px;
+    width: 1098px;
+    border-radius: 3px;
+}
+section.magazine_wrap h3.magazine_all{
+    left: 30px;
+}
+section.magazine_wrap h3{
+    display: block;
+    position: absolute;
+    top: 20px;
+    border-radius: 3px;
+}
+section.magazine_wrap h3 a.on{
+    background: #eae7e0;
+    color: #222;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 200px;
+}
+section.magazine_wrap h3 a{
+    background: #fff;
+    width: 200px;
+    text-align: center;
+    height: 35px;
+    display: block;
+    color: #222;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 35px;
+    
+}
+section.magazine_wrap article{
+    padding-top: 40px;
+}
+section.magazine_wrap article div.magazine_list{
+    position: relative;
+    display: inline-block;
+}
+section.magazine_wrap article div.magazine_list > dl > dd{
+    margin-bottom: 40px;   
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul{
+    width: 1120px;
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul > li{
+    width: 260px;
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul li dl{
+    width: 260px;
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul li dt{
+    width: 260px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul li dt > a > img:hover{
+    transform: scale(1.1, 1.1)
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul li dt > a > img{
+    transition: 1s;
+    width: 100%;
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul li dd{
+    height: 50px;
+    padding: 19px 10px 0 10px;
+}
+section.magazine_wrap article div.magazine_list > dl > dd > ul li dd h4{
+    font-size: 14px;
+    color: #444444;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 16px;
+    line-height: 16px;
+}
+section.magazine_wrap h3.magazine_people{
+    left: 240px;
+}
+section.magazine_wrap h3.magazine_coffee{
+    left: 450px;
+}
+section.magazine_wrap h3.magazine_places{
+    left: 660px;
+}
+section.magazine_wrap h3.magazine_experience{
+    left: 870px;
+}
+
+/* RESERVE MAGAZINE end */
+/* -------------------3. reserve_info.html end-----------------*/
+/* -------------------4. COFFEE espresso.html start-----------------*/
+article.cf_espressoBottom_inner, article.cf_espressoTop_inner{
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+p.cf_espressoClasslcs_img img{
+    margin: 0 auto;
+    display: block;
+}
+dl.cf_espressoClasslcs_info{
+    padding: 30px 0 60px 0;
+    width: 1100px;
+    height: 220px;
+    margin: 0 auto;
+}
+dl.cf_espressoClasslcs_info dt{
+    font-size: 20px;
+    color: #006633;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+dl.cf_espressoClasslcs_info dd{
+    color: #666;
+    line-height: 1.6;
+    padding-left: 10px;
+    
+}
+dl.cf_espressoClasslcs_info dd p.last{
+    margin-top: 30px;
+}
+section.cf_espressoBottom_wrap{
+    padding: 40px 0 80px 0;
+    background: #f4f4f2;
+}
+article.cf_espressoBottom_inner, article.cf_espressoTop_inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+ul.cf_espressoClasslcs_list{
+    margin-left:-24px;
+}
+ul.cf_espressoClasslcs_list li{
+    float: left;
+    margin-left:24px;
+    width: 350px;
+    height: 350px;
+}
+ul.cf_espressoClasslcs_list li img{
+    width: 342px;
+    height: 210px;
+}
+ul.cf_espressoClasslcs_list li dl dt{
+    width: 300px;
+    height: 210px;
+}
+ul.cf_espressoClasslcs_list li dl dt img:hover{
+    transform: scale(1.1, 1.1);
+}
+ul.cf_espressoClasslcs_list li dl dt img{
+    transition: transform 1s;
+}
+/* ☆ img 확대 천천히 되게 하기 */
+ul.cf_espressoClasslcs_list li dl dd{
+    height: 100px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+ul.cf_espressoClasslcs_list li dl dd:hover{
+    text-decoration: underline;
+}
+/* doppio start */
+div.productView_footmenu{
+    padding: 40px 0 60px 0;
+    background: #f4f4f2;
+    
+}
+div.productView_footmenu div.productView_footmenu_inner{
+    width: 1100px;
+    height: 420px;
+    margin: 0 auto;
+    
+}
+div.productView_bottom{
+    border-top: 1px solid #ddd;
+    padding-top: 40px;
+    
+}
+div.productView_bottom p.tit{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    
+}
+
+div.productView_bottom div.productRel_wrap ul{
+    width: 100%;
+}
+div.productView_bottom div.productRel_wrap li{
+    width: 33.3333%;
+    float:left;
+}
+div.productView_bottom div.productRel_wrap dl{
+    width: 350px;
+    height: 200px;
+    margin-bottom: 10px;   
+}
+div.productView_bottom div.productRel_wrap dt{
+    float: left;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+div.productView_bottom div.productRel_wrap li dt img{
+    /* 보류 */
+    width: 160px;
+    height: 166px;
+
+}
+div.productView_bottom div.productRel_wrap li dd{
+    float: right;
+    width: 170px;
+    height: 160px;
+    position: relative;
+}
+div.productView_bottom div.productRel_wrap li dd p.t1{
+    font-size: 14px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+div.productView_bottom div.productRel_wrap li dd p.t2{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+div.productView_bottom div.productRel_wrap li dd p.more_btn{
+    position: absolute;
+    bottom: 50px;
+    left: -8px;
+    bottom: 0;
+}
+div.productView_bottom div.productRel_wrap li dd p.more_btn a{
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    color: #222;
+    padding: 30px 0 2px 0;
+    width: 128px;
+    height: 18px;
+    margin-left: 10px;
+    text-indent: -20000px;
+}
+div.productView_bottom div.productRel_wrap li dd p.more_btn a img{
+    position: absolute;
+    vertical-align: middle;
+    padding-left: 5px;
+    top: 40px;
+}
+div.productView_bottom div.productRel_wrap li dt img:hover{
+    transform: scale(1.1, 1.1);
+}
+div.productView_bottom div.productRel_wrap li dt img{
+    transition: transform 1s;
+}
+/* doppio end */
+/* -------------------4. COFFEE espresso.html  end-----------------*/
+
+/* -------------------5. COFFEE high enjoy.html  start-----------------*/
+/* 커피 프레스 start */
+div.coffee_higher_enjoy{
+    position: relative;
+}
+div.coffee_higher_enjoy dl.content_tabmenu{
+    position: relative;
+    padding-top: 90px;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01{
+    left:50%;
+    margin-left: -550px;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab{
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a{
+    display: block;
+    width: 220px;
+    height: 50px;
+    background:#006633;
+    color: #fff;
+    border:0;
+    font-size: 14px;
+    line-height: 3;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab a{
+    display: block;
+    width: 219px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #444;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 a{
+    height: 38px;
+    padding-top: 10px;
+    line-height: 1.2;
+    border-left: 1px solid #ddd;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dd.panel{
+    display: block;   
+}
+
+div.coffee_content{
+    width: 1100px;
+    margin: 0px auto 80px;
+}
+div.icon_coffee_press{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_press.png") 0 22px no-repeat;
+}
+div.icon_pour_over{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_pour_over.png") 0 31px no-repeat;
+}
+div.icon_ice_pour_over{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_iced_pour_over.png") 0 29px no-repeat;
+}
+div.icon_coffee_maker{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_brewer.png") 0 32px no-repeat;
+}
+div.higher_enjoy_tit1{
+    padding:30px 50px 32px 50px;
+}
+div.coffee_info_bottom{
+    padding: 40px 0 80px 0; 
+    background:#f4f4f2;
+    width: 100%;
+}
+ul.coffee_info li{
+    padding-bottom: 20px;
+}
+ul.coffee_info li p.coffee_info_img{
+    float: left;
+    width: 480px;
+    height: 276px;
+    overflow: hidden;
+    margin-right: 70px;
+}
+ul.coffee_info li dl.icon_coffee_info_01{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_01.png") 550px 5px no-repeat;
+    margin-top:0;
+    margin-bottom:0;
+    
+}
+ul.coffee_info li p.coffee_info_img img:hover{
+    transform:scale(1.1, 1.1);
+}
+ul.coffee_info li p.coffee_info_img img{
+    transition: transform 1s;
+}
+
+ul.coffee_info li dl.coffee_info_text{
+    float:left;
+    width: 799px;
+}
+ul.coffee_info li dl.coffee_info_text dt h4{
+    padding-left: 50px;
+    padding-top: 5px;
+    font-size: 16px;
+    color: #006633;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+ul.coffee_info li dl.coffee_info_text dd p{
+    padding-left: 50px;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+}
+ul.coffee_info li dl.coffee_info_text dd span.icon_coffee_info_tip{
+    display: block;
+    padding: 34px 0 0 50px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+ul.coffee_info li dl.coffee_info_text dd span{
+    display: block;
+    padding-left: 50px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+
+ul.coffee_info li dl.icon_coffee_info_02{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_02.png") 550px 5px no-repeat;
+    margin-top:0;
+    margin-bottom:0
+}
+ul.coffee_info li dl.icon_coffee_info_03{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_03.png") 550px 5px no-repeat;
+    margin-top:0;
+    margin-bottom:0
+}
+ul.coffee_info li dl.icon_coffee_info_04{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_04.png") 550px 5px no-repeat;
+    margin-top:0;
+    margin-bottom:0
+}
+ul.coffee_info li dl.icon_coffee_info_05{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_05.png") 550px 5px no-repeat;
+    margin-top:0;
+    margin-bottom:0
+}
+ul.coffee_info li dl.icon_coffee_info_06{
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_06.png") 550px 5px no-repeat;
+    margin-top:0;
+    margin-bottom:0
+}
+ul.coffee_info li{
+    position: relative;
+    height: 280px;
+}
+ul.coffee_info li p.coffee_info_img img{
+    position: absolute;
+    float: left;
+    width: 480px;
+    height: 270px;
+}
+dl.coffee_info_text{
+    position: absolute;
+    padding-left: 550px;
+}
+/* 커피 프레스 end */
+/* 푸어 오버 start */
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02{
+    left: 50%;
+    margin-left: -330px;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03{
+    left: 50%;
+    margin-left: -110px;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04{
+    left: 50%;
+    margin-left: 110px;
+}
+
+/* 푸어 오버 end */
+/* 리저브를 매장에서 다양하게 즐기는 법 start*/
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05{
+    left: 50%;
+    margin-left: 330px;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05.on a{
+    height: 40px;
+    line-height: 1.2 !important;
+    background: #b06546;
+    padding: 10px 0 0;
+}
+div.coffee_higher_enjoy dl.content_tabmenu dd.panel .cloverExtraction_wrap{
+    width: 1100px;
+    margin: 0 auto 60px;
+}
+div.cloverExtraction_wrap h4{
+    text-align: center;
+}
+div.cloverExtraction_wrap h5{
+    margin: 30px 0 0 0;
+    font-size: 40px;
+    text-align: center;
+    color: #222;
+}
+div.cloverExtraction_wrap p{
+    text-align: center;
+    margin: 30px 0 0 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #444444;
+}
+div.cloverExtraction_wrap small{
+    display: block;
+    text-align: center;
+    margin: 40px 0 0 0;
+    font-size: 14px;
+    color: #222222;
+    font-weight: bold;
+}
+div.cloverExtraction_wrap div.howtoEnjoy{
+    position: relative;
+    margin: 30px auto;
+    width: 915px;
+    height: 850px;
+}
+div.cloverExtraction_wrap div.howtoEnjoy li:hover{
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+}
+div.howtoEnjoy{
+    position: relative;
+}
+div.howtoEnjoy li{
+    display: inline-block;
+}
+div.howtoEnjoy li:nth-child(2), div.howtoEnjoy li:nth-child(3){
+    margin-left: 60px;
+}
+div.howtoEnjoy li:nth-child(4){
+    margin-left: 160px;
+}
+div.howtoEnjoy li:nth-child(5){
+    margin-left: 60px;
+} 
+
+div.cloverExtraction_ber{
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 12.5px 30px;
+    border-radius: 3px;
+    background: #000 url("../../common/img/coffee/5_higher_enjoy/icon_cloverExtraction_ber.jpg") 30px center no-repeat;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+div.cloverExtraction_ber dl dt{
+    float: left;
+    color: #958351;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+div.cloverExtraction_ber dl{
+    height: 34px;
+}
+div.cloverExtraction_ber dl dt img{
+    vertical-align: middle;
+}
+div.cloverExtraction_ber dl dd{
+    float: left;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 15px;
+    
+}
+div.cloverExtraction_ber p.btn_cloverExtraction{
+    position: absolute;
+    right: 30px;
+    top: 22px;
+}
+
+/* div.cloverExtraction_ber dl dt{
+    float: left;
+    padding-right: 10px;
+}
+div.cloverExtraction_ber dl dt img{
+    vertical-align: middle;
+    margin-top: 8px;
+}
+div.cloverExtraction_ber dl dd{
+    float: left;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 10px;
+}
+div.cloverExtraction_ber p.btn_cloverExtraction{
+    right: 30px;
+    top:20px;
+}
+div.cloverExtraction_ber p.btn_cloverExtraction a{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 30px 0 2px 0;
+    width: 98px;
+    height: 18px;
+    margin-left: 10px;
+}
+div.cloverExtraction_ber p.btn_cloverExtraction a img{
+    padding-left: 140px;
+} */
+/* 리저브를 매장에서 다양하게 즐기는 법 end*/
+
+/* -------------------5. COFFEE high enjoy.html  end-----------------*/
+
+/* -------------------6. COFFEE coffee story.html start-----------------*/
+div.coffee_story dl.content_tabmenu dt.tab a{
+    display: block;
+    width: 219px;
+    height: 48px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #444;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    line-height: 48px;
+    
+}
+div.coffee_story{
+    position: relative;
+}
+div.coffee_story dl.content_tabmenu{
+    position: relative;
+    padding-top: 90px;
+}
+div.coffee_story dl.content_tabmenu dt.tab_01{
+    left: 50%;
+    margin-left: -550px;
+}
+div.coffee_story dl.content_tabmenu dt.tab{
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+div.coffee_story dl.content_tabmenu dt.tab.on a{
+    display: block;
+    width: 220px;
+    height: 50px;
+    background:#006633;
+    color: #fff;
+    border:0;
+    font-size: 14px;
+    line-height: 3;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+div.coffee_story dl.content_tabmenu dt.tab a{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+div.coffee_story dl.content_tabmenu dd.panel{
+    z-index: 4;
+}
+div.coffeeCultivation_wrap{
+    background: #fff;
+    margin-bottom: 60px;
+}
+div.coffeeCultivation_wrap h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin:0 0 20px 0;
+}
+div.coffeeCultivation_wrap div.cultivation_wrap{
+    padding-bottom: 0;
+    display: inline-block;
+}
+p.cultivation_img{
+    float: left;
+    width: 550px;
+}
+div.coffeeCultivation_wrap dl.cultivation_text{
+    float: left;
+    width: 520px;
+    padding: 0 0 0 30px;
+}
+div.coffeeCultivation_wrap dl.cultivation_text dt{
+    font-size: 20px;
+    color: #006633;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    font-style: italic;
+}
+div.coffeeCultivation_wrap dl.cultivation_text dd p.text1{
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    padding-bottom: 15px;
+}
+div.coffeeObtain_wrap{
+    background: #f4f4f2;
+    padding-bottom: 60px;
+}
+div.coffeeObtain_wrap h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+div.coffeeObtain_wrap p.bigImg01{
+    position: relative;
+}
+div.coffeeObtain_wrap p.bigImg01 span{
+    position: absolute;
+    left: 0;
+    top: 228px;
+}
+div.coffeeObtain_wrap dl.obtainInfo_text{
+    margin-left: 408px;
+}
+div.coffeeObtain_wrap dl.obtainInfo_text dt{
+    font-size: 20px;
+    color: #006633;
+    font-style: italic;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    padding-top: 30px;
+}
+div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1{
+    font-style: 14px;
+    padding-left: 12px;
+    padding-bottom: 30px;
+    line-height: 1.6;
+    color: #666;
+}
+div.coffeeRoasting_wrap h3{
+    padding-top: 60px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+}
+div.coffeeRoasting_info{
+    padding-bottom: 60px;
+}
+
+div.coffeeRoasting_info p.img{
+    float: left;
+    width: 550px;
+    height: 381px;
+}
+
+div.coffeeRoasting_info dl.text{    
+    float: left;
+    width: 520px;
+    height: 381px;
+    padding: 0 0 0 30px;
+} 
+
+div.coffeeRoasting_info dl.text dt{
+    font-size: 18px;
+    color: #006633;
+    line-height: 1.4;
+}
+div.coffeeRoasting_wrap h3.title{
+    font-size: 20px;
+    font-weight: normal;
+    color: #006633;
+    margin-bottom: 15px;
+    padding-top: 0;
+    font-style: italic;
+}
+div.coffeeRoasting_info dl.text dd p.text1{
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    padding-left: 10px;
+} 
+div.coffeeRoasting_wrap{
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 140px;
+}
+div.coffeeBlending_wrap{
+    background: #f4f4f2;
+    padding-bottom: 70px;   
+    display: inline-block;
+    width: 100%;
+}
+div.blending_text{
+    float: left;
+    width: 550px;
+}
+div.blending_text h3.blending{
+    font-style: 18px;
+    font-weight: bold;
+    color: #222;
+    padding: 35px 0 15px 10px;
+}
+div.blending_text dl.blendingInfo_text{
+    float: left;
+    width: 560px;
+}
+div.blending_text dl.blendingInfo_text dt{
+    font-size: 20px;
+    color: #006633;
+    padding-bottom: 10px;
+    line-height: 1.4;
+    font-style: italic;
+}
+div.blending_text dl.blendingInfo_text dd p.text1{
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+p.blending_img{
+    float: left;
+    width: 525px;
+    padding: 0 0 0 25px;
+}
+/* 농장에서 우리의 손으로 end */
+/* 최상의 아라비카 원두 start */
+div.coffee_story dl.content_tabmenu dt.tab_02{
+    left: 50%;
+    margin-left: -330px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+div.higherAravica_wrap h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: 20px;
+}
+dl.higherAravica{
+    padding-bottom: 60px;
+}
+dl.higherAravica > dd{
+    background: #000;
+    padding: 30px;
+    position: relative;
+    height: 332px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+dl.higherAravica > dd span.bigImg_bg{
+    position: absolute;
+    right: 140px;
+    top: -100px;
+}
+dl.higherAravica > dd div.youtube iframe{ 
+    float: left;
+    width: 550px;
+    height: 330px;
+}
+dl.higherAravica > dd dl.text{
+    float: left;
+    width: 450px;
+    height: 330px;
+    text-align: center;
+}
+dl.higherAravica > dd dl.text > dt{
+    font-size: 18px;
+    color: #e2d9c2;
+    margin-bottom: 15px;
+    margin-top: 145px;
+}
+dl.higherAravica > dd dl.text > dd{
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.6;
+}
+div.aravica_info_01{
+    padding-bottom: 40px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+div.aravica_info_01 p.img{
+    float: left;
+    width: 550px;
+}
+div.aravica_info_01 dl.text{
+    position: absolute;
+    width: 520px;
+    height: 174px;
+    left: 800px;
+    top: 50px;
+}
+div.aravica_info_01 dl.text dt{
+    font-size: 20px;
+    color: #006633;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+div.aravica_info_01 dl.text dd p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+div.aravica_info_02{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+div.aravica_info_02 dl.text{
+    position: absolute;
+    width: 550px;
+    height: 184px;
+    padding: 50px 0 0 0px;
+}
+div.aravica_info_02 dl.text dt{
+    font-size: 20px;
+    color: #006633;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+div.aravica_info_02 dl.text dd p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+div.aravica_info_02 p.img{
+    float: right;
+    width: 520px;
+}
+
+div.aravica_info_03{
+    padding-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background: #f4f4f2;
+    margin-bottom: 60px;
+}
+div.aravica_info_03 p.img{
+    float: left;
+    width: 550px;
+}
+div.aravica_info_03 dl.text{
+    position: absolute;
+    float: left;
+    width: 520px;
+    height: 319px;
+    padding: 95px 0 0 30px;
+    left: 800px;
+    top: -10px;
+}
+div.aravica_info_03 dl.text dt{
+    font-size: 20px;
+    color: #006633;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+div.aravica_info_03 dl.text dd p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+div.aravica_info_04{
+    padding-bottom: 60px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background: #f4f4f2;
+}
+div.aravica_info_04 dl.text{
+    position: absolute;
+    width: 550px;
+    height: 184px;
+    padding: 50px 0 0 0px;
+}
+div.aravica_info_04 dl.text dt{
+    font-size: 20px;
+    color: #006633;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+div.aravica_info_04 dl.text dd p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+div.aravica_info_04 p.img{
+    float: right;
+    width: 520px;
+}
+div.aravica_info_05{
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 50px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+div.aravica_info_05 p.img{
+    float: left;
+    width: 550px;
+}
+div.aravica_info_05 dl.text{
+    position: absolute;
+    float: left;
+    width: 520px;
+    height: 319px;
+    padding: 95px 0 0 30px;
+    left: 800px;
+    top: -10px;
+}
+div.aravica_info_05 dl.text dt{
+    font-size: 20px;
+    color: #006633;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+div.aravica_info_05 dl.text dd p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+div.coffee_story dl.content_tabmenu dt.tab_03{
+    left: 50%;
+    margin-left: -110px;
+}
+/* 최상의 아라비카 원두 end */
+/* 스타벅스 로스트 스펙트럼 start */
+div.cfs01_full_top h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: 20px;
+}
+div.cfs01_full_top p.big_img{
+    padding-bottom: 30px;
+}
+div.cfs01_full_top h3.title{
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: #006633;
+    padding-bottom: 20px;
+}
+div.cfs01_full_top p.t1{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding: 0 0 30px 10px;
+}
+div.cfs01_full_top span.btn_coffee_info_more{
+    display: block;
+    padding-bottom: 40px;
+    margin-left: -10px;
+}
+div.cfs01_full_top span.btn_coffee_info_more a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #222;
+    padding: 30px 0 2px 20px;
+    width: 140px;
+    height: 18px;
+}
+div.cfs01_full_top span.btn_coffee_info_more a img{
+    vertical-align: middle;
+}
+div.cfs01_bottom{
+    background: #f4f4f2;
+    width: 100%;
+    padding: 40px 0 70px 0;
+    display: inline-block;
+}
+div.cfs01_bottom ul.cfs01_bottom_list{
+    margin-left: -25px;
+    display: inline-block;
+}
+ul.cfs01_bottom_list li{
+    float: left;
+    width: 350px;
+    margin-left: 25px;
+}
+ul.cfs01_bottom_list li p img{
+    width: 350px;
+    height: 150px;
+}
+ul.cfs01_bottom_list li p.img{
+    position: relative;
+    margin-bottom: 20px;
+}
+ul.cfs01_bottom_list li p.img span.dim_txt1{
+    position: absolute;
+    display: block;
+    width: 341px;
+    height: 35px;
+    left: 0px;
+    bottom: 0px; 
+    background: #9b704d;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 29px;
+    padding-left: 9px;
+}
+ul.cfs01_bottom_list li p.img span.dim_txt1 span{
+    font-size: 14px;
+    color: #fff;
+    line-height: 35px;
+}
+
+
+ul.cfs01_bottom_list li p.img span.dim_txt2{
+    position: absolute;
+    display: block;
+    width: 341px;
+    height: 35px;
+    left: 0px;
+    bottom: 0px; 
+    background: #924c2e;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 29px;
+    padding-left: 9px;
+}
+ul.cfs01_bottom_list li p.img span.dim_txt2 span{
+    font-size: 14px;
+    color: #fff;
+    line-height: 35px;
+}
+
+ul.cfs01_bottom_list li p.img span.dim_txt3{
+    position: absolute;
+    display: block;
+    width: 341px;
+    height: 35px;
+    left: 0px;
+    bottom: 0px; 
+    background: #4f2c1d;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 29px;
+    padding-left: 9px;
+}
+ul.cfs01_bottom_list li p.img span.dim_txt3 span{
+    font-size: 14px;
+    color: #fff;
+    line-height: 35px;
+}
+
+
+ul.cfs01_bottom_list li dl.cfs01_text dt h4{
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 15px;
+}
+ul.cfs01_bottom_list li dl.cfs01_text dd p{
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+/* 스타벅스 로스트 스펙트럼 end */
+/* 스타벅스 디카페인 start */
+div.coffee_story dl.content_tabmenu dt.tab_04{
+    left: 50%;
+    margin-left: 110px;
+}
+div.cfs01_full_top h4.title2{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #658000;
+    font-weight: normal;
+    font-style: italic;   
+}
+div.cfs01_full_top p.t2{
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    padding: 0 0 25px 10px;
+}
+div.cfs01_full_top span.btn_coffee_info_more{
+    padding-bottom: 40px;
+    margin-left: -10px;
+    display: block;
+}
+div.cfs01_full_top span.btn_coffee_info_more a{
+    font-size: 12px;
+    width: 140px;
+    height: 18px;
+    color: #222;
+    padding: 30px 0 2px 20px;
+    font-weight: bold;
+}
+.decafeStory{
+    margin-top: 25px;
+}
+.decafeStory .top .imgBox{
+    float: left;
+    width: 50%;
+    display: block;
+}
+.decafeStory .top .imgBox img{
+    width: 100%;
+}
+.decafeStory .top dl{
+    float: left;
+    width: 50%;
+    padding: 40px 0 40px 35px;
+    box-sizing: border-box;
+}
+.decafeStory .top dl dt{
+    font-size: 20px;
+    color: #658000;
+    font-weight: normal;
+    font-style: italic;
+}
+.decafeStory .top dl dd{
+    font-size: 13.6px;
+    margin-top: 30px;
+    color: #444;
+    line-height: 24px;
+}
+sub{
+    font-style: 10px;
+}
+.decafeStory .bottom{
+    margin-top: 98px;
+}
+div.decafeStory div.top{
+    display: inline-block;
+}
+.decafeStory .bottom h5{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222;
+}
+.decafeStory .bottom > p{
+    line-height: 24px;
+    color: #444;
+    font-size: 14px;
+}
+.decafeStory .bottom .co2{
+    margin-top: 40px;
+}
+.decafeStory .bottom .co2 h6{
+    line-height: 34px;
+    color: #658000;
+    font-size: 18px;
+}
+.decafeStory .bottom .co2 h6 img{
+    margin-right: 12px;
+    vertical-align:top;
+}
+.decafeStory .bottom .co2 ul li{
+    float: left;
+    width: 50%;
+}
+.decafeStory .bottom .co2 ul li .imgBox{
+    display: block;
+    text-align: center;
+}
+.decafeStory .bottom .co2 ul li:nth-child(odd) p{
+    padding-left: 80px;
+}
+.decafeStory .bottom .co2 ul li p{
+    line-height: 24px;
+    margin-top: 15px;
+    color: #444;
+    font-size: 14px;
+}
+.decafeStory .bottom .co2 ul li p .num{
+    float: left;
+    width: 22px;
+    height: 22px;
+    display: block;
+    line-height: 22px;
+    background: #9ac23b;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.decafeStory .bottom .co2 ul li p .summary{
+    float: left;
+    margin-left: 8px;
+    text-align: left;
+    display: block;
+}
+.decafeStory .bottom .co2 ul li:nth-child(even) p{
+    padding-left: 75px;   
+}
+.decafeStory .bottom .co2 ul li.how3, .decafeStory .bottom .co2 ul li.how4{
+    margin-top: 50px;
+}
+div.co2{
+    display: inline-block;
+}
+/* 스타벅스 디카페인 end */
+/* 클로버®  커피 추출 시스템 start */
+div.coffee_story dl.content_tabmenu dt.tab_05{
+    left: 50%;
+    margin-left: 330px;
+}
+div.cfs05_full_top h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: 15px;
+}
+div.cfs05_full_top p.big_img{
+    padding-bottom: 30px;
+}
+div.cfs05_full_top h3.title{
+    font-size: 20px;
+    font-weight: normal;
+    color: #006633;
+    line-height: 1.6;
+    font-style: italic;
+}
+div.cfs05_full_top p.t1{
+    font-size: 14px;
+    color: #444;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+div.cloverExtraction_info_01{
+    padding-bottom: 150px;
+    display: inline-block;
+    width: 100%;
+}
+div.cloverExtraction_info_01 div.coffee_content{
+    /* display: inline-block; */
+    /* width: 100%; */
+}
+div.cloverExtraction_info_01 dl.ceInfo_text{
+    float: left;
+    width: 520px;
+    height: auto;
+    padding-right: 30px;
+}
+div.cloverExtraction_info_01 dl.ceInfo_text dt{
+    font-size: 18px;
+    color: #222;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+div.cloverExtraction_info_01 dl.ceInfo_text p.text1{
+    font-style: italic;
+    color: #006633;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+div.cloverExtraction_info_01 dl.ceInfo_text p.text1 span{
+    display: block;
+    padding-left: 10px;
+}
+div.cloverExtraction_info_01 dl.ceInfo_text p.text2{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+div.cloverExtraction_info_01 dl.ceInfo_text p.text3{
+    font-size: 13.7px;
+    color: #666;
+    line-height: 1.6;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+div.cloverExtraction_info_01 dl.ceInfo_text p.text4{
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+div.cloverExtraction_info_01 p.ceInfo_img{
+    float: left;
+    width: 550px;
+}
+div.cloverExtraction_info_02{
+    padding-bottom: 70px;
+    display: inline-block;
+    width: 100%;
+
+}
+div.cloverExtraction_info_02 p.ceInfo_img{
+    float: left;
+    width: 550px;
+    height: 250px;
+}
+div.cloverExtraction_info_02 dl.ceInfo_text{
+    float: left;
+    width: 520px;
+    height: auto;
+    padding: 0 0 0 30px;
+}
+div.cloverExtraction_info_02 p.ceInfo_img{
+    float: left;
+    width: 550px;
+    height: 300px;
+
+}
+div.cloverExtraction_info_02 dl.ceInfo_text dt{
+    font-size: 18px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+div.cloverExtraction_info_02 dl.ceInfo_text p.text1{
+    color: #006633;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+div.cloverExtraction_info_02 dl.ceInfo_text p.text1 span{
+    display: block;
+    padding-left: 10px;   
+}
+div.cloverExtraction_info_02 dl.ceInfo_text p.text2{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 13.6px;
+}
+div.cloverExtraction_info_02 dl.ceInfo_text p.text3{
+    font-style: 14px;
+    padding-left: 10px;
+    color: #666;
+    line-height: 1.6;
+}
+/* 클로버®  커피 추출 시스템 end */
+/* -------------------6. COFFEE coffee story.html end-----------------*/
+/* ---------------------------푸터 시작--------------------------- */
+footer{
+    width: 100%;
+    background-color: #2c2a29;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+#footer_inner{
+    width: 1115px;
+    margin: 0 20%;
+}
+#footer_inner ul{
+    margin-bottom: 60px;
+}
+#footer_inner ul li{
+    padding: 3px 0;
+}
+#footer_inner ul li a{
+    color: #fff;
+    font-size: 12px;
+}
+#footer_inner ul .li_tit a{
+    font-size: 14px;
+}
+.li_tit{
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+#footer_inner ul{
+    width: 220px;
+    float: left;
+}
+#footer_inner ul:last-child{
+    padding-right: 0;
+}
+#footer_inner img{
+    width: 14px;
+    overflow: hidden;
+    float: right;
+    margin-top: 40px;
+}
+
+#awards_area{
+    width: 100%;
+    overflow: hidden;
+    background-color: #282828;
+}
+#awards_inner{
+    margin: 0 18%;
+}
+#awards_inner ul li{
+    display: block;
+    float: left;
+    width: 14%;
+    padding: 30px 0;
+    margin: 0 10px;
+}
+#awards_inner ul li:nth-child(4) img{
+    width: 191px;
+}
+#awards_inner ul li:nth-child(5) img{
+    width: 191px;
+}
+#etc_area{
+    width: 100%;
+    background-color: #2c2a29;
+    text-align: center;
+}
+#etc_area ul:first-child {
+    padding-top: 30px;
+}
+#etc_area ul:first-child li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #393939;
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+}
+#etc_area ul li a{
+    color: #ccc;
+    font-size: 12px;
+    
+}
+#etc_area ul li:first-child a {
+    color: #00b050;
+}
+#etc_box {
+    padding: 10px 0 20px 0;
+}
+#etc_box a {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-right: 5px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+#etc_box a:hover{
+    text-decoration: underline;
+}
+#copyright_area {
+    width: 100%;
+    text-align: center;
+}
+#copyright_area ul{
+    margin-bottom: 20px;
+}
+#copyright_area ul li {
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    padding: 0 10px;
+    letter-spacing: 0;
+}
+#copyright_area span{
+    font-family: arial, HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 0;;
+}
