@@ -1,0 +1,1769 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    letter-spacing: -1px;
+    padding-top: 120px;
+}
+ul, ol li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.site_location{
+    font-size:12px;
+    float:left;
+    margin-left: 3px;
+}
+.site_location:hover{
+    text-decoration: underline;
+}
+.english{
+    font-family: arial, HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    letter-spacing: 0.25px;
+}
+.gray{
+    color:#666666;
+}
+/* Header start */
+#header_area{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #f6f5ef;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+#header_inner{
+    margin: 0 20%;
+    height: 120px;
+    width: 1100px;
+}
+#header_inner h1{
+    background: url('../Images/Header/Header_Logo.png') no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 20px;
+    float: left;
+}
+#header_inner h1 a{
+    display: block;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#header_cont{
+    float: right;
+}
+#util_nav li a{
+    color: #555;
+}
+#util_nav{
+    text-align: right;
+    float: right;
+}
+#util_nav li{
+    float: left;
+    font-size: 13px;
+    font:normal 13px Avenir, Arial, georgia;
+    letter-spacing: 0;
+    padding-top: 20px;
+}
+#util_nav > li:last-child > p{
+    width:34px;
+    height:34px;
+    background-color: #fff;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+#util_nav > li:last-child > p > a {
+    width:34px;
+    height:34px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#util_nav li::after{
+    content: "|";
+    color: rgba(85, 85, 85, 0.158);
+    padding: 20px;
+}
+#util_nav li:nth-child(4)::after{
+    content: none;
+}
+#util_nav li:nth-child(4){
+    padding-right: 10px;
+}
+#util_nav li:last-child::after{
+    content: none;
+}
+#gnb{
+    float: right;
+}
+
+#gnb li{
+    display: inline-block;
+    padding-top: 30px;
+    color: #333;
+    text-align: center;
+    font-size: 13px;
+}
+#gnb li:first-child{
+    width: 89px;
+}
+#gnb li:nth-child(2){
+    width: 73px;
+}
+#gnb li:nth-child(3){
+    width: 79px;
+}
+#gnb li:nth-child(4){
+    width: 153px;
+}
+#gnb li:nth-child(5){
+    width: 225px;
+}
+#gnb li:last-child{
+    width: 131px;
+    padding-right: 0;
+}
+#gnb li a{
+    color: #333;
+    display: block;
+    padding-top: 10px;
+    font:normal 13px Avenir, Arial, georgia;
+    letter-spacing: 0;
+    height: 45px;
+}
+#gnb li a:last-child{
+    padding-right: 0;
+}
+#gnb li a:hover{
+    background-color: #2c2a29;
+    color: #669900;
+    text-decoration: underline;
+}
+/* Header end */
+
+/* 1_Rewards start */
+.rewardsIntro_body_box{
+    width:100%;
+}
+#rewardsIntro_box1{
+    width: 100%;
+    height: 98px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#rewardsIntro_box1 > #rewardsIntro_box1_site_location{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    font-size:12px;
+    margin-right:210px;
+}
+#rewardsIntro_box1 > #rewardsIntro_box1_title{
+    display: flex;
+    align-items: center;
+    margin-left:14%;
+    margin-bottom:18px;
+}
+#rewardsIntro_box1_site_location > a,img{
+    display: flex;
+}
+#rewardsIntro_box1_site_location > a:hover{
+    text-decoration:underline;
+}
+#rewardsIntro_box2{
+    background-image: url('../Images/Starbucks_Rewards/Starbucks_Rewards_Intro1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+}
+#rewardsIntro_box2_txtbox{
+    padding-top: 127px;
+    padding-left:14%;
+    padding-bottom:5px;
+}
+#rewardsIntro_box2_links{
+    width:420px;
+    padding-left: 14%;
+}
+#rewardsIntro_box2_links > a{
+    width:200px;
+    height:36px;
+    border:2px solid #222;
+    border-radius: 3px;
+    font-size:13.5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#rewardsIntro_box2_links > a:first-child{
+    float: left;
+}
+#rewardsIntro_box2_links > a:last-child{
+    float: right;
+}
+#rewardsIntro_box2_links > a:hover{
+    text-decoration: underline;
+    animation-name: darken;
+    animation-duration:1s;
+}
+@keyframes darken{
+    from {
+    }
+    50%{
+    }
+    to{
+        transition: ease-in;
+        text-decoration: white underline;
+        color: white;
+        background-color: black;
+    }
+}
+
+#rewardsIntro_box3{
+    width: 61.75%;
+    height: 70px;
+    background-color: black;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#rewardsIntro_box3 > #rewardsIntro_box3_img1{
+    margin-left: 225px;
+    /* margin-top: 25px; */
+    float: left;
+}
+#rewardsIntro_box3 > #rewardsIntro_box3_img2{
+    margin-top: 6px;
+    margin-right: 22px;
+    float: right;
+}
+#rewardsIntro_box4{
+    width:38.25%;
+    height: 70px;
+    background: url('../Images/Starbucks_Rewards/Starbucks_Rewards_Intro_box4_background.jpg') no-repeat;
+    background-size: cover;
+    float: left;
+}
+#rewardsIntro_box4 > div:first-child{
+    float:left;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top: 11px;
+}
+#rewardsIntro_box4 > div:nth-child(2){
+    float:left;
+    margin-top:20px;
+    margin-right:35px;
+}
+#rewardsIntro_box4 > div:last-child{
+    margin-top:20px;
+}
+#rewardsIntro_box5{
+    width: 100%;
+    height: 430px;
+    background-image: url('../Images/Starbucks_Rewards/Starbucks_Rewards_Intro_box5_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
+    clear: both;
+}
+#rewardsIntro_box5 > #rewardsIntro_box5_wrap{
+    padding-top:100px;
+    padding-left: 800px;
+}
+#rewardsIntro_box5 > #rewardsIntro_box5_wrap > img{
+    margin-left:40px;
+}
+#rewardsIntro_box5 > #rewardsIntro_box5_wrap > div > ul > li{
+    margin-bottom: 10px;
+}
+#rewardsIntro_box5 > #rewardsIntro_box5_wrap > div:nth-child(2) > ul > li:nth-child(odd) {
+    float: left;
+    margin-right:5px;
+}
+#rewardsIntro_box5 > #rewardsIntro_box5_wrap > div:nth-child(2) > ul > li > a{
+    width:185px;
+    height:36px;
+    font-size:13.5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius:3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rewardsIntro_box5 > #rewardsIntro_box5_wrap > div:nth-child(2) > ul{
+    list-style-type: none;
+}
+#rewardsIntro_box5 > #rewardsIntro_box5_wrap > div:nth-child(2) > ul > li a:hover{
+    text-decoration: underline;
+    animation-name: lighten;
+    animation-duration: 1s;
+}
+@keyframes lighten {
+    from {
+    }
+    50%{
+    }
+    to{
+        transition: ease;
+        text-decoration: black underline;
+        color: black;
+        background-color: white;
+    }
+}
+
+#rewardsIntro_box6{
+    width: 100%;
+    height: 430px;
+    background-image: url('../Images/Starbucks_Rewards/Starbucks_Rewards_Intro_box6_background.jpg');
+    background-size: cover;
+    background-position: 90%;
+    background-repeat: no-repeat;
+}
+#rewardsIntro_box6 > img{
+    padding-left: 14%;
+    padding-top: 100px;
+}
+#rewardsIntro_box6 > #rewardsIntro_box6_links_set > ul > li:nth-child(odd){
+    float:left;
+    margin-right:5px;
+}
+#rewardsIntro_box6 > #rewardsIntro_box6_links_set > ul > li{
+    margin-bottom:10px;
+}
+#rewardsIntro_box6 > #rewardsIntro_box6_links_set > ul {
+    padding-left: 14%;
+    list-style-type: none;
+}
+#rewardsIntro_box6 > #rewardsIntro_box6_links_set > ul > li > a{
+    width:202px;
+    height:40px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius:3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rewardsIntro_box6 > #rewardsIntro_box6_links_set > ul > li > a:hover{
+    text-decoration: underline;
+    animation-name: darken2;
+    animation-duration: 1s;
+}
+@keyframes darken2 {
+    from {
+    }
+    50%{
+    }
+    to{
+        transition:ease;
+        text-decoration: white underline;
+        color: white;
+        background-color: black;
+    }
+}
+/*1_Rewards end */
+
+/*2_Rewards_Intro start */
+.Starbucks_Reward_intro_body_box{
+    width:100%;
+    height:1184px;
+}
+.Starbucks_Reward_intro_body_top{
+    width:100%;
+    height:98px;
+}
+.Starbucks_Reward_intro_body_top_wrap{
+    display: flex;
+    justify-content: center;
+}
+.Starbucks_Reward_intro_body_top_wrap > h2{
+    margin-top:30px;
+    margin-right:300px;
+}
+#Starbucks_Reward_intro_body_sitelocation{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-left:200px;
+    font-size: 12px;
+}
+#Starbucks_Reward_intro_body_sitelocation > .english, #Starbucks_Reward_intro_body_sitelocation_a3{
+    color:#666666;
+}
+#Starbucks_Reward_intro_body_sitelocation > a, a+img{
+    float:left;
+    margin-left:3px;
+}
+
+.Starbucks_Reward_intro_body_bottom{
+    width:100%;
+    height:1006px;
+    display: flex;
+    justify-content: center;
+}
+#Starbucks_Reward_intro_body_bottom_butt1{
+    margin-top:40px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.Starbucks_Reward_intro_body_bottom_wrap > #Starbucks_Reward_intro_body_bottom_butt1> a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:152px;
+    height:30px;
+    font-weight: bolder;
+    font-size: 12px;
+    background:#006341;
+    border-radius: 3px;
+    color:white;
+}
+.Starbucks_Reward_intro_body_bottom_wrap > a:hover{
+    text-decoration: underline;
+}
+#Starbucks_Reward_intro_body_bottom_img2{
+    width:1100px;
+    height:706px;
+    background-image: url('../Images/Starbucks_Reward_Intro/Starbucks_Reward_Intro_box2_img2.jpg');
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#Starbucks_Reward_intro_body_bottom_img2 > #Starbucks_Reward_intro_body_bottom_butt2{
+    margin-bottom:40px;
+}
+#Starbucks_Reward_intro_body_bottom_img2 > #Starbucks_Reward_intro_body_bottom_butt2 > a{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:154px;
+    height:30px;
+    background:#222;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius:3px;
+}
+/*2_Rewards_Intro end*/
+
+/*3_Rewards_Level start*/
+#page3_wrap{
+    width:100%;
+    height:auto;
+}
+#page3_top_wrap{
+    width: auto;
+    height:98px;
+    margin: 0px 209.6px 0px 209.6px;
+    display: flex;
+    justify-content: space-between;
+}
+#page3_top_wrap > h2 > img{
+    margin-top: 30px;    
+}
+#page3_sitelocation{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+#page3_sitelocation > .page3_loc{
+    float:left;
+    font-size: 12px;
+    margin-left:1px;
+    letter-spacing:0.25px;
+}
+#page3_middle_wrap{
+    width: auto;
+    height:1610.8px;
+    margin: 0px 209.6px 0px 209.6px;
+}
+#page3_middle_wrap_container{
+    width:auto;
+    height:auto;
+    margin-top: 40px;
+}
+#page3_middle_wrap_container > span{
+    font-size:18px;
+    color:#222;
+    font-weight: bolder;
+}
+#page3_middle_main_ul{
+    width:auto;
+    height:958px;
+    border: 1px solid #ddd;
+    border-radius:3px;
+}
+
+.page3_middle_main_li{
+    width:306px;
+    height: 900px;
+    margin: 27px 0px 31px 0px;
+    padding: 0 29px 0px 29px;
+    border-right: 1px solid #ddd;
+    float: left;
+    background-color: red;
+}
+.page3_middle_inner_ul1{
+    display:flex;
+    justify-self: center;
+    width:306px;
+    height: 300px;
+    background:blue;
+}
+.page3_middle_inner_li_img{
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    width:306px;
+    height:300px;
+}
+.page3_middle_inner_li_img > span{
+    display: flex;
+    justify-content: center;
+    padding-top:115px;
+    color: white;
+    font-size:16px;
+}
+.page3_middle_inner_li_img > dl{
+    padding-top:35px;
+}
+.page3_middle_inner_li_img > dl > dt{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display:flex;
+    justify-content: center;
+}
+.page3_middle_inner_li_img > dl > dd{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height:1.6;
+    margin-top:10px;
+}
+
+#page3_middle_inner_img1{
+    background-image: url('../Images/3_Rewards_Level/level_black.png');
+}
+#page3_middle_inner_img2{
+    background-image: url('../Images/3_Rewards_Level/level_green.png');
+}
+#page3_middle_inner_img3{
+    background-image: url('../Images/3_Rewards_Level/level_gold.png');
+}
+.page3_middle_inner_ul2{
+    width:306px;
+    height:200px;
+    background-color: yellowgreen;
+}
+.page3_middle_inner_ul2_including{
+    width:306px;
+    height:30px;
+    background:#f6f5ef;
+    font-size:14px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#level_green{
+    font-weight:bold;
+    color:#1d191b;
+}
+#level_gold{
+    font-weight:bold;
+    color:#007042;
+}
+#page3_bottom_wrap{
+    width:100%;
+    height:auto;
+    background-color:#f4f4f2;
+    display: flex;
+    justify-content: center;
+}
+#page3_bottom_wrap_container{
+    width:1120px;
+    height:auto;
+    background-color: #f4f4f2;
+    margin: 50px 0px 100px 0px;
+}
+#page3_bottom_wrap_container > h3{
+    margin-bottom: 20px;
+    font-size:17px;
+    font-weight:bold;
+}
+#page3_bottom_wrap_container > ul {
+    width:1200px;
+    height:auto;
+}
+#page3_bottom_wrap_container > ul > li{
+    width:260px;
+    height:296px;
+    background-color: white;
+    float:left;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+#page3_bottom_wrap_container > ul > li{
+    background-repeat: no-repeat;
+}
+#page3_bottom_wrap_container > ul > li > div{
+    display:flex;
+    justify-content: center;
+    margin-top:150px;
+}
+#page3_bottom_wrap_container > ul > li > div > img{
+    float:left;
+}
+#page3_bottom_wrap_container > ul > li > p{
+    clear:both;
+    position:relative;
+    text-align:center;
+    font-size:14px;
+    line-height:1.4;
+    margin-top:15px;
+}
+#level_li_13_p{
+    font-size:10px;
+    color:#666;
+}
+.more_button_levels{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #ccc;
+    border-radius:3px;
+    height:26px;
+    width:83px;
+    font-size:12px;
+    font-weight:bold;
+    color:#666;
+    margin-left:90px;
+    margin-top:10px;
+}
+.more_button_levels:hover{
+    text-decoration: underline;
+}
+#page3_bottom_wrap_container > ul > li:first-child{
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_01.png');
+    background-position: center 60px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(2){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_02.png');
+    background-position: center 60px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(3){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_03.png');
+    background-position: center 40px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(4){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_04.png');
+    background-position:center 50px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(5){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_05.png');
+    background-position:center 40px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(6){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_06.png');
+    background-position: center 30px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(7){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_07.png');
+    background-position: center 30px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(8){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_08.png');
+    background-position: center 35px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(9){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_09.png');
+    background-position: center 30px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(10){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_10.png');
+    background-position: center 45px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(11){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_11.png');
+    background-position: center 55px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(12){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_12.png');
+    background-position: center 60px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(13){
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_13.png');
+    background-position: center 60px;
+}
+#page3_bottom_wrap_container > ul > li:nth-child(14){
+    background-color: #e2d9c2;
+    background-image: url('../Images/3_Rewards_Level/benefit/Blist_14.png');
+    background-position: center 30px;
+}
+#page3_bottom_wrap_container > ul > li:last-child{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#page3_bottom_wrap_container > ul > li:last-child > a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:123px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    border:1px solid black;
+    border-radius:3px;
+    font-weight:bold;
+    font-size:12px;
+    margin-bottom:30px;
+}
+#page3_bottom_wrap_container > ul > li:last-child > a:hover{
+    text-decoration: underline;
+}
+/*3_Rewards_Level end*/
+
+/* 4_Rewards_Star start */
+#rewards_star_wrap{
+    width:100%;
+    height:auto;
+}
+#rewards_star_top_wrap{
+    width:auto;
+    height:91px;
+    margin:0px 209.6px 0px 209.6px;
+    display:flex;
+    justify-content: space-between;
+}
+#rewards_star_title{
+    margin-top:30px;
+}
+#rewards_star_site_location{
+    display:flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#rewards_star_bottom_wrap{
+    width:auto;
+    height:auto;
+}
+#rewards_star_bottom_wrap_inner{
+    width:auto;
+    height:auto;
+    margin:0px 209.6px 0px 209.6px;
+}
+#rewards_star_bottom_wrap_inner > div{
+    width:auto;
+    height:auto;
+    padding:50px 0px 100px 0px;
+}
+#rewards_star_bottom_wrap_inner > div > div:first-child{
+    margin-bottom:50px;
+}
+#rewards_star_bottom_item1, #rewards_star_bottom_item2{
+    width:1100px;
+    height:219.4px;
+    display:block;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#rewards_star_bottom_item1{
+    background-image: url('../Images/4_Rewards_Star/4_Rewards_Star_point1.png');
+}
+#rewards_star_bottom_item2{
+    background-image: url('../Images/4_Rewards_Star/4_Rewards_Star_point2.png');
+}
+#rewards_star_bottom_wrap_inner > div > div > dl{
+    padding:30px 0px 0px 275px;
+    line-height: 2;
+}
+#rewards_star_bottom_wrap_inner > div > div > dl > dt{
+    font-size:18px;
+    font-weight:bold;
+    color:#222;
+    word-spacing:1px;
+    margin-bottom: 5px;
+}
+.rewards_star_dot{
+    background-image: url('../Images/Icons/dot1.png');
+    background-repeat: no-repeat;
+    background-position:0% 12px;
+    font-size:14px;
+    color:#444444;
+    word-spacing:1px;
+}
+.rewards_star_p{
+    font-size:12px;
+    color:#666666;
+    word-spacing:0.25px;
+    font-weight: lighter;
+}
+/* 4_Rewards_Star end */
+
+/* 5_Rewards_Card start */
+#rewards_card_wrap{
+    width:100%;
+    height:auto;
+}
+#rewards_card_wrap_inner{
+    width:auto;
+    height:auto;
+}
+#rewards_card_top{
+    width:auto;
+    height:91px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:0px 209.6px 0px 209.6px;
+}
+#rewards_card_site_location{
+    display:flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#rewards_card_top2{
+    width:auto;
+    height:auto;
+    margin:0px 209.6px 0px 209.6px;
+}
+#rewards_card_top2 > p{
+    font-size:18px;
+    font-weight:bold;
+    color:#222;
+    margin:30px 0px 0px 0px;
+}
+#rewards_card_top2_bottom{
+    width:auto;
+    height:400px;
+    background-image: url('../Images/5_Rewards_Card/Card_top2_background.jpg');
+    background-repeat: no-repeat;
+    background-position:100% 10px;
+}
+.card_top2_dt{
+    font-size:16px;
+    color:#006633;
+    line-height: 2.5;
+}
+.card_top2_dd{
+    font-size:14px;
+    color:#666;
+    background-image: url('../Images/Icons/dot1.png');
+    background-repeat:no-repeat;
+    background-position:0px 10px;
+    line-height:1.8;
+}
+#card_top2_dt2{
+    margin-top:30px;
+}
+#rewards_card_middle{
+    width:100%;
+    height:575px;
+    background-color: #f4f4f2;
+}
+#rewards_card_middle_wrap{
+    width:auto;
+    height:auto;
+    margin:0px 209.6px 0px 209.6px;
+    padding-top:30px;
+}
+#rewards_card_middle_title{
+    font-size:18px;
+    font-weight:bold;
+    color:#222;
+    margin-bottom:26px;
+}
+#rewards_card_middle_text{
+    font-size:16px;
+    color:#006633;
+    line-height:1.4;
+    margin-bottom:15px;
+}
+#rewards_card_middle_title2{
+    font-size:15px;
+    font-weight:bold;
+    color:#222;
+    margin-bottom:10px;
+}
+#card_middle_sublist_title1, #card_middle_sublist_title2{
+    font-size:15px;
+    color:#006633;
+    margin-bottom:10px;
+}
+#card_middle_main_list{
+    width:auto;
+    height:auto;
+}
+.card_main_list_space{
+    padding-bottom:10px;
+}
+#card_middle_sub_list_wrap{
+    width:auto;
+    height:150px;
+    background-color: #ffffff;
+    padding:25px 0px 0px 20px;
+    margin:0px 0px 20px 10px;
+    border-radius:3px;
+}
+#card_middle_main_list > li > img{
+    margin-left:10px;
+    margin-bottom:20px;
+}
+#card_middle_sub_list > dl{
+    float:left;
+}
+#card_middle_sub_list > dl > dd{
+    line-height:1.6;
+}
+#card_middle_sub_list > dl:first-child{
+    width:33%;
+    height:auto;
+    border-right:1px solid lightgray;
+}
+#card_middle_sub_list > dl:last-child{
+    width:59%;
+    height:auto;
+    padding-left: 50px;
+}
+#card_middle_sub_list > dl:first-child > dd{
+    line-height:1.6;
+}
+#card_middle_sub_list > dl:last-child > dd{
+    margin-left:10px;
+    line-height:1.3;
+    margin-bottom:10px;
+}
+.card_middle_common{
+    font-size:14px;
+    color:#666;
+    text-align: left;
+}
+.card_middle_dot{
+    background-image: url('../Images/Icons/dot1.png');
+    background-repeat: no-repeat;
+    background-position:0px 5px;
+    padding-left: 10px;
+}
+#card_middle_gold{
+    color:#b79855;
+}
+#rewards_card_bottom{
+    width:100%;
+    height:auto;
+}
+#rewards_card_bottom_inner{
+    width:auto;
+    height:auto;
+    margin:0px 209.6px 0px 209.6px;
+    /* background-color: #999; */
+}
+.card_bottom_p_main{
+    font-size:18px;
+    font-weight:bold;
+    color:#222;
+    padding:30px 0px 20px 0px;
+}
+.card_bottom_p_sub{
+    font-size:16px;
+    font-weight:bold;
+    color:#444;
+    margin-bottom:15px;
+}
+.card_bottom_common{
+    font-size:14px;
+    color:#666;
+    line-height:1.4;
+    margin-bottom:8px;
+}
+.card_bottom_p_green, .card_bottom_green{
+    font-size:14px;
+    color:#006633;
+    margin-bottom:14px;
+}
+.card_bottom_dot{
+    background-image: url('../Images/Icons/dot1.png');
+    background-repeat:no-repeat;
+    background-position:0px 5px;
+    padding-left:10px;
+}
+#card_bottom_diagram{
+    width:auto;
+    height:162px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+#card_bottom_diagram > li{
+    width:350px;
+    height:116px;
+    float:left;
+    margin-right:3px;
+    background-repeat: no-repeat;
+}
+#card_bottom_diagram > li:first-child, #card_bottom_diagram > li:nth-child(2){
+    border-right:1px solid #ddd;
+}
+#card_bottom_diagram > li:nth-child(2){
+    padding-right:10px;
+}
+#card_bottom_diagram > li > div{
+    float:right;
+}
+#card_bottom_diagram > li:first-child{
+    background-image: url('../Images/5_Rewards_Card/Card_bottom_1.jpg');
+    background-position:15px 0%;
+}
+#card_bottom_diagram > li:nth-child(2), #card_bottom_diagram > li:nth-child(3){
+    background-image: url('../Images/5_Rewards_Card/Card_bottom_2.jpg');
+    background-position: 25px 0%;
+}
+#card_bottom_diagram_content1{
+    margin-right:30px;
+}
+#card_bottom_diagram_content2{
+    margin-right:5px;
+}
+#card_bottom_diagram_content3{
+    margin-right:65px;
+}
+.card_bottom_diagram_title{
+    font-size:14px;
+    font-weight:bold;
+    color:#444;
+    margin-bottom:5px;
+}
+#card_bottom_diagram_title_green{
+    font-size:14px;
+    font-weight:bold;
+    color: #006633;
+}
+.card_bottom_diagram_text{
+    font-size:12px;
+    color:#666;
+}
+.card_bottom_diagram_button{
+    width:83px;
+    height:28px;
+    font-size:12px;
+    font-weight:bold;
+    color:#222;
+    border:1px solid #222;
+    border-radius:3px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:25px;
+}
+.card_bottom_diagram_button:hover{
+    text-decoration: underline;
+}
+#card_bottom_diagram_button_green{
+    background-color: #006633;
+    border:1px solid #006633;
+    color:white;
+    margin-top:40px;
+}
+#card_bottom_div_3{
+    margin-top:30px;
+    margin-bottom:70px;
+}
+.card_bottom_indent{
+    margin-left:10px;
+}
+#card_bottom_hyperlink{
+    text-decoration: underline;
+    color:#0000ff;
+}
+/* 5_Rewards_Card end */
+
+/* 6_Rewards_Card_Gallery start */
+/* .container {
+    width: 180px;
+    height: 600px;
+    overflow-y: scroll;
+    transform: rotate(-270deg);
+}
+  
+.content {
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+  
+    background-color: #a8a8df;
+    
+    transform: rotate(-90deg);
+  } */
+#gallery_container{
+    width:100%;
+    height:auto;
+}
+#gallery_top{
+    width:auto;
+    height:91px;
+    margin:0px 209.6px 0px 209.6px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gallery_site_location{
+    margin-top:30px;
+    display:flex;
+    align-items: center;
+}
+#gallery_card{
+    width:auto;
+    height:auto;
+    margin:0px 209.6px 0px 209.6px;
+}
+.card_wraps{
+    width:auto;
+    height: 300px;
+    background-color: salmon;
+    margin-bottom:10px;
+}
+.card_titles{
+    width:auto;
+    height:58px;
+    background-color: #f4f4f2;
+    font:18px;
+    font-weight:bold;
+    color:#222;
+    border-radius:3px;
+    margin-bottom:10px;
+}
+.card_cards{
+    width:auto;
+    height:223.238px;
+    background-color: #00b050;
+}
+/* 6_Rewards_Card_Gallery end */
+
+/* 7_Rewards_Card_Reg_Search start */
+#reg_search{
+    width:100%;
+    height:auto;
+}
+#reg_search_wrap{
+    width:auto;
+    height:auto;
+    margin: 0px 209.6px 0px 209.6px;
+}
+#reg_search_top{
+    width:auto;
+    height:91px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#reg_search_site_location{
+    display:flex;
+    align-items: center;
+    margin-top:30px;
+}
+#reg_search_middle{
+    width:auto;
+    height:auto;
+}
+#reg_search_middle > ul{
+    width:auto;
+    height:360px;
+    /* background-color: yellowgreen; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.reg_search_diagram_li{
+    width:365px;
+    height: 280px;
+    /* background-color: thistle; */
+    float:left;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+#reg_search_middle > ul > li:nth-child(2){
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    background-image: url('../Images/7_Rewards_Card_Reg_Search/reg_search_img2.png');
+}
+#reg_search_middle > ul > li:first-child{
+    background-image: url('../Images/7_Rewards_Card_Reg_Search/reg_search_img1.png');
+}
+#reg_search_middle > ul > li:last-child{
+    background-image: url('../Images/7_Rewards_Card_Reg_Search/reg_search_img3.png');
+}
+.reg_search_diagram_li_p{
+    font-size:16px;
+    font-weight:bold;
+    color:#222;
+    padding-bottom:15px;
+    text-align: center;
+    margin-top:95px;
+}
+.reg_search_diagram_li_p2{
+    font-size:13.5px;
+    color:#666;
+    line-height:1.6;
+    padding-bottom:15px;
+    text-align: center;
+}
+.reg_search_btn_common{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:12px;
+    border-radius:3px;
+}
+.reg_search_btn_common:hover{
+    text-decoration: underline;
+}
+.reg_search_green_bold_btn{
+    background-color: #006633;
+    font-weight: bold;
+    color:#fff;
+
+}
+#reg_search_middle > ul > li:first-child > div > a{
+    width:85px;
+    height:30px;
+}
+#reg_search_middle > ul > li:last-child > div > a{
+    width:104px;
+    height:30px;
+}
+#reg_search_diagram_li2_btns > a:first-child{
+    background-color:#006633;
+    color:#fff;
+    width:132px;
+    height:30px;
+    float: left;
+    margin-right:5px;
+}
+#reg_search_diagram_li2_btns > a:last-child{
+    background:#222;
+    color:#fff;
+    width:98px;
+    height:30px;
+}
+#reg_search_diagram_li2_btns{
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.reg_search_btn_position{
+    height:89px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#reg_search_middle_bottom{
+    width:auto;
+    height:60px;
+    background-color: #f4f4f2;
+    padding:0px 30px 0px 30px;
+    margin: 27px 0px 90px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+.reg_search_bottom_common{
+    font-size:14px;
+    color:#444;
+    line-height:60px;
+}
+#reg_search_bottom_a{
+    text-decoration: underline dotted;
+    font-weight:bold;
+    font-size:13.5px;
+}
+/* 7_Rewards_Card_Reg_Search end */
+
+/* 8_Rewards_Deposit_Directions start */
+#deposit_directions{
+    width:100%;
+    height:auto;
+}
+#deposit_directions_wrap{
+    width:auto;
+    height:auto;
+    margin:0px 209.6px 0px 209.6px;
+}
+#deposit_directions_top{
+    width:auto;
+    height:91px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#deposit_directions_middle{
+    width:auto;
+    height: auto;
+}
+.middle_deposit{
+    width:49.855%;
+    height:48px;
+    border:0.5px solid;
+    text-align:center;
+    line-height:48px;
+    font-size:14px;
+    font-weight: bold;
+    margin:40px 0px 40px 0px;
+}
+.middle_deposit:hover{
+    text-decoration: underline;
+}
+#middle_deposit_1{
+    float:left;
+    color:#fff;
+    background-color: #006633;
+    border-color:#006633;
+}
+#middle_deposit_2{
+    float:right;
+    color:#444;
+    background-color:#fff;
+    border-color:#ddd;
+}
+#middle_deposit_content{
+    clear:both;
+    width:auto;
+    height:auto;
+}
+.deposit_content_subtit{
+    font-size:18px;
+    margin-bottom:10px;
+}
+.deposit_content_text_last{
+    font-size:14px;
+    color:#666;
+    margin-bottom:55px;
+}
+.deposit_content_text{
+    font-size:14px;
+    color:#666;
+    line-height:1.4;
+    margin-bottom: 10px;
+}
+#deposit_content_box{
+    border: 1px solid #ddd;
+    padding:20px 0px 10px 20px;
+    text-align: left;
+}
+.deposit_content_list{
+    background-image: url('../Images/Icons/icon_dot.jpg');
+    background-repeat: no-repeat;
+    background-position: 0% 7px;
+    text-indent:10px;
+}
+#deposit_content_btn{
+    width:125px;
+    height:40px;
+    background-color:#666;
+    line-height:40px;
+    border-radius:3px;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#deposit_content_btn:hover{
+    text-decoration: underline;
+}
+#deposit_content_btn_center{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+    margin-bottom:60px;
+}
+.deposit_content_text_green{
+    font-size:16px;
+    color:#006633;
+    line-height:1.4;
+    margin-bottom:10px;
+}
+.class_green{
+    font-size:14px;
+    color:#006633;
+    border-bottom:1px solid #006633;
+}
+.class_green:hover{
+    text-decoration: underline;
+}
+#deposit_directions_colored{
+    width:auto;
+    height:572px;
+    background:#f4f4f2;
+}
+#deposit_directions_colored_wrap{
+    padding:60px 209.6px 0px 209.6px;
+}
+#colored_card_terms{
+    width:auto;
+    height:54px;
+    background-color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px 0px 20px;
+}
+#colored_card_terms_question{
+    font-size:16px;
+    color:#444;
+}
+#colored_card_manual{
+    margin-top:40px;
+}
+#colored_card_terms{
+    margin-top:40px;
+}
+/* 8_Rewards_Deposit_Directions end */
+
+/* 9_Rewards_lost_refund start */
+#lost_refund{
+    width:100%;
+    height:auto;
+}
+#lost_refund_wrap{
+    width:auto;
+    height:auto;
+    margin:0px 209.6px 0px 209.6px;
+}
+#lost_refund_top{
+    width:auto;
+    height:98px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#lost_refund_site_location{
+    display:flex;
+    align-items: center;
+    margin-top:30px;
+}
+#lost_refund_menu{
+    width:auto;
+    height:50px;
+    margin:50px 0px 25px 0px;
+    border:1px solid #ddd;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#lost_refund_menu > div{
+    width:219px;
+    height:50px;
+    border-right:1px solid #ddd;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+#lost_refund_menu > div > a{
+    font-size:14px;
+    color:#444;
+    font-weight:bold;
+}
+#lost_refund_menu > div > a:hover{
+    text-decoration: underline;
+}
+#lost_refund_menu > div:first-child {
+    background-color: #006633;
+    border-color:#006633;
+}
+#lost_refund_menu > div:first-child > a{
+    color:#fff;
+}
+.lost_refund_subtit{
+    font-size:18px;
+    font-weight:bold;
+    color:#222;
+    margin-bottom:15px;
+}
+.lost_refund_list{
+    background-image: url('../Images/Icons/icon_dot.jpg');
+    background-repeat: no-repeat;
+    background-position: 0% 5px;
+    line-height:1.4;
+    font-size:14px;
+    color:#666;
+    padding-left: 10px;
+    margin-bottom:10px;
+}
+#lost_refund_body > ul:nth-child(3) > li:nth-child(3) > ul{
+    margin-top:10px;
+}
+#lost_refund_body > ul:nth-child(3) > li:nth-child(3) > ul > li{
+    margin-bottom:5px;
+}
+#lost_refund_body > ul{
+    margin-bottom:50px;
+}
+.green_link{
+    color:#006633;
+    border-bottom:1px solid #006633;
+}
+.green_link:hover{
+    text-decoration: underline;
+}
+#shortcut_report_transfer{
+    display:inline-block;
+    width:221px;
+    height:26px;
+    font-size: 12px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    line-height:26px;
+    text-align: center;
+    color:#444;
+}
+#shortcut_report_transfer:hover{
+    text-decoration: underline;
+}
+/* 9_Rewards_lost_refund end */
+
+/* faq start */
+#faq_wrap{
+    width:100%;
+    height:auto;
+}
+#faq_wrap_top{
+    width:auto;
+    height:91px;
+    margin:0px 14% 0px 14%;
+    display:flex;
+    justify-content: space-between;
+}
+#faq_wrap_top > div{
+    display:flex;
+    align-items: center;
+}
+#faq_site_location{
+    display:flex;
+    align-items: center;
+    margin-top:30px;
+}
+#faq_wrap_bottom{
+    width:auto;
+    height:234.4px;
+    margin:0px 14% 0px 14%;
+    padding-bottom:65px;
+}
+#faq_wrap_bottom > p{
+    margin:25px 0px 20px 0px;
+    font-size:15px;
+}
+#faq_bottom_p_span{
+    color:#006633;
+}
+#faq_bottom_div_background{
+    width:auto;
+    height:60px;
+    background-color: #f4f4f2;
+    border-radius:3px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom:30px;
+}
+#faq_bottom_div_background > input{
+    width:343px;
+    height:28px;
+    border:1px solid #ddd;
+    border-radius:3px;
+}
+#faq_bottom_div_background > a{
+    width:42px;
+    height:28px;
+    background:#777777;
+    font-size:12px;
+    font-weight:bold;
+    color:#ffffff;
+    border-radius: 3px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 20px 0px 10px;
+}
+#faq_bottom_div_background > a:hover{
+    text-decoration: underline;
+}
+#faq_bottom_double_underline{
+    width:100%;
+    height:0.5px;
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+    margin-top: 35px;
+}
+#faq_bottom_div_pagenumber{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+}
+#faq_bottom_div_pagenumber > a{
+    font-size:12px;
+    font-weight:bold;
+    color:#0d5f34;
+    border-bottom:0.1px solid #0d5f34;
+}
+#faq_bottom_div_pagenumber > a:hover{
+    text-decoration: underline;
+}
+/* faq end */
+
+/* Footer start */
+.footer_box{
+    width:100%;
+    height: 601px;
+    background-color: #2C2A29;
+}
+.footer_list_box{
+    margin-bottom:30px;
+    width:100%;
+    height:214px;
+}
+.footer_list{
+    width:1282px;
+    height:214px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left:60px;
+    background-image: url('../Images/Footer/footer_starbucks_logo.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50px;
+}
+.footer_list > ul{
+    float:left;
+    margin-top: 50px;
+}
+#footer_list_logo{
+    margin-top:50px;
+}
+.footer_list > ul > h4{
+    margin-bottom:10px;
+    font-family: arial, HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    font-size:14px;
+    font-weight: normal;
+    letter-spacing:1px;
+}
+.footer_list > ul > li{
+    font-size:12px;
+    line-height:1;
+    margin-bottom:15px;
+}
+.footer_list > ul > h4 > a{
+    color: white;
+}
+.footer_list > ul > li > a{
+    color: white;
+}
+.footer_list > ul > h4 > a:hover{
+    text-decoration: underline;
+}
+.footer_list > ul > li > a:hover{
+    text-decoration: underline;
+}
+.footer_rewards{
+    width:100%;
+    height:100px;
+    background-color: #282828;
+    clear: both;
+    margin-top: 75px;
+}
+#footer_rewards_list{
+    display: flex;
+    justify-content: center;
+}
+#footer_rewards_list > li{
+    padding-top:20px;
+    float: left;
+    list-style: none;
+    vertical-align: top;
+}
+.footer_terms_of_use{
+    width: 100%;
+    height:20px;
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    
+}
+.footer_terms_of_use > a{
+    color: #ccc;
+    font-size: 12px;
+    padding:0px 10px 0px 10px;
+    border-right: 1px solid #393939;
+}
+.footer_terms_of_use > a:hover{
+    text-decoration: underline;
+}
+
+#footer_personal_info_policy{
+    color:#00b050;
+    font-weight: bold;
+}
+.footer_instructions{
+    width:100%;
+    display: flex;
+    justify-content: center;    
+}
+.footer_instructions > div{
+    width:90px;
+    height: 30px;
+    margin:10px 2px 0px 3px;
+    padding:0px 10px 0px 10px;
+    float: left;
+    font-weight: bold;
+    font-size:12px;
+    border: 2px solid white;
+    border-radius:3px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_instructions > div > a{
+    color: white;
+}
+.footer_instructions > div > a:hover{
+    text-decoration: underline;
+}
+.footer_about_span, .footer_all_rights_reserved_span{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    clear: both;
+    margin-top:20px;
+}
+.footer_about_span, .footer_all_rights_reserved_span > span{
+    color:#999;
+    font-size: 12px;
+}
+/* Footer end */
