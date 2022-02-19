@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/common.css">
+<script src="./js/scripts.js"></script>
+<body>
+<!-- header start -->
+<header>
+    <div id="header_area">
+        <div id="header_inner">
+            <h1><a href="#">메인</a></h1>
+            <div id="header_cont">
+                <ul id="util_nav">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">My Starbucks</a></li>
+                    <li><a href="#">Customer Service & Ideas</a></li>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><p><a href="#"><img src="./Images/Icons/icon_magnifier_black.png" alt="icon_magnifier_black"></a></p></li>    
+                </ul>
+                <nav>
+                    <ul id="gnb">
+                        <li><a href="#">COFFEE</a></li>
+                        <li><a href="#"> MENU</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">RESPONSIBILITY</a></li>
+                        <li><a href="#">STARBUCKS REWARDS</a></li>
+                        <li><a href="#">WHAT'S NEW</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header finish -->
+
+<!-- 8_Rewards_Deposit_Directions start -->
+<div id="deposit_directions">
+    <div id="deposit_directions_wrap">
+        <div id="deposit_directions_top">
+            <div>
+                <img src="./Images/8_Rewards_Card_Deposit_Directions/8_directions_deposit_title.jpg" alt="directions_deposit_title">
+            </div>
+            <div id="reg_search_site_location">
+                <a href="#"><img src="./Images/Icons/icon_home.png" alt="icon_home"></a>
+                <img src="./Images/Icons/icon_arrow.png" alt="icons_arrow">
+                <a href="./1_Rewards.html" class="gray english site_location">Starbucks Rewards</a>
+                <img src="./Images/Icons/icon_arrow.png" alt="icons_arrow">
+                <a href="./5_Rewards_Card.html" class="gray site_location">스타벅스 카드</a>
+                <img src="./Images/Icons/icon_arrow.png" alt="icons_arrow">
+                <a href="#" class="site_location">충전 및 이용안내</a>
+            </div>
+        </div>
+        <div id="deposit_directions_middle">
+            <img src="./Images/8_Rewards_Card_Deposit_Directions/8_Deposit_Directions_Banner.png" alt="deposit_directions_banner">
+            <div class="middle_deposit" id="middle_deposit_1" onclick="normal()">
+                일반충전
+                <script>
+                    function normal(){
+                        document.getElementById("middle_deposit_1").style.backgroundColor = "#006633";
+                        document.getElementById("middle_deposit_1").style.borderColor = "#006633";
+                        document.getElementById("middle_deposit_1").style.color="#fff";
+                        document.getElementById("middle_deposit_2").style.backgroundColor = "#fff";
+                        document.getElementById("middle_deposit_2").style.color="#444";
+                        document.getElementById("middle_deposit_2").style.borderColor="#ddd";
+                    }
+                </script>
+            </div>
+            <div class="middle_deposit" id="middle_deposit_2" onclick="automatic()">
+                자동충전
+                <script>
+                    function automatic(){
+                        document.getElementById("middle_deposit_2").style.backgroundColor = "#006633";
+                        document.getElementById("middle_deposit_2").style.borderColor = "#006633";
+                        document.getElementById("middle_deposit_2").style.color="#fff";
+                        document.getElementById("middle_deposit_1").style.backgroundColor = "#fff";
+                        document.getElementById("middle_deposit_1").style.color="#444";
+                        document.getElementById("middle_deposit_1").style.borderColor="#ddd";
+                        // documnet.getElementById("middle_deposit_content").innerHtml =  ""; 
+                    }
+                    </script>
+            
+            </div>
+            <div id="middle_deposit_content">
+                <div id="middle_deposit_summary">
+
+                    <h6 class="deposit_content_subtit">정의</h6>
+                    <p class="deposit_content_text_last">필요 시 마다 충전금액과 결제수단 등의 정보를 입력하여 즉시 충전</p>
+                </div>
+                <div id="middle_deposit_medium">
+
+                    <h6 class="deposit_content_subtit">충전 방법</h6>
+                    <p class="deposit_content_text_green">매장 홈페이지에서 충전 가능</p>
+                    <p class="deposit_content_text_last">- 홈페이지 (<span class="english">PC</span>웹, 모바일 웹), 모바일 <span class="english">App</span> 모두 가능</p>
+                </div>
+                <div id="middle_deposit_charge_amount">
+
+                    <h6 class="deposit_content_subtit">충전 금액</h6>
+                    <p class="deposit_content_text">- 최초충전 금액 및 단위 : 5,000원, 10,000원~500,000원 (1만원 이상부터는 만원 단위로 충전가능)</p>
+                    <p class="deposit_content_text">- 재충전 금액 및 단위 : 10,000원~550,000원 (만원 단위/최대 잔액 55만원 내에서 선택가능)</p>
+                    <p class="deposit_content_text">- 재충전은 1회에 최대 55만원 까지 충전하실 수 있으며, 충전 후 합계액이 55만원을 초과할 수 없습니다.</p>
+                    <p class="deposit_content_text">- 매장에서 최초 충전 시에는 충전금액을 5천원으로 선택 가능합니다.</p>
+                    <p class="deposit_content_text_last">- 5만원 충전 시 BOGO 쿠폰발금은 자동충전 설정 혜택으로 일반충전 시에는 발급되지 않습니다.</p>
+                </div>
+                <div id="middle_deposit_method">
+
+                    <h6 class="deposit_content_subtit">충전 가능 결제 수단</h6>
+                    <p class="deposit_content_text">- 신용카드 (개인 및 법인 등의 모든 신용카드)</p>
+                    <p class="deposit_content_text">- 휴대폰 소액결제</p>
+                    <p class="deposit_content_text">- 실시간 계좌이체</p>
+                    <p class="deposit_content_text">- 현금</p>
+                    <p class="deposit_content_text">- 자기 앞 수표 (10만원 권만 가능)</p>
+                    <p class="deposit_content_text_last">※ 매장, 홈페이지, 모바일 애플리케이션 간 충전 가능한 결제수단의 차이가 있을 수 있습니다.</p>
+                </div>
+                <div id="middle_deposit_method_n">
+                    <h6 class="deposit_content_subtit">충전 불가 결제 수단</h6>
+                    <p class="deposit_content_text">- 상품권</p>
+                    <p class="deposit_content_text">- 스타벅스에서 발행한 각종 쿠폰</p>
+                    <p class="deposit_content_text">- 스타벅스 카드</p>
+                    <p class="deposit_content_text_last">- 직불카드</p>
+                </div>
+                <ul id="deposit_content_box">
+                    <li list-style-type="circle" class="deposit_content_text deposit_content_list">신용카드(법인카드)로 스타벅스 카드 충전 시, 청구서 상 "상품권" 유형으로 표시됩니다. (별도 상품권 가맹)</li>
+                    <li list-style-type="circle" class="english deposit_content_text deposit_content_list">홈페이지 충전은 <span>My Starbucks</span> &gt; <span>MY</span> 스타벅스 카드 &gt; <a href="#" class="class_green">충전하기</a>에서 가능합니다.</li>
+                    <li list-style-type="circle" class="english deposit_content_text deposit_content_list">스타벅스 카드 온라인 충전, <span>e-Gift Card</span> 및 사이렌오더 결제 시, 신용카드 결제에 대한 영수증은 이니시스 홈페이지 <a href="#" class="class_green english">(www.inicis.com)</a> 또는 스마트로 홈페이지 <a href="#" class="class_green english">(pg.smartro.co.kr)</a>를 통해 확인하실 수 있습니다.</li>
+                </ul>
+            </div>
+            <div id="deposit_content_btn_center">
+                <div id="deposit_content_btn">일반충전 하러가기</div>
+            </div>
+        </div>
+    </div>
+    <div id="deposit_directions_colored">
+        <div id="deposit_directions_colored_wrap">
+            <div id="colored_instore_card">
+                <h6 class="deposit_content_subtit">이용 매장</h6>
+                <p class="deposit_content_text_green">스타벅스 카드는 스타벅스 매장에서 이용 가능합니다. (일부 매장 제외)</p>
+                <ul>
+                    <li list-style-type="circle" class="deposit_content_text deposit_content_list">충전, 재충전, 결제 가능 매장: 스타벅스 전국 매장 (충전 불가 매장 제외)</li>
+                    <li list-style-type="circle" class="deposit_content_text deposit_content_list">충전 불가 매장 (결제만 가능) : 백화점 및 시즌 매장 등 일부 매장</li>
+                    <li list-style-type="circle" class="deposit_content_text deposit_content_list">충전 및 결제 불가 매장 (총 10개): 시즌매장(오션월드, 오션월드입구) 외화매장(용산미8군, 용산타운하우스, 오산AB, 평택험프리, 대구캠프워커, 군산AB, 캠프캐롤, 캠프케이시)</li>
+                </ul>
+            </div>
+            <div id="colored_card_manual">
+                <h6 class="deposit_content_subtit">이용 방법</h6>
+                <p class="deposit_content_text_green">스타벅스 카드로 스타벅스의 모든 제품 및 상품을 구매하실 수 있습니다.</p>
+                <ul>
+                    <li class="deposit_content_text deposit_content_list">스타벅스 카드로 결제 시, 음료 한잔 당 1개의 <span class="english">Free Extra</span> 혜택이 제공됩니다. (전액 결제 또는 잔액 소진 시)</li>
+                    <li class="deposit_content_text deposit_content_list">스타벅스 카드는 다른 스타벅스 카드, 신용카드, 제휴카드, 현금등 다른 결제수단과 함께 결제할 수 있습니다. (단, 이 경우 <span class="english">Free Extra</span> 혜택은 제공되지 않습니다.)</li>
+                    <li class="deposit_content_text deposit_content_list">스타벅스 카드로 결제하신 금액에 대해 소득공제 혜택을 받으실 수 있습니다.</li>
+                    <li class="deposit_content_text deposit_content_list">스타벅스 <span class="english">e-Gift Card</span>의 경우, 휴대폰으로 선물받은 바코드를 제시하여 사용하실 수 있습니다.</li>
+                </ul>
+            </div>
+            <div id="colored_card_terms">
+                <div id="colored_card_terms_question">스타벅스 카드 이용약관이 궁금하신가요?</div>
+                <div id="colored_card_terms_link">
+                    <a href="#">
+                        <img src="./Images/8_Rewards_Card_Deposit_Directions/8_mycard_btn.png" alt="8_mycard_btn.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 8_Rewards_Deposit_Directions end -->
+
+<!-- footer start -->
+<div class="footer_box">
+    <div class="footer_list_box">     
+        <div class="footer_list">
+            <ul style="list-style-type:none;">
+                <h4><a href="#">COMPANY</a></h4>
+                <li><a href="#">한눈에 보기</a></li>
+                <li><a href="#">스타벅스 사명</a></li>
+                <li><a href="#">스타벅스 소개</a></li>
+                <li><a href="#">국내 뉴스룸</a></li>
+                <li><a href="#">세계의 스타벅스</a></li>
+                <li><a href="#">글로벌 뉴스룸</a></li>
+            </ul>
+            <ul style="list-style-type:none;">
+                <h4><a href="#">CORPORATE SALES</a></h4>
+                <li><a href="#">단체 및 기업 구매 안내</a></li>
+            </ul>
+            <ul style="list-style-type:none;">
+                <h4><a href="#">PARTNERSHIP</a></h4>
+                <li><a href="#">신규 입점 제의</a></li>
+                <li><a href="#">협력 고객사 등록신청</a></li>
+            </ul>
+            <ul style="list-style-type:none;">
+                <h4><a href="#">ONLINE COMMUNITY</a></h4>
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">트위터</a></li>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">인스타그램</a></li>
+            </ul>
+            <ul style="list-style-type:none;">
+                <h4><a href="#">RECRUIT</a></h4>
+                <li><a href="#">채용 소개</a></li>
+                <li><a href="#">채용 지원하기</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_rewards">
+        <ul id="footer_rewards_list">
+            <li><img src="./Images/Footer/footer_award_여성가족부장관상.jpg" alt="여성가족부장관상"></li>
+            <li><img src="./Images/Footer/footer_award_행정안전부장관표창.jpg" alt="행정안전부장관표창"></li>
+            <li><img src="./Images/Footer/footer_award_농림축산식품부장관상.jpg" alt="농림축산식품부장관상"></li>   
+            <li><img src="./Images/Footer/footer_award_국화산업통상자원.jpg" alt="국회산업통상자원중소벤쳐위원회장상"></li> 
+            <li><img src="./Images/Footer/footer_award_대통령직속.jpg" alt="대통령직속 일자리위원회 부위원장상"></li>
+            <li><img src="./Images/Footer/footer_award_동반성장위원회.jpg" alt="동반성장위원회 위원장상"></li>
+        </ul>
+    </div>
+    <div class="footer_terms_of_use">
+        <a href="#" class="footer_terms_of_use_border" id="footer_personal_info_policy">개인정보처리방침</a>
+        <a href="#" class="footer_terms_of_use_border">영상정보처리기기 운영관리 방침</a>
+        <a href="#" class="footer_terms_of_use_border">홈페이지 이용약관</a>
+        <a href="#" class="footer_terms_of_use_border">위치정보 이용약관</a>
+        <a href="#" class="footer_terms_of_use_border">스타벅스 카드 이용약관</a>
+        <a href="#" class="footer_terms_of_use_border">비회원 이용약관</a>
+        <a href="#" class="footer_terms_of_use_border">My DT Pass 서비스 이용약관</a>
+        <a href="#">윤리경영 핫라인</a>
+    </div>    
+    <div class="footer_instructions">
+        <div id="footer_directions"><a href="#">찾아오시는 길</a></div>    
+        <div id="footer_new_location_request"><a href="#">신규입점제의</a></div>
+        <div id="footer_site_map"><a href="#">사이트 맵</a></div>
+    </div>
+    <div class="footer_about_span">
+        <span>사업자 등록번호 : 201</span>
+        <span> 주시기회사에스씨케이컴퍼니 대표이사: 송 데이비드 호섭</span>
+        <span>TEL: 1522-3232</span>
+        <span>개인정보 책임자 : 하익성</span>
+    </div>
+    <div class="footer_all_rights_reserved_span">
+        <span>© 2022 Starbucks Coffee Company. All Rights Reserved.</span>
+    </div>
+</div>
+<!-- footer finish -->
+</body>
+</html>
