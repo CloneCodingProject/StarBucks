@@ -1219,7 +1219,7 @@ a{
 }
 /* -----------STORE 스타벅스 리저브 매장 페이지 끝(reserve.html)-----------*/
 
-/* -----------STORE 커뮤니티 스토어 매장 페이지 시작(reserve.html)-----------*/
+/* -----------STORE 커뮤니티 스토어 매장 페이지 시작(com.html)-----------*/
 #com_sec1{
     width: 100%;
     margin: 0 auto;
@@ -1228,6 +1228,9 @@ a{
 #comSec1_inner{
     margin: 20px auto;
     max-width: 1100px;
+}
+#comSec1_inner .m_pic{
+display: none;
 }
 .seccont_tit{
     font-size: 20px;
@@ -1264,6 +1267,9 @@ a{
     padding-top: 40px;
     margin-bottom: 25px;
 }
+#comsec2_box1 .m_pic{
+    display: none;
+}
 #comsec2_cont1{
     float: right;
     padding-left: 30px;
@@ -1299,6 +1305,9 @@ a{
 .cont_img{
     float: right;
 }
+#comsec2_box2 .m_pic{
+    display: none;
+}
 #comsec2_cont2 > p {
     color: #666;
     font-size: 14px;
@@ -1313,15 +1322,20 @@ a{
     margin: 0 auto;
     max-width: 1100px;
 }
+
 #comstore_inner ul li{
     display: inline-block;
     vertical-align: middle;
     color: #fff;
     padding-right: 10px;
+    font-size: 14px;
 }
-/* -----------STORE 커뮤니티 스토어 매장 페이지 끝(reserve.html)-----------*/
+#comstore_inner ul .m_pic {
+    display: none;
+}
+/* -----------STORE 커뮤니티 스토어 매장 페이지 끝(com.html)-----------*/
 
-/* -----------STORE 티바나 바 매장 페이지 시작(reserve.html)-----------*/
+/* -----------STORE 티바나 바 매장 페이지 시작 (tbn.html)-----------*/
 #tbn_sec1{
     background: url(../IMAGES/TEABANA/STORE/starField_visual_bg.jpg) no-repeat;
     width: 100%;
@@ -1504,7 +1518,11 @@ a{
     background-color: #006633;
 
 }
-
+#tbnstore_inner {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
 #tbnstore_inner ul {
     padding: 25px 0;
 }
@@ -1535,15 +1553,9 @@ a{
 }
 #tbnstore_inner ul:first-child {
     float: left;
-    position: relative;
-    left: 50%;
-    margin-left: -570px;
 }
 #tbnstore_inner ul:last-child {
     float: right;
-    position: relative;
-    right: 50%;
-    margin-right: -510px;
 }
 #tbnstore_inner ul li label {
     font-size: 16px;
@@ -1561,7 +1573,7 @@ a{
     display: block;
     clear: both;
 }
-/* -----------STORE 티바나 바 매장 페이지 끝(reserve.html)-----------*/
+/* -----------STORE 티바나 바 매장 페이지 끝(tbn.html)-----------*/
 
 /* ---------------------------본문 끝--------------------------- */
 
@@ -2035,7 +2047,7 @@ footer{
 }
 /* -------------------STORE main 페이지 반응형 끝(index.html)-----------------*/
 
-/* -------------------STORE dt 페이지 반응형 시작(index.html)-----------------*/
+/* -------------------STORE dt 페이지 반응형 시작(dt.html)-----------------*/
 @media screen and (max-width:1099px) {
     #dtSec1_inner {
         max-width: 961px;
@@ -2469,6 +2481,8 @@ footer{
         margin: 100px 0 50px 0;
     }
 }
+/* -----------STORE 스타벅스 드라이브 스루 페이지 반응형 끝(dt.html)-----------*/
+
 /* -----------STORE 스타벅스 리저브 매장 페이지 반응형 시작(reserve.html)-----------*/
 @media screen and (max-width:1099px) and (min-width:961px) {
     #resSec1_inner {
@@ -2801,3 +2815,261 @@ footer{
         font-size: 12px;
     }
 }
+/* -----------STORE 리저브 스토어 매장 반응형 페이지 끝(reserve.html)-----------*/
+
+/* -----------STORE 커뮤니티 스토어 매장 반응형 페이지 시작(com.html)-----------*/
+@media screen and (max-width:1099px) and (min-width:961px){
+    #com_tit_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comSec1_inner {
+        width: 96%;
+        margin: 20px 2%;
+    }
+    #comSec1_inner img {
+        max-width: 100%;
+    }
+    #comSec1_inner > p {
+        white-space: normal;
+    }
+    #comsec2_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comsec2_box1 img {
+        width: 50%;
+    }
+    #comsec2_cont1{
+        width: 48%;
+        padding-left: 2%;
+        white-space: normal;
+    }
+    #comsec2_cont1 p br {
+        display: none;
+    }
+    #comsec2_cont2 {
+        width: 50%;
+        white-space: normal;
+    }
+    
+    #comsec2_cont2 p:nth-child(2) br {
+        display: none;
+    }
+    #comsec2_cont2 p:nth-child(2) {
+        padding-right: 180px;
+        line-height: 22px;
+    }
+    #comsec2_box2 .cont_img {
+        width: 50%;
+    }
+    #comstore_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comstore_inner ul .w_pic img {
+        height: 66px;
+    }
+}
+@media screen and (max-width:940px) and (min-width:641px){
+    #com_tit_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #com_tit_link {
+        display: none;
+    }
+    #comSec1_inner {
+        margin: 0 2%;
+        width: 96%;
+    }
+    #comSec1_inner img {
+        max-width: 100%;
+    }
+    #comSec1_inner > p {
+        white-space: normal;
+        padding-bottom: 40px;
+    }
+    #comsec2_inner {
+        width: 96%;
+        margin: 0 2%;
+        background-size: contain;
+        background-position: 0 180px;
+    }
+    #comsec2_box1 {
+        height: auto;
+        overflow: hidden;
+    }
+    #comsec2_box1 img {
+        width: 50%;
+    }
+    #comsec2_cont1{
+        width: 48%;
+        padding-left: 2%;
+        white-space: normal;
+    }
+    #comsec2_cont1 .seccont_tit {
+        font-size: 15px;
+    }
+    #comsec2_cont1 p:nth-child(3) {
+        font-size: 13px;
+    }
+    #comsec2_cont1 p br {
+        display: none;
+    }
+    #comsec2_box2 {
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 80px;
+    }
+    #comsec2_cont2 {
+        width: 48%;
+        padding-right: 2%;
+        white-space: normal;
+    }
+    
+    #comsec2_cont2 p:nth-child(2) br {
+        display: none;
+    }
+    #comsec2_cont2 .seccont_tit {
+        font-size: 15px;
+    }
+    #comsec2_cont2 p:nth-child(2) {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    #comsec2_box2 .cont_img {
+        width: 50%;
+    }
+    #comsec2_box2 .cont_img img {
+        max-width: 100%;
+    }
+    #comstore_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comstore_inner ul .w_pic img {
+        height: 66px;
+    }
+}
+@media screen and (max-width:640px) {
+    #com_tit_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #com_tit_link {
+        display: none;
+    }
+    #comSec1_inner {
+        margin: 0 2%;
+        width: 96%;
+    }
+    #comSec1_inner img {
+        max-width: 100%;
+    }
+    #comSec1_inner > p {
+        white-space: normal;
+        padding-bottom: 40px;
+    }
+    #comSec1_inner .w_pic {
+        display: none;
+    }
+    #comSec1_inner .m_pic {
+        display: block;
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comsec2_inner {
+        margin: 0 2%;
+        width: 96%;
+    }
+    #comsec2_box1 .w_pic {
+        display: none;
+    }
+    #comsec2_box1 .m_pic {
+        display: block;
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comsec2_cont1{
+        float: none;
+        padding: 20px 0 0 0;
+        white-space: normal;
+        width: 100%;
+    }
+    .cont_img .w_pic {
+        display: none;
+    }
+    #comsec2_box2 .m_pic {
+        display: block;
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comsec2_cont2 {
+        float: none;
+        padding-top: 20px;
+        margin: 0;
+        width: 100%;
+        white-space: normal;
+    }
+    #comsec2_cont2 p br {
+        display: none;
+    }
+    #comstore_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #comstore_inner ul .w_pic{
+        display: none;
+    }
+    #comstore_inner ul .m_pic {
+        display: block;
+        width: 353px;
+        padding-top: 20px
+    }
+    #comstore_inner ul .m_pic img{
+        width: 353px;
+    }
+    #comstore_inner ul li:last-child {
+        padding: 0 0 20px 55px;
+
+    }
+}
+/* -----------STORE 커뮤니티 스토어 매장 반응형 페이지 끝(com.html)-----------*/
+
+/* -----------STORE 티바나 바 매장 반응형 페이지 시작(tbn.html)-----------*/
+@media screen and (max-width:1099px) and (min-width:961px) {
+    #tbn_tit_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #tbn_tit_link {
+        padding-bottom: 10px;
+    }
+    #tbnstore_inner {
+        width: 96%;
+        margin: 0 2%;
+        height: auto;
+        overflow: hidden;
+    }
+    #tbnstore_inner ul:first-child li:nth-child(2) {
+        font-size: 15px;
+    }
+    #tbnstore_inner ul:first-child li:nth-child(3) {
+        font-size: 13px;
+        padding-right: 0;
+    }
+    #tbnstore_inner ul:first-child li:last-child{
+        padding-left: 20px;
+    }
+    #tbnstore_inner ul:last-child {
+        padding-top: 20px;
+    }
+    #tbnstore_inner ul:last-child li{
+        padding: 0;
+    }
+    
+    
+    
+}
+/* -----------STORE 티바나 바 매장 반응형 페이지 끝(tbn.html)-----------*/
