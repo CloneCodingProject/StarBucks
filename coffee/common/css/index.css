@@ -1,8 +1,10 @@
 /* 공통 부분 */
-
 * {
     padding: 0;
     margin: 0;
+}
+header, nav, section, article, aside, footer{
+    display: block;
 }
 a:hover, a:focus{
     text-decoration: underline;
@@ -27,7 +29,7 @@ a{
 #container{
     width: 100%;
 }
-#img{
+img{
     vertical-align: top;
     max-width: 100%;
 }
@@ -301,7 +303,8 @@ div.gnb_sub_bottom_left p.gnb_sub_bottom_txt {
     position: relative;
 }
 .sub_tit_wrap h2{
-    font: bold 36px;
+    font-size: 36px;
+    font-weight: bold;
     color: #222222;
     padding-top: 30px;
     position: relative;
@@ -1075,21 +1078,10 @@ section.magazine_wrap h3.magazine_experience{
 /* RESERVE MAGAZINE end */
 /* -------------------3. reserve_info.html end-----------------*/
 /* -------------------4. COFFEE espresso.html start-----------------*/
-article.cf_espressoBottom_inner, article.cf_espressoTop_inner{
-    width: 96%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-p.cf_espressoClasslcs_img img{
-    margin: 0 auto;
-    display: block;
-}
+
+
 dl.cf_espressoClasslcs_info{
     padding: 30px 0 60px 0;
-    width: 1100px;
-    height: 220px;
-    margin: 0 auto;
 }
 dl.cf_espressoClasslcs_info dt{
     font-size: 20px;
@@ -1122,16 +1114,11 @@ ul.cf_espressoClasslcs_list{
 ul.cf_espressoClasslcs_list li{
     float: left;
     margin-left:24px;
-    width: 350px;
-    height: 350px;
-}
-ul.cf_espressoClasslcs_list li img{
-    width: 342px;
-    height: 210px;
 }
 ul.cf_espressoClasslcs_list li dl dt{
-    width: 300px;
+    width: 350px;
     height: 210px;
+    overflow:hidden;
 }
 ul.cf_espressoClasslcs_list li dl dt img:hover{
     transform: scale(1.1, 1.1);
@@ -1155,13 +1142,11 @@ ul.cf_espressoClasslcs_list li dl dd:hover{
 div.productView_footmenu{
     padding: 40px 0 60px 0;
     background: #f4f4f2;
-    
+    height: 250px;
 }
 div.productView_footmenu div.productView_footmenu_inner{
     width: 1100px;
-    height: 420px;
     margin: 0 auto;
-    
 }
 div.productView_bottom{
     border-top: 1px solid #ddd;
@@ -1219,9 +1204,16 @@ div.productView_bottom div.productRel_wrap li dd p.t2{
 }
 div.productView_bottom div.productRel_wrap li dd p.more_btn{
     position: absolute;
-    bottom: 50px;
-    left: -8px;
+    left: -14px;
     bottom: 0;
+}
+div.productRel_wrap li dd p.more_btn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: bold;
+    width: 65px;
 }
 div.productView_bottom div.productRel_wrap li dd p.more_btn a{
     position: relative;
@@ -1235,10 +1227,8 @@ div.productView_bottom div.productRel_wrap li dd p.more_btn a{
     text-indent: -20000px;
 }
 div.productView_bottom div.productRel_wrap li dd p.more_btn a img{
-    position: absolute;
     vertical-align: middle;
     padding-left: 5px;
-    top: 40px;
 }
 div.productView_bottom div.productRel_wrap li dt img:hover{
     transform: scale(1.1, 1.1);
@@ -2548,3 +2538,238 @@ footer{
     font-size: 12px;
     letter-spacing: 0;;
 }
+div.productView_footmenu_latte{
+    height: 1100px;
+}
+div.productView_footmenu_mocha{
+    height: 500px;
+}
+/* 반응형 961px~1099px start */
+@media screen and (min-width: 961px) and (max-width: 1099px){
+    /* -----------------에스프레소 음료 start----------------- */
+    /* espress.html start */
+    .sub_tit_wrap div.sub_tit_inner{
+        width: 96%;
+        margin: 0 auto;
+        padding-top:0;
+    }
+    article.cf_espressoBottom_inner, article.cf_espressoTop_inner{
+        width: 96%;
+    }
+    dl.cf_espressoClasslcs_info{
+        width: 96%;
+    }
+    ul.cf_espressoClasslcs_list{
+        width: 100%;
+        margin-left: -1.33%;
+    }
+    ul.cf_espressoClasslcs_list li{
+        width: 32%;
+        margin-left: 1.33%;
+    }
+    ul.cf_espressoClasslcs_list li dl dd{
+        height: 120px;
+        text-align: justify;
+    }
+    ul.cf_espressoClasslcs_list li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    ul.cf_espressoClasslcs_list li dl dd{
+        height: 120px;
+        text-align: justify;
+    }
+    /* espress.html end */
+    /* doppio.html start */
+    div.productView_footmenu div.productView_footmenu_inner{
+        width: 96%;
+        margin: 0 auto;
+    }
+    div.productView_bottom div.productRel_wrap li dl{
+        width: 100%;
+    }
+    div.productView_bottom div.productRel_wrap li dl dt{
+        width: 48%;
+        height: auto;
+    }
+    div.productView_bottom div.productRel_wrap li dl dd{
+        width: 46%;
+        padding: 0 3%;
+        height: auto;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.t2{
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn{
+        position: static;
+        font-size: 12px;
+        width: 97px;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a{
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    div.productView_footmenu_latte{
+        height: 1100px;
+    }
+    
+    /* -----------------에스프레소 음료 end----------------- */
+}
+/* 반응형 961px~1099px end */
+
+
+/* 반응형 641px~960px start */
+/* espress.html start */
+@media screen and (min-width: 641px) and (max-width: 960px){
+    .sub_tit_wrap div.sub_tit_inner{
+        width:96%;
+    }
+    .sub_tit_wrap div.sub_tit_inner ul.smap{
+        display: none;
+    }
+    article.cf_espressoBottom_inner, article.cf_espressoTop_inner{
+        width: 96%;
+    }
+    
+    ul.cf_espressoClasslcs_list{
+        width: 100%;
+        margin-left: -2%;
+    }
+    ul.cf_espressoClasslcs_list li{
+        width: 48%;
+        margin-left: 2%;
+    }
+    ul.cf_espressoClasslcs_list li dl dt{
+        width: 100%;
+        height: auto;
+        text-align: justify;
+    }
+    ul.cf_espressoClasslcs_list li dl dd br{
+        display:none;
+    }
+    div.productView_footmenu div.productView_footmenu_inner{
+        width: 96%;
+        margin: 0 auto;
+    }
+    div.productView_bottom div.productRel_wrap li dl{
+        width: 100%;
+    }
+    div.productView_bottom div.productRel_wrap li dl dt{
+        width: 48%;
+        height: auto;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.t2{
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn{
+        position: static;
+        font-size: 12px;
+        width: 97px;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a{
+        width: 100%;
+        margin-left: 0px;
+    }
+    div.productView_bottom div.productRel_wrap li dl dd{
+        width: 46%;
+        padding:0 3%;
+        height: auto;
+    }
+    div.productView_footmenu_latte{
+        height: 1400px;
+    }
+    div.productView_footmenu_mocha{
+        height: 500px;
+    }
+}
+/* espress.html end */
+/* 반응형 641px~960px end */
+
+/* 반응형 ~641px start */
+@media screen and (max-width:640px) {
+    /* -----------------에스프레소 음료 start----------------- */
+    /* espress.html start */
+    .sub_tit_wrap div.sub_tit_inner{
+        margin: 0 18px;
+    }
+    .sub_tit_wrap h2{
+        width: 70%;
+    }
+    article.cf_espressoBottom_inner, article.cf_espressoTop_inner{
+        width: 96%;
+    }
+    ul.cf_espressoClasslcs_list{
+        width: 100%;
+    }
+    ul.cf_espressoClasslcs_list li{
+        width: 100%;
+    }
+    ul.cf_espressoClasslcs_list li dl{
+        margin-left: 1.5%;
+    }
+    ul.cf_espressoClasslcs_list li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    ul.cf_espressoClasslcs_list li dl dd br{
+        display:none;
+    }
+    /* espress.html end */
+    div.productView_footmenu div.productView_footmenu_inner{
+        width: 96%;
+    }
+    div.productView_bottom div.productRel_wrap li{
+        width: 100%;
+        float: none;
+        margin-bottom: 40px;
+    }
+    div.productView_bottom div.productRel_wrap li dl{
+        width: 100%;
+    }
+    div.productView_bottom div.productRel_wrap li dt{
+        width: 40%;
+        height: auto;
+    }
+    div.productView_bottom div.productRel_wrap li dt img{
+        width: 100%;
+    }
+    div.productView_bottom div.productRel_wrap li dd{
+        width: 56%;
+        height: auto;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.t2{
+        padding-bottom: 16%;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn{
+        position: absolute;
+        left: 0;
+        bottom:0;
+        left:auto;
+    }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a{
+        margin: 0;
+        padding:0;
+    }
+    div.productView_footmenu_americano{
+        height: 500px;   
+    }
+    div.productView_footmenu_macchiato{
+        height: 500px;
+    }
+    div.productView_footmenu_cappuccino{
+        height: 500px;
+    }
+    div.productView_footmenu_latte{
+        height: 3500px;
+    }
+    div.productView_footmenu_mocha{
+        height: 1000px;
+    }
+    /* -----------------에스프레소 음료 end----------------- */
+}
+/* 반응형 ~640px end */
+
+
