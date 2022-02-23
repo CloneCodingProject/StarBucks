@@ -1352,6 +1352,9 @@ display: none;
 #tbnsec1_inner{
     margin: 0 auto;
 }
+#tbnsec1_inner .m_pic {
+    display: none;
+}
 #tbnsec1_inner img:first-child {
     position: absolute;
     top: 180px;
@@ -1386,13 +1389,36 @@ display: none;
     margin: 0 auto;
     width: 1100px;
 }
-
+#tbnsec2_art1 .m_pic {
+    display: none;
+}
+#tbnsec2_art2 .m_pic {
+    display: none;
+}
+#tbnsec2_art3 .m_pic {
+    display: none;
+}
+#tbnsec2_art4 .m_pic {
+    display: none;
+}
+#tbnsec2_art1 .m_txt {
+    display: none;
+}
+#tbnsec2_art2 .m_txt {
+    display: none;
+}
+#tbnsec2_art3 .m_txt {
+    display: none;
+}
+#tbnsec2_art4 .m_txt {
+    display: none;
+}
 #tbnsec2_art1::after {
     content: "";
     display: block;
     clear: both;
 }
-#tbnsec2_art1 img {
+#tbnsec2_art1 .w_pic {
     max-width: 100%;
     width: 800px;
     display: block;
@@ -1435,7 +1461,7 @@ display: none;
     top: -350px;
     left: -35px;
 }
-#tbnsec2_art2 img {
+#tbnsec2_art2 .w_pic {
     float: right;
     width: 940px;
     display: block;
@@ -1456,7 +1482,7 @@ display: none;
 #tbnsec2_art2 {
     height: 165px;
 }
-#tbnsec2_art3 > img {
+#tbnsec2_art3 > .w_pic {
     position: relative;
     left: 50px;
 }
@@ -1499,7 +1525,7 @@ display: none;
     right: 53px;
     z-index: 2;
 }
-#tbnsec2_art4 img {
+#tbnsec2_art4 .w_pic {
     display: block;
     float: right;
     position: relative;
@@ -1554,7 +1580,7 @@ display: none;
 #tbnstore_inner ul:first-child {
     float: left;
 }
-#tbnstore_inner ul:last-child {
+#tbnstore_inner .select_list {
     float: right;
 }
 #tbnstore_inner ul li label {
@@ -3062,14 +3088,353 @@ footer{
     #tbnstore_inner ul:first-child li:last-child{
         padding-left: 20px;
     }
-    #tbnstore_inner ul:last-child {
+    #tbnstore_inner .select_list {
         padding-top: 20px;
     }
-    #tbnstore_inner ul:last-child li{
+    #tbnstore_inner .select_list li{
         padding: 0;
     }
+}
+@media screen and (max-width:960px) and (min-width:641px) {
+    #tbn_tit_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #tbn_tit_link {
+        display: none;
+    }
+    #tbnsec1_inner .tbnsec1_img1 {
+        display: none;
+    }
+    #tbnsec1_inner .m_pic {
+        display: block;
+        margin: 0 auto;
+        padding-top: 150px;
+    }
+    #tbnsec2_art1 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art2 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art3 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art4 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art1 .m_pic {
+        display: block;
+        padding-top: 60px;
+    }
+    #tbnsec2_art2 .m_pic {
+        display: block;
+        padding-top: 60px;
+    }
+    #tbnsec2_art3 .m_pic {
+        display: block;
+        padding-top: 60px;
+        margin: 0 auto;
+        width: 420px;
+    }
+    #tbnsec2_art4 .m_pic {
+        display: inline-block;
+        padding-top: 60px;
+    }
+    #tbnsec2_art4 {
+        text-align: right;
+    }
+    #tbn_sec2 {
+        background: url(../IMAGES/TEABANA/STORE/m_starField_area_bg.jpg) no-repeat;
+        background-size: 100% 100%;
+        height: 3150px;
+        overflow: hidden;
+    }
+    #tbnsec2_inner {
+        width: 640px;
+        margin: 0 auto;
+    }
+    #tbnsec2_art1 .tbnsec2_cont {
+        float: none;
+        position: static;
+        padding-top: 40px;
+    }
+    #tbnsec2_art1 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art1 .tbnsec2_cont p:nth-child(4) br {
+        display: none;
+    }
+    #tbnsec2_art1 .tbnsec2_cont p:nth-child(4) {
+        white-space: normal;
+    }
+    #tbnsec2_art2 {
+        height: auto;
+        overflow: hidden;
+    }
+    #tbnsec2_art2 .tbnsec2_cont {
+        position: static;
+        padding-top: 40px;
+    }
+    #tbnsec2_art2 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art2 .tbnsec2_cont p:nth-child(4) br:nth-child(1) {
+        display: none;
+    }
+    #tbnsec2_art3 .tbnsec2_cont {
+        position: static;
+        padding-top: 40px;
+    }
+    #tbnsec2_art3 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art3 .tbnsec2_cont p:nth-child(4) br:nth-child(1) {
+        display: none;
+    }
+    #tbnsec2_art4 .tbnsec2_cont {
+        position: static;
+        padding-top: 40px;
+        height: 143px;
+        text-align: left;
+    }
+    #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 88.3%;
+        padding-right: 0;
+    }
+    #tbnsec2_art4 > .tbnsec2_cont > a {
+        right: 0;
+    }
+    #tbnsec2_art4 .tbnsec2_cont p:nth-child(5) br {
+        display: none;
+    } 
+    #tbnstore_inner {
+        width: 100%;
+        height: 72px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(2) {
+        font-size: 15px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(3) {
+        font-size: 13px;
+    }
+    #tbnstore_inner ul:nth-child(1) {
+        margin: 0 2%;
+        width: 100%;
+    }
+    #tbnstore_inner .select_list {
+        display: block;
+        width: 100%;
+        background-color: #f4f4f2;
+    }
+    #tbnstore_inner .select_list li {
+        margin: 0 2%;
+        padding: 0;
+    }
+    #tbnstore_inner .select_list li label {
+        color: #444;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #tbn_tit_inner {
+        width: 96%;
+        margin: 0 2%;
+    }
+    #tbn_tit_link {
+        display: none;
+    }
+    #tbnsec1_inner .tbnsec1_img1 {
+        display: none;
+    }
+    #tbnsec1_inner .m_pic {
+        display: block;
+        margin: 0 auto;
+        padding-top: 150px;
+        width: 100%;
+    }
+    #tbnsec2_art1 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art2 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art3 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art4 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art1 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art2 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art3 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art4 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art1 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art2 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art3 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art4 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art1 .m_pic {
+        display: block;
+        padding-top: 60px;
+        width: 100%;
+    }
+    #tbnsec2_art2 .m_pic {
+        display: block;
+        padding-top: 60px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #tbnsec2_art3 .m_pic {
+        display: block;
+        padding-top: 60px;
+        max-width: 100%;
+    }
+    #tbnsec2_art4 .m_pic {
+        display: inline-block;
+        padding-top: 60px;
+        max-width: 100%;
+    }
+    #tbnsec2_art4 {
+        text-align: right;
+    }
+    #tbn_sec2 {
+        background: url(../IMAGES/TEABANA/STORE/m_starField_area_bg.jpg) no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        
+    }
+    #tbnsec2_inner {
+        width: 100%;
+        
+    }
+    .tbnsec2_cont > div {
+        top: 38px;
+        left: -12px;
+    }
+    #tbnsec2_art4 .tbnsec2_cont > div {
+        top: 13px;
+        left: 5px;
+    }
+    #tbnsec2_art1 .tbnsec2_cont {
+        float: none;
+        position: static;
+        padding-top: 40px;
+        width: 90%;
+        margin: 0 auto;
+        white-space: normal;
+    }
+    #tbnsec2_art1 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
     
-    
-    
+    #tbnsec2_art1 .tbnsec2_cont p:nth-child(4) {
+        white-space: normal;
+    }
+    #tbnsec2_art2 {
+        height: auto;
+        overflow: hidden;
+    }
+    #tbnsec2_art2 .tbnsec2_cont {
+        position: static;
+        padding-top: 40px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #tbnsec2_art2 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art2 .tbnsec2_cont p:nth-child(4) br:nth-child(1) {
+        display: none;
+    }
+    #tbnsec2_art3 .tbnsec2_cont {
+        position: static;
+        padding-top: 40px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #tbnsec2_art3 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art3 .tbnsec2_cont p:nth-child(4) br:nth-child(1) {
+        display: none;
+    }
+    #tbnsec2_art4 .tbnsec2_cont {
+        position: relative;
+        padding-top: 40px;
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        padding-bottom: 275px;
+    }
+    #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 86.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art4 > .tbnsec2_cont > a {
+        position: absolute;
+        right: 1px;
+        top: 40px;
+    }
+    #tbnsec2_art4 .tbnsec2_cont p:nth-child(5) br {
+        display: none;
+    } 
+    #tbnstore_inner {
+        width: 100%;
+        height: 72px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(2) {
+        font-size: 15px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(3) {
+        font-size: 13px;
+    }
+    #tbnstore_inner ul:nth-child(1) {
+        margin: 0 2%;
+        width: 100%;
+    }
+    #tbnstore_inner ul:nth-child(2) {
+        display: block;
+        width: 100%;
+        background-color: #f4f4f2;
+    }
+    #tbnstore_inner ul:nth-child(2) li {
+        margin: 0 2%;
+        padding: 0;
+    }
+    #tbnstore_inner ul:nth-child(2) li label {
+        color: #444;
+    }
 }
 /* -----------STORE 티바나 바 매장 반응형 페이지 끝(tbn.html)-----------*/
