@@ -939,8 +939,6 @@ div.product_list_wrap ul.product_list li dt > a > img:hover{
 }
 div.product_list_wrap ul.product_list li dt > a > img{
     transition: transform 1s;
-    width: 259px;
-    height: 271px;
 }
 div.product_list_wrap ul.product_list li dt ul.icon {
     position: absolute;
@@ -2301,10 +2299,7 @@ div.cloverExtraction_info_01{
     display: inline-block;
     width: 100%;
 }
-div.cloverExtraction_info_01 div.coffee_content{
-    /* display: inline-block; */
-    /* width: 100%; */
-}
+
 div.cloverExtraction_info_01 dl.ceInfo_text{
     float: left;
     width: 520px;
@@ -2411,6 +2406,68 @@ div.cloverExtraction_info_02 dl.ceInfo_text p.text3{
 }
 /* 클로버®  커피 추출 시스템 end */
 /* -------------------6. COFFEE coffee story.html end-----------------*/
+/* -------------------7. COFFEE productFinder.html start-----------------*/
+div.productFinder_list{
+    background: #fff;
+}
+div.findWrap{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    background: url("../img/coffee/2_coffee_well_with_me/findWrap_bg.jpg") 50% 0;
+}
+div.find_frame{
+    width: 1100px;
+    height: 700px;
+    margin: 0 auto;
+}
+div.find_section1{
+    top: 0;
+}
+div.find_section{
+    width: 1100px;
+    height: 469px;
+    padding-top: 85px;
+    position: absolute;
+}
+div.findWrap p.find_con{
+    margin-bottom: 90px;
+    position: relative;
+    text-align: center;
+}
+div.findWrap ul.find_taste{
+    width: 1100px;
+}
+div.findWrap ul.find_taste li{
+    float: left;
+    width: 242px;
+    height: 280px;
+    margin-right: 43px;
+    position: relative;
+}
+div.findWrap ul.find_taste dt{
+    margin-bottom: 20px;
+}
+div.findWrap ul.find_taste dd{
+    font-size: 14px;
+    text-align: center;
+}div.findWrap ul.find_taste li.last{
+    margin-right: 0;
+}
+.coffee_sub_tit{
+    font-size: 16px;
+    color: #666;
+    padding-top: 10px;
+}
+.coffee_sub_tit_wrap{
+    height: inherit;
+}
+.coffee_sub_tit_wrap div.sub_tit_inner{
+    height: inherit;
+    padding-bottom: 20px;
+}
+/* -------------------7. COFFEE productFinder.html end-----------------*/
 /* ---------------------------푸터 시작--------------------------- */
 footer{
     width: 100%;
@@ -2616,6 +2673,139 @@ div.productView_footmenu_mocha{
     }
     
     /* -----------------에스프레소 음료 end----------------- */
+
+    /* -----------------스타벅스 리저브™ start----------------- */
+    /* reserve_info.html start */
+    section.content_top div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+    }
+    div.summary_full p.t1{
+        letter-spacing: -0.9px;
+    }
+    div.content_bottom div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+    }
+    div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+        left: auto;
+    }
+    div.reserve_ing_tit{
+        width: 100%;
+    }
+    div.content_bottom ul.product_list{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -0.8%;
+        margin-left: -50%;
+    }
+    div.content_bottom ul.product_list > li{
+        width: 23.6363%;
+        margin: 0.6%;
+    }
+    div.content_bottom ul.product_list > li dl{
+        width: 100%;
+        height: auto;
+    }
+    div.content_bottom ul.product_list > li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    /* reserve_info.html end */
+    /* -----------------스타벅스 리저브™ end----------------- */
+
+    
+    /* -----------------나와 어울리는 커피 start----------------- */
+    /* productFinder.html start */
+    div.find_frame{
+        width: 96%;
+    }
+    div.find_section{
+        width: 96%;
+        padding-top: 10%;
+    }
+    div.findWrap ul.find_taste{
+        width: 100%;
+    }
+    div.findWrap ul.find_taste li{
+        width: 21%;
+        margin-right: 4%;
+    }
+    /* productFinder.html end */
+    /* -----------------나와 어울리는 커피 end----------------- */
+
+
+    /* -----------------RESERVE MAGAZINE start----------------- */
+    /* reserve_magazine.html start */
+    .wn_cont{
+        width: 96%;
+        margin: 0 0 0 -48%;
+    }
+    section.magazine_wrap h3.magazine_all{
+        width: 18%;
+        left: 2%;
+    }    
+    section.magazine_wrap h3 a.on{
+        width: 100%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul > li{
+        width: 24%;
+        margin: 0.5%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul li dl{
+        width: 100%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul li dt{
+        width: 100%;
+        height: 0;
+        padding: 0 0 100% 0;
+    }
+    section.magazine_wrap h3 a{
+        width: 100%;
+    }
+    section.magazine_wrap h3.magazine_people{
+        width: 18%;
+        left: 21.5%;
+    }
+    section.magazine_wrap h3.magazine_coffee{
+        width: 18%;
+        left: 41%;
+    }
+    section.magazine_wrap h3 a{
+        width: 100%;
+    }
+    section.magazine_wrap h3.magazine_places{
+        width: 18%;
+        left: 60.5%;
+    }
+    section.magazine_wrap h3 a{
+        width: 100%;
+    }
+    section.magazine_wrap h3.magazine_experience{
+        width: 18%;
+        left: 80%;
+    }
+    section.magazine_wrap h3 a{
+        width: 100%;
+    }
+    section.magazine_wrap div.box_bg{
+        width: 100%;
+    }
+    /* reserve_magazine.html end */
+    /* -----------------RESERVE MAGAZINE end----------------- */
+
+    /* reserve_magazine.html end */
+    /* -----------------RESERVE MAGAZINE end----------------- */
+    /* reserve_magazine.html end */
+    /* -----------------RESERVE MAGAZINE end----------------- */
 }
 /* 반응형 961px~1099px end */
 
@@ -2629,6 +2819,7 @@ div.productView_footmenu_mocha{
     .sub_tit_wrap div.sub_tit_inner ul.smap{
         display: none;
     }
+    /* -----------------에스프레소 음료 start----------------- */
     article.cf_espressoBottom_inner, article.cf_espressoTop_inner{
         width: 96%;
     }
@@ -2684,10 +2875,169 @@ div.productView_footmenu_mocha{
     div.productView_footmenu_mocha{
         height: 500px;
     }
+
+    /* espress.html end */
+    /* -----------------에스프레소 음료 end----------------- */
+
+    /* -----------------스타벅스 리저브™ start----------------- */
+    /* reserve_info.html start */
+    section.content_top div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+    }
+    div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+        left: auto;
+    }
+    div.summary_full p.t1{
+        letter-spacing: -0.9px;
+    }
+    .icon_reserve{
+        width: 60%;
+    }
+    div.content_bottom div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+    }
+    div.reserve_ing_tit{
+        width: 100%;
+    }
+    div.product_list_wrap ul.product_list{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -0.8%;
+        margin-left: -50%;
+    }
+    div.product_list_wrap ul.product_list > li{
+        width: 23.6363%;
+        margin: 0.6%;
+    }
+    div.product_list_wrap ul.product_list li dl{
+        width: 100%;
+        height: auto;
+    }
+    div.product_list_wrap ul.product_list li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    br.w880{
+        display: block;
+    }
+    /* reserve_info.html end */
+    /* -----------------스타벅스 리저브™ end----------------- */
+
+    /* -----------------나와 어울리는 커피 start----------------- */
+    /* productFinder.html start */
+    div.find_frame{
+        width: 96%;
+    }
+    div.find_section{
+        width: 96%;
+        padding-top: 10%;
+    }
+    div.findWrap ul.find_taste{
+        width: 100%;
+    }
+    div.findWrap ul.find_taste li{
+        width: 22%;
+        margin-right: 4%;
+    }
+    /* productFinder.html end */
+    /* -----------------나와 어울리는 커피 end----------------- */
+
+    /* -----------------RESERVE MAGAZINE start----------------- */
+    /* reserve_magazine.html start */
+    .wn_cont{
+        width: 96%;
+        margin: 0 0 0 -48%;
+    }
+    section.magazine_wrap h3.magazine_all{
+        width: 18%;
+        left: 2%;
+    }
+    section.magazine_wrap h3 a.on{
+        width: 100%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul > li{
+        width: 32%;
+        margin: 0.65%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul li dl{
+        width: 100%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul li dt{
+        width: 100%;
+        height: 0;
+        padding: 0 0 100% 0;
+    }
+    section.magazine_wrap h3.magazine_people{
+        width: 18%;
+        left: 21.5%;
+    }
+    section.magazine_wrap h3 a{
+        width: 100%;
+    }
+    section.magazine_wrap h3.magazine_coffee{
+        width: 18%;
+        left: 41%;
+    }
+    section.magazine_wrap h3.magazine_places{
+        width: 18%;
+        left: 60.5%;
+    }
+    section.magazine_wrap h3.magazine_experience{
+        width: 18%;
+        left: 80%;
+    }
+    section.magazine_wrap h3 a{
+        width: 100%;
+    }
+    section.magazine_wrap div.box_bg{
+        width: 100%;
+    }
+    /* reserve_magazine.html end */
+    /* -----------------RESERVE MAGAZINE end----------------- */
 }
-/* espress.html end */
 /* 반응형 641px~960px end */
 
+
+/* 반응형 641px~768px start */
+@media screen and (min-width: 641px) and (max-width: 768px){
+    /* -----------------스타벅스 리저브™ start----------------- */
+    /* reserve_info.html start */
+    div.product_list_wrap ul.product_list{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -0.8%;
+        margin-left: -50%;
+    }
+    div.product_list_wrap ul.product_list > li{
+        width: 31.6363%;
+        margin: 0.8%;
+    }
+    div.product_list_wrap ul.product_list li dl{
+        width: 100%;
+        height: auto;
+    }
+    div.product_list_wrap ul.product_list li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    div.content_bottom{
+    height: 930px;
+    }
+    /* reserve_info.html end */
+    /* -----------------스타벅스 리저브™ end----------------- */
+}
+/* 반응형 641px~768px end */
 /* 반응형 ~641px start */
 @media screen and (max-width:640px) {
     /* -----------------에스프레소 음료 start----------------- */
@@ -2769,7 +3119,191 @@ div.productView_footmenu_mocha{
         height: 1000px;
     }
     /* -----------------에스프레소 음료 end----------------- */
+
+    /* -----------------스타벅스 리저브™ start----------------- */
+    /* reserve_info.html start */
+    section.content_top div.coffee_content.reserve_coffee_cont{
+        width: 100%;
+    }
+    section.content_top div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .reserve_coffee_cont_top{
+        margin: 0 18px;
+    }
+    div.summary_full p.t1{
+        margin: 0 5px;
+        letter-spacing: -0.2px;
+        font-size: 12px;
+    }
+    .for_web{
+        display: none !important;
+    }
+    div.summary_full p.t2{
+        margin: 0 5px;
+        letter-spacing: -0.2px;
+        font-size: 12px;
+    }
+    .reserve_info_wrap{
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .reserve_info_ttl{
+        width: 50%;
+    }
+    
+    .reserve_info_ttl img{
+        width: 100%;
+    }
+    .reserve_info_ttl .m{
+        display: block;
+    }
+    .reserve_info_warn{
+        margin: 0 40px 40px 40px;
+        letter-spacing: -0.3px;
+        font-size: 12px;
+    }
+    .btn_reserve_more a{
+        width: 70%;
+    }
+    div.content_bottom div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+    }
+    div.reserve_ing_tit{
+        width: 100%;
+    }
+    div.reserve_ing_tit p{
+        font-size: 13px;
+        padding-left: 0;
+        text-align: center;
+    }
+    div.product_list_wrap ul.product_list{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -0.8%;
+        margin-left: -50%;
+    }
+    div.product_list_wrap ul.product_list > li{
+        width: 42.5%;
+        margin: 3.5%;
+    }
+    div.product_list_wrap ul.product_list li dl{
+        width: 100%;
+        height: auto;
+    }
+    div.product_list_wrap ul.product_list li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    div.product_list_wrap ul.product_list li dd a{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    div.product_list_wrap ul.product_list li dd a img{
+        width: 18px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    div.content_bottom{
+        height: 1450px;
+    }
+    /* reserve_info.html end */
+    /* -----------------스타벅스 리저브™ end----------------- */
+
+    /* -----------------나와 어울리는 커피 start----------------- */
+    /* productFinder.html start */
+    div.find_frame{
+        width: 96%;
+    }
+    div.find_section{
+        width: 96%;
+        padding-top: 10%;
+    }
+    div.findWrap p.find_con{
+        margin-bottom: 5%;
+    }
+    div.findWrap ul.find_taste01{
+        width: 60%;
+        margin-left: 20%;
+    }
+    div.findWrap ul.find_taste01 li{
+        width: 40%;
+        margin-right: 10%;
+        height: 208px;
+    }
+    /* productFinder.html end */
+    /* -----------------나와 어울리는 커피 end----------------- */
+    
+    /* -----------------스타벅스 리저브™ start----------------- */
+    /* reserve_info.html start */
+    section.magazine_wrap div.box_bg{
+        width: 100%;
+        height: 35px;
+        background: #fff url(../img/coffee/3_Starbucks_reserve/RESERVE_MAGAZINE/select_arrow.png) no-repeat 98% 15px;
+    }
+    section.magazine_wrap h3.magazine_all{
+        top: 10px;
+        left: 10px;
+    }
+    section.magazine_wrap h3 a.on{
+        height: 20px;
+        line-height: 20px;
+        color: #222;
+        background: none;
+        text-align: left;
+        display: block;
+    }
+
+
+    section.magazine_wrap article div.magazine_list > dl > dd > ul{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul > li{
+        width: 49%;
+        margin: 0.5%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul li dl{
+        width: 100%;
+    }
+    section.magazine_wrap article div.magazine_list > dl > dd > ul li dt{
+        width: 100%;
+        height: 0;
+        padding: 0 0 100% 0;
+    }
+    .wn_cont{
+        width: 96%;
+        margin: 0 0 0 -48%;
+    }
+    section.magazine_wrap h3.magazine_people{
+        top: 35px;
+        left: 10px;
+    }
+    section.magazine_wrap h3 a{
+        height: 20px;
+        line-height: 20px;
+        background: none;
+        text-align: left;
+        display: none;
+    }
+    section.magazine_wrap h3.magazine_coffee{
+        top: 60px;
+        left: 10px;
+    }
+    section.magazine_wrap h3.magazine_places{
+        top: 85px;
+        left: 10px;
+    }
+    section.magazine_wrap h3.magazine_experience{
+        width: 110px;
+        left: 10px;
+    }
+    /* reserve_info.html end */
+    /* -----------------스타벅스 리저브™ end----------------- */
 }
 /* 반응형 ~640px end */
-
-
