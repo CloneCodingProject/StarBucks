@@ -1389,6 +1389,9 @@ display: none;
     margin: 0 auto;
     width: 1100px;
 }
+.m_seccont_tit {
+    display: none;
+}
 #tbnsec2_art1 .m_pic {
     display: none;
 }
@@ -3243,7 +3246,7 @@ footer{
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:640px) and (min-width:431px) {
     #tbn_tit_inner {
         width: 96%;
         margin: 0 2%;
@@ -3324,7 +3327,6 @@ footer{
         background: url(../IMAGES/TEABANA/STORE/m_starField_area_bg.jpg) no-repeat;
         background-size: 100% 100%;
         height: 100%;
-        
     }
     #tbnsec2_inner {
         width: 100%;
@@ -3335,8 +3337,8 @@ footer{
         left: -12px;
     }
     #tbnsec2_art4 .tbnsec2_cont > div {
-        top: 13px;
-        left: 5px;
+        top: 37px;
+        left: -12px;
     }
     #tbnsec2_art1 .tbnsec2_cont {
         float: none;
@@ -3351,7 +3353,24 @@ footer{
         width: 96.5%;
         padding-right: 0;
     }
-    
+    .sec2cont_tit {
+        font-size: 15px;
+    }
+    .seccont_tit{
+        font-size: 17px;
+    }
+    .m_seccont_tit{
+        font-size: 17px;
+        color: #063;
+        display: block;
+        padding: 20px 0;
+    }
+    #tbnsec2_art3 .tbnsec2_cont .seccont_tit {
+        display: none;
+    }
+    #tbnsec2_art4 .tbnsec2_cont .seccont_tit {
+        display: none;
+    }
     #tbnsec2_art1 .tbnsec2_cont p:nth-child(4) {
         white-space: normal;
     }
@@ -3399,13 +3418,15 @@ footer{
     }
     #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
         display: inline-block;
-        width: 86.5%;
+        width: 96.5%;
         padding-right: 0;
     }
+    
     #tbnsec2_art4 > .tbnsec2_cont > a {
         position: absolute;
-        right: 1px;
-        top: 40px;
+        right: -12px;
+        top: 63px;
+        background-color: #fff;
     }
     #tbnsec2_art4 .tbnsec2_cont p:nth-child(5) br {
         display: none;
@@ -3423,6 +3444,22 @@ footer{
     #tbnstore_inner ul:nth-child(1) {
         margin: 0 2%;
         width: 100%;
+        position: relative;
+    }
+    
+    #tbnstore_inner ul:nth-child(1) li:first-child img {
+        height: 30px;
+        width: 53px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(2) {
+        position: relative;
+        top: -13px;
+        font-weight: bold;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(3) {
+        position: absolute;
+        bottom: 25px;
+        left: 37px;
     }
     #tbnstore_inner ul:nth-child(2) {
         display: block;
@@ -3435,6 +3472,61 @@ footer{
     }
     #tbnstore_inner ul:nth-child(2) li label {
         color: #444;
+    }
+}
+@media screen and (max-width:430px) {
+    #tbn_sec2{
+        height: 2400px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    #tbnsec2_art1 .m_pic {
+        padding-top: 40px;
+    }
+    #tbnsec2_art1 .tbnsec2_cont {
+        padding-top: 10px;
+    }
+    #tbnsec2_art2 .tbnsec2_cont {
+        padding-top: 10px;
+    }
+    #tbnsec2_art3 .tbnsec2_cont {
+        padding-top: 10px;
+    }
+    #tbnsec2_art4 > div:first-child {
+        width: 100%;
+    }
+    #tbnsec2_art4 .m_pic {
+        width: 50%;
+    }
+    #tbnsec2_art4 {
+        position: relative;
+        padding-bottom: 0px;
+        height: 670px;
+        overflow: hidden;
+    }
+    #tbnsec2_art4 .tbnsec2_cont {
+        position: absolute;
+        bottom: 3.3%;
+        left: 0px;
+        padding-bottom: 0;
+    }
+    #tbnsec2_art4 > .tbnsec2_cont > a {
+        background-color: transparent; 
+        top:38px;
+        right: 0;
+    }
+    #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
+        width: 80%;
+    }
+    #tbnsec2_art4 .tbnsec2_cont > div {
+        top: 13px;
+        left: 5px;
+    }
+}
+@media screen and (max-width:380px) {
+    #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
+        width: 80%;
     }
 }
 /* -----------STORE 티바나 바 매장 반응형 페이지 끝(tbn.html)-----------*/
