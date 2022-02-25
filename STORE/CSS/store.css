@@ -48,6 +48,9 @@ a{
     text-indent: -9999px;
     overflow: hidden;
 }
+#m_header_cont {
+    display: none;
+}
 #header_cont{
     float: right;
 }
@@ -75,7 +78,25 @@ a{
     
 }
 #up_nav li:nth-child(4){
-    padding-right: 10px;
+    padding-right: 20px;
+}
+#up_nav li:nth-child(5) {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ccc;
+    padding-top: 0;
+    margin-top: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    
+}
+#up_nav li:nth-child(5) a {
+    width: 34px;
+    height: 34px;
+    display: block;
+    background: url(../IMAGES/MAIN/LOGO/icon_magnifier_black.png) no-repeat;
+    background-position: center;
+    text-indent: -99999px;
 }
 #up_nav li:last-child::after{
     content: none;
@@ -1734,6 +1755,102 @@ footer{
     font-size: 12px;
     letter-spacing: 0;;
 }
+/* ---------------------------푸터 끝--------------------------- */
+
+
+/* -------------------헤더, 푸터 반응형 시작(index.html)-----------------*/
+/* ------------------------헤더------------------------ */
+@media screen and (max-width:1100px) {
+    #header_inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #header_inner h1 {
+        left: 2%;
+    }
+    #up_nav li:after {
+        padding: 10px;
+    }
+    #up_nav li:nth-child(5) {
+        margin-right: 40px;
+    }
+    #gnb li{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:960px) {
+    body {
+        padding-top: 70px;
+    }
+    #header_cont {
+        display: none;
+    }
+    #header_area {
+        height: 70px;
+    }
+    #header_inner {
+        height: 70px;
+    }
+    #header_inner h1 {
+        width: 45px;
+        height: 45px;
+        background-size: cover;
+        top: 13px;
+        left: 1%;
+    }
+    #header_inner h1 a {
+        width: 45px;
+        height: 45px;
+    }
+    #m_header_cont {
+        display: block;
+        float: right;
+    }
+    #m_nav li{
+        float: left;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        position: relative;
+    }
+    #m_nav li:first-child a{
+        background: url(../IMAGES/MAIN/LOGO/icon_user_m.png) no-repeat;
+        width: 25px;
+        height: 30px;
+        display: block;
+        background-size: cover;
+        text-indent: -99999px;
+        position: relative;
+        top: 14px;
+        left: 18px;
+    }
+    #m_nav li:nth-child(2) a{
+        background: url(../IMAGES/MAIN/LOGO/icon_spot_m.png) no-repeat;
+        width: 24px;
+        height: 32px;
+        display: block;
+        background-size: cover;
+        text-indent: -99999px;
+        position: relative;
+        top: 12px;
+        left: 16px;
+    }
+    #m_nav li:nth-child(3) a{
+        background: url(../IMAGES/MAIN/LOGO/btn_berger_m.png) no-repeat;
+        width: 28px;
+        height: 26px;
+        display: block;
+        background-size: cover;
+        text-indent: -99999px;
+        position: relative;
+        top: 15px;
+        left: 11px;
+    }
+}
+/* ------------------------헤더 끝------------------------ */
+/* -------------------헤더, 푸터 반응형 시작(index.html)-----------------*/
+
+
 /* -------------------STORE main 페이지 반응형 시작(index.html)-----------------*/
 @media screen and (max-width:1099px) {
     #tit_inner {
@@ -3313,7 +3430,7 @@ footer{
     #tbnsec2_art3 .m_pic {
         display: block;
         padding-top: 60px;
-        max-width: 100%;
+        width: 92%;
     }
     #tbnsec2_art4 .m_pic {
         display: inline-block;
@@ -3474,56 +3591,258 @@ footer{
         color: #444;
     }
 }
-@media screen and (max-width:430px) {
-    #tbn_sec2{
-        height: 2400px;
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
+@media screen and (max-width:480px) {
+    #tbnstore_inner ul:nth-child(1) li:nth-child(2) {
+        font-size: 12px !important;
     }
-    #tbnsec2_art1 .m_pic {
-        padding-top: 40px;
+    #tbnstore_inner ul:nth-child(1) li:nth-child(3) {
+        font-size: 11px !important;
     }
-    #tbnsec2_art1 .tbnsec2_cont {
-        padding-top: 10px;
+}
+@media screen and (max-width:430px){
+    #tbn_tit_inner {
+        width: 96%;
+        margin: 0 2%;
     }
-    #tbnsec2_art2 .tbnsec2_cont {
-        padding-top: 10px;
+    #tbn_tit_link {
+        display: none;
     }
-    #tbnsec2_art3 .tbnsec2_cont {
-        padding-top: 10px;
+    #tbnsec1_inner .tbnsec1_img1 {
+        display: none;
     }
-    #tbnsec2_art4 > div:first-child {
+    #tbnsec1_inner .m_pic {
+        display: block;
+        margin: 0 auto;
+        padding-top: 150px;
         width: 100%;
     }
+    #tbnsec2_art1 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art2 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art3 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art4 .w_pic {
+        display: none;
+    }
+    #tbnsec2_art1 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art2 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art3 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art4 .w_txt {
+        display: none;
+    }
+    #tbnsec2_art1 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art2 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art3 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art4 .m_txt {
+        display: block;
+    }
+    #tbnsec2_art1 .m_pic {
+        display: block;
+        padding-top: 40px;
+        width: 100%;
+    }
+    #tbnsec2_art2 .m_pic {
+        display: block;
+        padding-top: 60px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #tbnsec2_art3 .m_pic {
+        display: block;
+        padding-top: 60px;
+        width: 92%;
+    }
     #tbnsec2_art4 .m_pic {
+        display: inline-block;
+        padding-top: 60px;
         width: 50%;
     }
     #tbnsec2_art4 {
-        position: relative;
-        padding-bottom: 0px;
-        height: 670px;
+        text-align: right;
+    }
+    #tbn_sec2 {
+        background: url(../IMAGES/TEABANA/STORE/m_starField_area_bg.jpg) no-repeat;
+        height: 2500px;
+        background-size: cover;
+        background-position: center;
         overflow: hidden;
+        position: relative;
     }
-    #tbnsec2_art4 .tbnsec2_cont {
-        position: absolute;
-        bottom: 3.3%;
-        left: 0px;
-        padding-bottom: 0;
+    #tbnsec2_inner {
+        width: 100%;
+        
     }
-    #tbnsec2_art4 > .tbnsec2_cont > a {
-        background-color: transparent; 
-        top:38px;
-        right: 0;
-    }
-    #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
-        width: 80%;
+    .tbnsec2_cont > div {
+        top: 38px;
+        left: -12px;
     }
     #tbnsec2_art4 .tbnsec2_cont > div {
         top: 13px;
         left: 5px;
     }
+    #tbnsec2_art1 .tbnsec2_cont {
+        float: none;
+        position: static;
+        padding-top: 10px;
+        width: 90%;
+        margin: 0 auto;
+        white-space: normal;
+    }
+    #tbnsec2_art1 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    .sec2cont_tit {
+        font-size: 15px;
+    }
+    .seccont_tit{
+        font-size: 17px;
+    }
+    .m_seccont_tit{
+        font-size: 17px;
+        color: #063;
+        display: block;
+        padding: 20px 0;
+    }
+    #tbnsec2_art3 .tbnsec2_cont .seccont_tit {
+        display: none;
+    }
+    #tbnsec2_art4 .tbnsec2_cont .seccont_tit {
+        display: none;
+    }
+    #tbnsec2_art1 .tbnsec2_cont p:nth-child(4) {
+        white-space: normal;
+    }
+    #tbnsec2_art2 {
+        height: auto;
+        overflow: hidden;
+    }
+    #tbnsec2_art2 .tbnsec2_cont {
+        position: static;
+        padding-top: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #tbnsec2_art2 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art2 .tbnsec2_cont p:nth-child(4) br:nth-child(1) {
+        display: none;
+    }
+    #tbnsec2_art3 .tbnsec2_cont {
+        position: static;
+        padding-top: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #tbnsec2_art3 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 96.5%;
+        padding-right: 0;
+    }
+    #tbnsec2_art3 .tbnsec2_cont p:nth-child(4) br:nth-child(1) {
+        display: none;
+    }
+    
+    #tbnsec2_art4 {
+        padding-bottom: 0px;
+        height: 540px;
+    }
+    #tbnsec2_art4 .tbnsec2_cont {
+        padding-top: 40px;
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        top: inherit;
+        bottom: 3.5%;
+        left: 0;
+        
+        padding-bottom: 0;
+    }
+    
+    #tbnsec2_art4 > div:first-child {
+        width: 100%;
+    }
+    #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
+        display: inline-block;
+        width: 80%;
+        padding-right: 0;
+    }
+    
+    #tbnsec2_art4 > .tbnsec2_cont > a {
+        position: absolute;
+        top:38px;
+        right: 0;
+        background-color: transparent;
+
+    }
+    #tbnsec2_art4 .tbnsec2_cont p:nth-child(5) br {
+        display: none;
+    } 
+    #tbnstore_inner {
+        width: 100%;
+        height: 72px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(2) {
+        font-size: 15px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(3) {
+        font-size: 13px;
+    }
+    #tbnstore_inner ul:nth-child(1) {
+        margin: 0 2%;
+        width: 100%;
+        position: relative;
+    }
+    
+    #tbnstore_inner ul:nth-child(1) li:first-child img {
+        height: 30px;
+        width: 53px;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(2) {
+        position: relative;
+        top: -13px;
+        font-weight: bold;
+    }
+    #tbnstore_inner ul:nth-child(1) li:nth-child(3) {
+        position: absolute;
+        bottom: 25px;
+        left: 37px;
+    }
+    #tbnstore_inner ul:nth-child(2) {
+        display: block;
+        width: 100%;
+        background-color: #f4f4f2;
+    }
+    #tbnstore_inner ul:nth-child(2) li {
+        margin: 0 2%;
+        padding: 0;
+    }
+    #tbnstore_inner ul:nth-child(2) li label {
+        color: #444;
+    }
 }
+
 @media screen and (max-width:380px) {
     #tbnsec2_art4 .tbnsec2_cont .sec2cont_tit{
         width: 80%;
