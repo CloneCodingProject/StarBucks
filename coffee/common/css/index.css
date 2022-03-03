@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
 }
 header, nav, section, article, aside, footer{
     display: block;
@@ -46,6 +47,7 @@ sup{
     vertical-align: super;
     font-size: 12px;
 }
+
 /* --------------------------- header start --------------------------- */
 #header_area{
     width: 100%;
@@ -335,12 +337,211 @@ ul.smap a.this{
 }
 /* ------------------- sub_tit_wrap end ------------------- */
 /* coffee_slide start */
-section.coffee_slide_wrap{
+/* .coffeeSlideArea{
     width: 100%;
-    height: 430px;
+    height: 400px;
     position: relative;
-    background: url("../../common/img/coffee/0_index/NICARAGUA.jpg") 45% 50% no-repeat;
-    background-size: cover;
+    overflow: hidden;
+}
+.coffeeSlideArea .bxslide-main{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider{
+    width: 100%;
+}
+.coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div{
+    height: 400px;
+    width: 2000px !important;
+    position: relative;
+    left: 50%;
+    margin-left: -1000px;
+    top: 0;
+}
+.coffeeSlideArea ul.coffee_slider li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.coffeeSlideArea .bx-wrapper .bx-prev{
+    display: none;
+}
+.bx-wrapper .bx-controls-direction a{
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.coffeeSlideArea .bx-wrapper .bx-next{
+    display: none;
+} */
+/* .coffee_slider_control_pager{
+    bottom: 40px;
+    height: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.coffee_slider_controls{
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    width: 9px;
+}
+.coffee_slider_controls div.bx-controls-auto{
+    position: absolute;
+} */
+/*.coffee_slider_controls div.bx-controls-auto a.bx-start{
+    background: url("../img/coffee/0_index/play.png") 0 0;
+    height: 15px;
+    width: 15px;
+}
+.coffee_slider_controls div.bx-controls-auto a{
+    display: block;
+    overflow: hidden;
+    text-indent: -20000px;
+}
+.coffee_slider_pagers{
+    display: inline-block;
+    height: 12px;
+}
+.coffee_slider_pagers div.bx-pager div.bx-pager-item{
+    float: left;
+    margin-left: 8px;
+}
+.coffee_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active{
+    background: url("../img/coffee/0_index/visual_on.png") 0 0;
+    height: 15px;
+    width: 15px;
+}
+.coffee_slider_pagers div.bx-pager div.bx-pager-item a{
+    display: block;
+    overflow: hidden;
+    text-indent: -20000px;
+}
+.coffee_slider_pagers div.bx-pager div.bx-pager-item{
+    float: left;
+    margin-left: 8px;
+}
+.coffee_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link{
+    background: url(../img/coffee/0_index/visual_off.png) 0 0;
+    height: 15px;
+    width: 15px;
+}
+.coffee_slider_pagers div.bx-pager div.bx-pager-item a{
+    display: block;
+    overflow: hidden;
+    text-indent: -20000px;
+} */
+
+
+/* 커피슬라이드 */
+
+.newsArea_right{
+    float: right;
+    width: 50%;
+    height: 70px;
+    background: url(../img/coffee/0_index/useInfo_bg.jpg) 0 0 repeat;
+}
+
+.newsArea_left{
+    float: left;
+    width: 50%;
+    height: 70px;
+    background: #111;
+}
+.newsArea{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+.newsArea_bg{
+    width: 1100px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -550px;
+    background: url(../img/coffee/0_index/newsArea_bg2.jpg) 0 0 no-repeat;
+}
+.newsArea_bgl{
+    width: 729px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    position: relative;
+}
+.newsArea_bgl dl{
+    width: 729px;
+}
+.newsArea_bgl dt{
+    width: 95px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.newsArea_bgl dt img.w_pic{
+    vertical-align: middle;
+    position: absolute;
+    left: 15px;
+    top: 26px;
+}
+.newsArea_bgl dt img.m_pic{
+    vertical-align: middle;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+img.m_pic{
+    display: none;
+    margin: 0 auto;
+}
+.newsArea_bgl dd{
+    width: 634px;
+    float: right;
+    margin-top: 25px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.newsArea_bgl dd a{
+    font-size: 14px;
+    color: #ccc;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+    display: block;
+    overflow: hidden;
+}
+.newsArea_bgl p.btn{
+    position: absolute;
+    right: 22px;
+    top: 18px;
+}
+.newsArea_bgr{
+    width: 371px;
+    height: 70px;
+    float: right;
+    background: url(../img/coffee/0_index/useInfo_app.png) 21px 11px no-repeat;
+    position: relative;
+}
+.newsArea_bgr p.tit{
+    padding: 19px 0 0 104px;
+}
+img.m_pic{
+    display: none;
+    margin: 0 auto;
+}
+.newsArea_bgr p.btn{
+    position: absolute;
+    left: 321px;
+    top: 18px;
 }
 div.coffee_wrap_inner{
     width: 1100px;
@@ -372,6 +573,40 @@ ul.btn_control_s_o li{
 }
 /* coffee_slide end */
 /* ------------------- 나에게 어울리는 커피는? start ------------------- */
+section.coffee_slide{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    background: url("../img/coffee/0_index/X4Jqpx_20220228105247339.jpg") 40% 50% no-repeat;
+    background-size: cover;
+}
+p.left_btn{
+    position: absolute;
+    left: 1%;
+    top: 175px;
+    z-index:2;
+}
+p.right_btn{
+    position: absolute;
+    right: 1%;
+    top: 175px;
+    z-index:2;
+}
+
+div.coffee_control_btn .control_inner{
+    position: absolute;
+    left: 50%;
+    top: 370px;
+
+}
+div.coffee_control_btn .control_inner ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+
 section.coffee_choice_wrap{
     width: 100%;
     height: 430px;
@@ -630,16 +865,10 @@ dl.product_kind_tab dt{
     top: 30px;
 }
 dl.product_kind_tab dt a.selected{
-    display: inline-block;
     background: #006633;
     color: #fff;
-    width: 200px;
-    height: 34px;
-    line-height: 2;
-    text-align: center;
 }
 
-/* ☆ 다시 보기  dl.product_kind_tab dt a.selected */
 dl.product_kind_tab dd.dd1{
     display: block;
 }
@@ -655,12 +884,55 @@ dl.product_kind_tab dd{
     text-indent: -9999px;
     overflow: hidden;
 }
-div.product_select_wrap{
-    position:relative;
+div.coffee_product_list div.product_result_wrap01{
+    display: block;
 }
+div.coffee_product_list div.product_result_wrap{
+    position: relative;
+    padding-top: 80px;
+}
+#cf_select_wrap, #cf_select_wrap2, #cf_select_wrap3{
+    width: 249px;
+    position: absolute;
+    right: 0;
+    top: 23px;
+}
+p.cf_s_p{
+    position: relative;
+}
+#cf_select_wrap .select, #cf_select_wrap2 .select, #cf_select_wrap3 .select{
+    width: 236px;
+    padding-right: 10px;
+    height: 38px;
+    background: url(../img/coffee/1_coffee/sbox_arrow_down.png) 96% center no-repeat #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-indent: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #444;
+    overflow: hidden;
+}
+p.cf_s_p span.cf_s_span{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    font-size: 14px;
+    color: #444;
+}
+#cf_select_wrap .opt, #cf_select_wrap2 .opt, #cf_select_wrap3 .opt{
+    width: 247px;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    border: 1px solid #eee;
+    background: #fff;
+    z-index: 10;
+    border-radius: 3px;
+}
+
 div.product_kind_wrap div.product_select_wrap ul{
     width: 1040px;
-    display: inline-block;
 }
 div.product_kind_wrap div.product_select_wrap ul li{
     font-size: 12px;
@@ -709,7 +981,12 @@ div.product_list > dl > dt > a{
     color: #222;
     margin-left: 50px;
 }
-div.product_list > dl > dd{
+/* div.product_list > dl > dd{
+    margin-bottom: 40px;
+    display: inline-block;
+    
+} */
+div.product_list dl dd{
     margin-bottom: 40px;
     display: inline-block;
 }
@@ -739,8 +1016,8 @@ div.product_list > dl > dd > ul li dt > a > img:hover{
 }
 div.product_list > dl > dd > ul li dt > a > img{
     transition: 1s;
-    width: 259px;
-    height: 271px;
+    /* width: 259px;
+    height: 271px; */
 }
 div.product_list > dl > dd > ul li dt ul{
     position: absolute;
@@ -777,34 +1054,8 @@ div.product_list > dl > dt.icon_reserve_bean{
 div.product_list > dl > dt.icon_flavor_latte{
     background: #f4f4f2 url(../../common/img/coffee/1_coffee/icon_flavor_latte.png) no-repeat 20px center;
 }
-#cf_select_wrap, #cf_select_wrap2, #cf_select_wrap3{
-    width: 249px;
-    position: absolute;
-    right: 0;
-    top: 23px;
-}
-p.cf_s_p{
-    position: relative;
-}
-#cf_select_wrap .select, #cf_select_wrap2 .select, #cf_select_wrap3 .select{
-    width: 236px;
-    padding-right: 10px;
-    height: 38px;
-    background: url(../../common/img/coffee/1_coffee/sbox_arrow_down.png) #fff center 96% no-repeat;
-    border: 1px solid #ddd;
-    text-indent: 10px;
-    text-align: left;
-    font-size: 16px;
-    color:  #444;
-    overflow: hidden;
-}
-p.cf_s_p span.cf_s_span{
-    position: absolute;
-    left: 10px;
-    top: 13px;
-    font-size: 14px;
-    color: #444;
-}
+
+
 div.cloverExtraction_ber{
     position: relative;
     width: 100%;
@@ -1281,6 +1532,7 @@ div.coffee_higher_enjoy dl.content_tabmenu dt.tab a{
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
 div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 a{
     height: 38px;
@@ -1318,19 +1570,20 @@ div.coffee_info_bottom{
 }
 ul.coffee_info li{
     padding-bottom: 20px;
+    display: inline-block;
 }
 ul.coffee_info li p.coffee_info_img{
     float: left;
     width: 480px;
-    height: 276px;
+    height: 280px;
     overflow: hidden;
     margin-right: 70px;
 }
+.coffee_higher_enjoy div.coffee_content{
+    margin-top: 0;
+}
 ul.coffee_info li dl.icon_coffee_info_01{
-    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_01.png") 550px 5px no-repeat;
-    margin-top:0;
-    margin-bottom:0;
-    
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_01.png") 0 5px no-repeat;
 }
 ul.coffee_info li p.coffee_info_img img:hover{
     transform:scale(1.1, 1.1);
@@ -1341,7 +1594,7 @@ ul.coffee_info li p.coffee_info_img img{
 
 ul.coffee_info li dl.coffee_info_text{
     float:left;
-    width: 799px;
+    width: 550px;
 }
 ul.coffee_info li dl.coffee_info_text dt h4{
     padding-left: 50px;
@@ -1373,44 +1626,23 @@ ul.coffee_info li dl.coffee_info_text dd span{
 }
 
 ul.coffee_info li dl.icon_coffee_info_02{
-    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_02.png") 550px 5px no-repeat;
-    margin-top:0;
-    margin-bottom:0
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_02.png") 0 5px no-repeat;
+    
 }
 ul.coffee_info li dl.icon_coffee_info_03{
-    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_03.png") 550px 5px no-repeat;
-    margin-top:0;
-    margin-bottom:0
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_03.png") 0 5px no-repeat;
+    
 }
 ul.coffee_info li dl.icon_coffee_info_04{
-    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_04.png") 550px 5px no-repeat;
-    margin-top:0;
-    margin-bottom:0
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_04.png") 0 5px no-repeat;
 }
 ul.coffee_info li dl.icon_coffee_info_05{
-    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_05.png") 550px 5px no-repeat;
-    margin-top:0;
-    margin-bottom:0
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_05.png") 0 5px no-repeat;
 }
 ul.coffee_info li dl.icon_coffee_info_06{
-    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_06.png") 550px 5px no-repeat;
-    margin-top:0;
-    margin-bottom:0
+    background: url("../../common/img/coffee/5_higher_enjoy/icon_coffee_info_06.png") 0 5px no-repeat;
 }
-ul.coffee_info li{
-    position: relative;
-    height: 280px;
-}
-ul.coffee_info li p.coffee_info_img img{
-    position: absolute;
-    float: left;
-    width: 480px;
-    height: 270px;
-}
-dl.coffee_info_text{
-    position: absolute;
-    padding-left: 550px;
-}
+
 /* 커피 프레스 end */
 /* 푸어 오버 start */
 div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02{
@@ -1586,25 +1818,30 @@ div.coffee_story dl.content_tabmenu{
     position: relative;
     padding-top: 90px;
 }
+div.coffee_story dl.content_tabmenu dt.tab{
+    position: absolute;
+    top: 0;
+    lefT: 0;
+    z-index: 5;
+}
 div.coffee_story dl.content_tabmenu dt.tab_01{
     left: 50%;
     margin-left: -550px;
 }
-div.coffee_story dl.content_tabmenu dt.tab{
-    position: absolute;
-    top: 0;
-    z-index: 5;
+dt.box_bg{
+    display: none;
 }
+
 div.coffee_story dl.content_tabmenu dt.tab.on a{
     display: block;
     width: 220px;
     height: 50px;
     background:#006633;
     color: #fff;
-    border:0;
-    font-size: 14px;
-    line-height: 3;
-    text-align: center;
+    line-height: 50px;
+    border: 0;
+}
+div.coffee_story dl.content_tabmenu dt.tab_first a{
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
@@ -2802,17 +3039,265 @@ div.productView_footmenu_mocha{
     /* reserve_magazine.html end */
     /* -----------------RESERVE MAGAZINE end----------------- */
 
-    /* reserve_magazine.html end */
-    /* -----------------RESERVE MAGAZINE end----------------- */
-    /* reserve_magazine.html end */
-    /* -----------------RESERVE MAGAZINE end----------------- */
+    /* -----------------story.html start----------------- */
+    
+    p.cultivation_img{
+        width: 50%;
+    }
+    
+    div.coffeeCultivation_wrap dl.cultivation_text{
+        width: 48%;
+        height: auto;
+        padding: 0 0 0 2%;
+        text-align: justify;
+    }
+    div.coffeeObtain_wrap{
+        padding-bottom: 120px;
+    }
+    div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+        left: auto;
+    }
+    div.coffeeObtain_wrap dl.obtainInfo_text{
+        margin-left: 44%;
+        text-align: justify;
+    }
+    div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+        left: auto;
+    }
+    div.coffeeRoasting_info p.img{
+        width: 50%;
+        height: 381px;
+    }
+    div.coffeeRoasting_info dl.text{
+        width: 48%;
+        height: 381px;
+        padding: 0 0 0 2%;
+        text-align: justify;
+    }
+    div.coffeeBlending_wrap{
+        height: auto;
+    }
+    div.blending_text{
+        width: 48%;
+        padding-bottom: 8%;
+    }
+    p.blending_img{
+        width: 40%;
+        padding: 0;
+        float: right;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_01{
+        left: 2%;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab.on a{
+        width: auto;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab{
+        width: 19.2%;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_02{
+        left: 21.2%;
+        margin: 0;
+    }
+    
+    div.coffee_story dl.content_tabmenu dt.tab_03{
+        left: 40.4%;
+        margin: 0;
+    }
+    
+    div.coffee_story dl.content_tabmenu dt.tab_04{
+        left: 59.6%;
+        margin: 0;
+    }
+    
+    div.coffee_story dl.content_tabmenu dt.tab_05{
+        left: 78.8%;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab a{
+        width: auto;
+    }
+    /* -----------------story.html end----------------- */
+
+    /* -----------------product_list.html start----------------- */
+    div.product_list > dl > dd > ul{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -0.8%;
+        margin-left: -50%;
+    }
+    div.product_list > dl > dd > ul > li{
+        width: 23.6363%;
+        margin: 0.6%;
+    }
+    div.product_list > dl > dd > ul li dl{
+        width: 100%;
+        height: auto;
+    }
+    div.product_list > dl > dd > ul > li{
+        width: 23.6363%;
+        margin: 0.6%;
+    }
+    div.product_list > dl > dd > ul li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    /* -----------------product_list.html end----------------- */
+
+    /* -----------------higher_enjoy.html start----------------- */
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01{
+        left: 2%;
+        margin: 0;
+    }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab{
+        width: 19.2%;
+    }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a{
+        width: auto;
+    }
+    div.higher_enjoy_youtube{
+        width: 100%;
+    }
+    div.higher_enjoy_youtube iframe{
+        width: 100%;
+        margin: 0 auto;
+    }
+    ul.coffee_info li{
+        width: 100%;
+    }
+    ul.coffee_info li p.coffee_info_img{
+        width: 45.4545%;
+        height: auto;
+        margin: 0;
+    }
+    ul.coffee_info li dl.coffee_info_text{
+        width: 45.4545%;
+        float: right;
+    }
+    ul.coffee_info li dl.coffee_info_text dd p{
+        text-align: justify;
+    }
+    /* -----------------higher_enjoy.html end----------------- */
+
+
+    /* -----------------index.html start----------------- */
+    section.coffee_choice_wrap{
+        height: 300px;
+
+    }
+    div.coffee_wrap_inner{
+        width: 100%;
+    }
+    p.coffee_choice_txt{
+        left: 58%;
+        top: 65px;
+    }
+    div.coffee_choice_btn{
+        left: 58%;
+        top: 206px;
+    }
+    section.coffee_reserve_wrap{
+        height: 300px;
+    }
+    p.coffee_reserve_txt{
+        left: 5%;
+        top: 65px;
+    }
+    div.coffee_reserve_btn{
+        left: 5%;
+        top: 206px;
+    }
+    section.coffee_espresso_wrap{
+        height: 300px;
+    }
+    p.coffee_espresso_txt{
+        left: 58%;
+        top: 65px;
+    }
+    div.coffee_espresso_btn{
+        left: 58%;
+        top: 206px;
+    }
+    section.coffee_best_wrap{
+        height: 300px;
+    }
+    p.coffee_best_txt{
+        left: 5%;
+        top: 65px;
+    }
+    div.coffee_best_btn{
+        left: 5%;
+        top: 206px;
+    }
+
+    .newsArea_bg{
+        width: 100%;
+        margin-left: -50%;
+        background-size: 100% 70px;
+    }
+    .newsArea_bgl{
+        width: 67.2727%;
+    }
+    .newsArea_bgl dl{
+        width: 100%;
+    }
+    .newsArea_bgl dt{
+        width: 18%;
+    }
+    .newsArea_bgl dd{
+        width: 80%;
+    }
+    .newsArea_bgl dd a{
+        width: 85%;
+    }
+    .newsArea_bgr{
+        width: 32.7272%;
+        background: url(../img/coffee/0_index/useInfo_app.png) 11px bottom no-repeat;
+        background-size: 25px auto;
+    }
+    .newsArea_bgr p.tit{
+        width: 140px;
+        padding: 13px 0 0 12px;
+    }
+    .newsArea_bgr p.btn{
+        left: 85%;
+        top: 30%;
+        width: 30px;
+    }
+
+    .coffeeSlideArea{
+        height: 300px;
+    }
+    .coffeeSlideArea #prevBtn, .coffeeSlideArea #nextBtn{
+        top: 130px;
+    }
+    .coffeeSlideArea #prevBtn a{
+        width: 38.25px;
+        height: 38.25px;
+    }
+    .coffeeSlideArea #nextBtn a{
+        width: 38.25px;
+        height: 38.25px;
+    }
+    section.coffee_slide{
+        height: 400px;
+    }
+    /* -----------------index.html end----------------- */
+    
 }
 /* 반응형 961px~1099px end */
 
 
 /* 반응형 641px~960px start */
-/* espress.html start */
+
 @media screen and (min-width: 641px) and (max-width: 960px){
+    /* espress.html start */
     .sub_tit_wrap div.sub_tit_inner{
         width:96%;
     }
@@ -3004,6 +3489,333 @@ div.productView_footmenu_mocha{
     }
     /* reserve_magazine.html end */
     /* -----------------RESERVE MAGAZINE end----------------- */
+
+    
+    /* -----------------story.html start----------------- */
+    
+    p.cultivation_img{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+    div.coffeeCultivation_wrap dl.cultivation_text{
+        width: 95%;
+        height: auto;
+        padding: 0 0 0 2%;
+        text-align: justify;   
+    }
+    div.coffeeCultivation_wrap dl.cultivation_text p.text1 br{
+        display: none;
+    }
+    div.coffeeObtain_wrap p.bigImg01 span{
+        display: none;
+    }
+    div.coffeeObtain_wrap dl.obtainInfo_text{
+        margin-left: 0;
+        text-align: justify;
+    }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1 br{
+        display: none;
+    }
+    div.coffeeRoasting_info p.img{
+        width: 100%;
+        height:auto;
+        float: none;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+    div.coffeeRoasting_info dl.text{
+        width: 96%;
+        height: auto;
+        padding: 0;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    div.coffeeRoasting_wrap h3.title{
+        padding-left: 2%;
+    }
+    div.coffeeRoasting_info dl.text br{
+        display: none;
+    }
+    
+    div.coffeeBlending_wrap{
+        position: relative;
+        height: auto;
+    }
+    div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+        left: auto;
+    }
+    div.blending_text{
+        float: none;
+        width: 100%;
+        padding-bottom: 8%;
+        padding-top: 80%;
+    }
+    p.blending_img{
+        float: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_01{
+        left: 2%;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab.on a{
+        width: auto;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab{
+        width: 19.2%;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_02{
+        left: 21.2%;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab a{
+        font-size: 12px;
+        letter-spacing: -1.8px;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_03{
+        left: 40.4%;
+        margin: 0;
+    }
+    
+    div.coffee_story dl.content_tabmenu dt.tab_04{
+        left: 59.6%;
+        margin: 0;
+    }
+    
+    div.coffee_story dl.content_tabmenu dt.tab_05{
+        left: 78.8%;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab a{
+        width: auto;
+    }
+    div.product_kind_wrap div.product_select_wrap ul{
+        width: 100%;
+        margin-bottom: -10px;
+
+    }
+    div.product_kind_wrap div.product_select_wrap ul li{
+        width: 20%;
+        margin: 0 0 10px 0;
+    }
+    #cf_select_wrap, #cf_select_wrap2, #cf_select_wrap3{
+        left: 50%;
+        margin-left: -50%;
+        right: initial;
+        width: 100%;
+    }
+    #cf_select_wrap .select, #cf_select_wrap2 .select, #cf_select_wrap3 .select{
+        background-position: 98% center;
+        width: 98.6%;
+    }
+    #cf_select_wrap .opt, #cf_select_wrap2 .opt, #cf_select_wrap3 .opt{
+        width: 100%;
+    }
+    div.product_list > dl > dd > ul{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -0.8%;
+        margin-left: -50%;
+    }
+    div.product_list > dl > dd > ul > li{
+        width: 23.6363%;
+        margin: 0.6%;
+    }
+    div.product_list > dl > dd > ul li dl{
+        width: 100%;
+        height: auto;
+    }
+    div.product_list > dl > dd > ul li dl dt{
+        width: 100%;
+        height: auto;
+    }
+    /* -----------------story.html end----------------- */
+    /* -----------------product_list.html start----------------- */
+
+    /* -----------------product_list.html end----------------- */
+
+    /* -----------------higher_enjoy.html start----------------- */
+    ul.coffee_info li{
+        width: 100%;
+    }
+    ul.coffee_info li p.coffee_info_img{
+        width: 45.4545%;
+        height: auto;
+        margin: 0;
+    }
+    /* -----------------higher_enjoy.html end----------------- */
+    /* -----------------index.html start----------------- */
+    section.coffee_choice_wrap{
+        height: 200px;
+    }
+    div.coffee_wrap_inner{
+        width: 100%;
+    }
+    p.coffee_choice_txt{
+        left: 60%;
+        top: 40px;
+        width: 228px;
+    }
+    div.coffee_choice_btn{
+        left: 60%;
+        top: 140px;
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    section.coffee_reserve_wrap{
+        height: 200px;
+    }
+    p.coffee_reserve_txt{
+        left: 2%;
+        top: 55px;
+        width: 185px;
+    }
+    div.coffee_reserve_btn{
+        left: 2%;
+        top: 130px;
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    section.coffee_espresso_wrap{
+        height: 200px;
+    }
+    p.coffee_espresso_txt{
+        left: 60%;
+        top: 40px;
+        width: 252px;
+    }
+    div.coffee_espresso_btn{
+        left: 60%;
+        top: 140px;
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    section.coffee_best_wrap{
+        height: 200px;
+    }
+    p.coffee_best_txt{
+        left: 2%;
+        top: 40px;
+        width: 220px;
+    }
+    div.coffee_best_btn{
+        left: 2%;
+        top: 140px;
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    section.coffee_hs_wrap{
+        height: 200px;
+    }
+    p.coffee_hs_txt{
+        left: 60%;
+        top: 40px;
+        width: 252px;
+    }
+    div.coffee_hs_btn{
+        left: 60%;
+        top: 140px;
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    .newsArea_bg{
+        width: 100%;
+        margin-left: -50%;
+        background-size: 100% 70px;
+    }
+    .newsArea_bgl{
+        width: 67.2727%;
+    }
+    .newsArea_bgl dl{
+        width: 100%;
+    }
+    .newsArea_bgl dt{
+        width: 18%;
+    }
+    .newsArea_bgl dd{
+        width: 80%;
+    }
+    .newsArea_bgl dd a{
+        width: 85%;
+    }
+    .newsArea_bgl p.btn{
+        right: 4%;
+        top: 30%;
+        width: 30px;
+    }
+    .newsArea_bgr{
+        width: 32.7273%;
+        background: url(../img/coffee/0_index/useInfo_app.png) 11px bottom no-repeat;
+        background-size: 25px auto;
+    }
+    .newsArea_bgr p.tit{
+        width: 140px;
+        padding: 13px 0 0 12px;
+    }
+    .w_pic{
+        display: block;
+    }
+    img.m_pic{
+        display: none;
+        margin: 0 auto;
+    }
+    .newsArea_bgr p.btn{
+        left: 85%;
+        top: 30%;
+        width: 30px;
+    }
+    div.bx-viewport{
+        width: 100%; 
+        overflow: hidden; 
+        position: relative; 
+        height: 300px;
+    }
+    section.coffee_slide{
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+    p.left_btn{
+        position: absolute;
+        left: 1%;
+        top: 80px;
+        z-index:2;
+        width: 40px;
+    }
+    p.right_btn{
+        position: absolute;
+        right: 1%;
+        top: 80px;
+        z-index:2;
+        width: 40px;
+    }
+    div.coffee_control_btn .control_inner{
+        position: absolute;
+        left: 50%;
+        top: 150px;
+    }
+    div.coffee_control_btn .control_inner ul li{
+        margin-right: 8px;
+        width: 10px;
+    }
+    /* -----------------index.html end----------------- */
 }
 /* 반응형 641px~960px end */
 
@@ -3036,6 +3848,53 @@ div.productView_footmenu_mocha{
     }
     /* reserve_info.html end */
     /* -----------------스타벅스 리저브™ end----------------- */
+    /* -----------------product_list.html start----------------- */
+    div.product_list > dl > dd > ul{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        top: -0.8%;
+        margin-left: -50%;
+    }
+    div.product_list > dl > dd > ul > li{
+        width: 31.6363%;
+        margin: 0.8%;
+    }
+    div.product_list > dl > dd > ul li dl{
+        width: 100%;
+        height: auto;
+    }
+    div.product_list > dl > dd > ul li dl dt{
+        width: 100%;
+        height: auto;
+    }
+
+    div.product_toggle_wrap{
+        width: 100%;
+    }
+    dl.product_kind_tab dt.dt1{
+        left: 0;
+    }
+    dl.product_kind_tab dt.dt2{
+        left: 180px;
+    }
+    dl.product_kind_tab dt{
+        position: absolute;
+        top: 30px;
+        width: 30%;
+    }
+    dl.product_kind_tab dt.dt3{
+        left: 360px;
+    }
+    dl.product_kind_tab dt{
+        position: absolute;
+        top: 30px;
+        width: 30%;
+    }
+    dl.product_kind_tab dt a{
+        width: 100%;
+    }
+    /* -----------------product_list.html end----------------- */
 }
 /* 반응형 641px~768px end */
 /* 반응형 ~641px start */
@@ -3305,5 +4164,369 @@ div.productView_footmenu_mocha{
     }
     /* reserve_info.html end */
     /* -----------------스타벅스 리저브™ end----------------- */
+
+    /* -----------------story.html start----------------- */
+    p.cultivation_img{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+    div.coffeeCultivation_wrap dl.cultivation_text{
+        width: 95%;
+        height: auto;
+        padding: 0 0 0 2%;
+        text-align: justify;
+    }
+    div.coffeeCultivation_wrap dl.cultivation_text p.text1 br{
+        display: none;
+    }
+    div.coffee_content{
+        width: 96%;
+        margin: 0 auto;
+        left: auto;
+    }
+    div.coffeeObtain_wrap p.bigImg01 span{
+        display: none;
+    }
+    div.coffeeObtain_wrap dl.obtainInfo_text{
+        margin-left: 0;
+        text-align: justify;
+    }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1 br{
+        display: none;
+    }
+    div.coffeeRoasting_info p.img{
+        width: 100%;
+        height: auto;
+        float: none;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+    div.coffeeRoasting_info dl.text{
+        width: 96%;
+        height: auto;
+        padding:0;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    div.coffeeRoasting_wrap h3.title{
+        padding-left: 2%;
+    }
+    div.coffeeRoasting_info dl.text dd p.text1, div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1, div.coffeeObtain_wrap dl.obtainInfo_text dd p.text2, div.coffeeRoasting_wrap p.t1, div.blending_text dl.blendingInfo_text dd p.text1, div.blending_text dl.blendingInfo_text dd p.text2{
+        padding-left: 0;
+        text-align: justify;
+    }
+    div.coffeeRoasting_info dl.text br{
+        display: none;
+    }
+    div.coffeeBlending_wrap{
+        height: auto;
+        position: relative;
+    }
+    div.blending_text{
+        float: none;
+        width: 100%;
+        padding-bottom: 8%;
+        padding-top: 80%;
+    }
+    div.blending_text dl.blendingInfo_text{
+        float: none;
+        width: 100%;
+    }
+    p.blending_img{
+        float: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text2 br, div.blending_text dl.blendingInfo_text dd p.text1 br, div.blending_text dl.blendingInfo_text dd p.text2 br{
+        display: none;
+    }
+    dt.box_bg{
+        display: block;
+        width: 96%;
+        margin: 0 auto;
+        height: 35px;
+        background: #fff url(../img/coffee/6_coffee_story/select_arrow.png) no-repeat 98% 15px; 
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        margin-bottom: 30px;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_01{
+        left: 4%;
+        top: 26px;
+        margin: 0;   
+    }
+    div.coffee_story dl.content_tabmenu dt.tab.on a{
+        height: 20px;
+        line-height: 20px;
+        color: #222;
+        background: none;
+        text-align: left;
+        display: block;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_02{
+        left: 4%;
+        top: 54px;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab a{
+        height: 20px;
+        line-height: 20px;
+        color: #222;
+        background: none;
+        text-align: left;
+        display: none;
+        border: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_03{
+        left:4%;
+        top: 82px;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_04{
+        left: 4%;
+        top: 110px;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_05{
+        left: 4%;
+        top: 134px;
+        margin: 0;
+    }
+    div.coffee_story dl.content_tabmenu dt.tab_05 h3{
+        height: 20px;
+        line-height: 20px;
+    }
+    div.coffee_story dl.content_tabmenu, div.coffee_higher_enjoy dl.content_tabmenu{
+        padding-top: 16px;
+    }
+    /* -----------------story.html end----------------- */
+    /* -----------------product_list.html start----------------- */
+    div.product_toggle_wrap{
+        width: 100%;
+    }
+    dl.product_kind_tab dt.dt1{
+        left: 0;
+    }
+    div.product_kind_wrap div.product_select_wrap ul{
+        width: 100%;
+    }
+    div.product_kind_wrap div.product_select_wrap ul li{
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    #cf_select_wrap, #cf_select_wrap2, #cf_select_wrap3{
+        left: 50%;
+        border-right-style: -50%;
+        right: initial;
+        width: 100%;
+    }
+    #cf_select_wrap .select, #cf_select_wrap2 .select, #cf_select_wrap3 .select{
+        background-position: 98% center;
+        width: 98.6%;
+    }
+    div.product_toggle_wrap{
+        width: 100%;
+    }
+    dl.product_kind_tab dt.dt1{
+        left: 0;
+    }
+    dl.product_kind_tab dt{
+        position: absolute;
+        top: 30px;
+        width: 32%;
+    }
+    dl.product_kind_tab dt a{
+        width: 100%;
+    }
+    div.product_kind_wrap div.product_select_wrap ul{
+        width: 100%;
+    }
+    div.product_kind_wrap div.product_select_wrap ul li{
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    dl.product_kind_tab dt.dt2{
+        left: 33%;
+    }
+    dl.product_kind_tab dt.dt3{
+        left: 66%;
+    }
+    dl.product_kind_tab dt{
+        position: absolute;
+        top: 30px;
+        width: 32%;
+    }
+    /* -----------------product_list.html end----------------- */
+    /* -----------------higher_enjoy.html start----------------- */
+
+    /* -----------------higher_enjoy.html end----------------- */
+
+    /* -----------------index.html start----------------- */
+    section.coffee_choice_wrap{
+        height: inherit;
+    }
+    div.coffee_wrap_inner{
+        width: 100%;
+    }
+    img.m_pic{
+        display: block;
+    }
+    p.coffee_choice_txt{
+        width: 320px;
+        left: 50%;
+        top: 130px;
+        margin-left: -160px;
+    }
+    img.w_pic{
+        display: none;
+    }
+    div.coffee_choice_btn{
+        left: 50%;
+        margin-left: -60.5px;
+        top: 310px;
+    }   
+    
+    section.coffee_reserve_wrap{
+        height: inherit;
+    }
+    p.coffee_reserve_txt{
+        width: 320px;
+        left: 50%;
+        top: 130px;
+        margin-left: -160px;
+    }   
+    div.coffee_reserve_btn{
+        left: 50%;
+        margin-left: -60.5px;
+        top: 360px;
+    }
+    p.coffee_espresso_txt{
+        width: 320px;
+        left: 50%;
+        top: 130px;
+        margin-left: -160px;
+    }
+    section.coffee_espresso_wrap{
+        height: inherit;
+    }
+    div.coffee_espresso_btn{
+        left: 50%;
+        margin-left: -60.5px;
+        top: 280px;
+    }
+    section.coffee_best_wrap{
+        height: inherit;
+    }
+    p.coffee_best_txt{
+        width: 320px;
+        left: 50%;
+        top: 130px;
+        margin-left: -160px;
+    }
+    div.coffee_best_btn{
+        left: 50%;
+        margin-left: -60.5px;
+        top: 280px;
+    }
+    p.coffee_hs_txt{
+        width: 320px;
+        left: 50%;
+        top: 130px;
+        margin-left: -160px;
+    }
+    div.coffee_hs_btn{
+        left: 50%;
+        margin-left: -60.5px;
+        top: 290px;
+    }
+    .newsArea{
+        height: 140px;
+    }
+    .newsArea_left{
+        display: none;
+    }
+    .newsArea_right{
+        display: none;
+    }
+    .newsArea_bg{
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+    .newsArea_bgl{
+        float: none;
+        width: 100%;
+        overflow: hidden;
+    }
+    .newsArea_bgl dl{
+        width: 100%;
+    }
+    .newsArea_bgl dd{
+        float: left;
+        margin-left: 70px;
+        width: auto;
+    }
+    .newsArea_bgl dd li{
+        width: 230px;
+    }
+    .newsArea_bgl dd li a{
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .newsArea_bgr{
+        float: none;
+        width: 100%;
+        background: url(../img/coffee/0_index/useInfo_bg.jpg) 0 0 repeat;
+    }
+    .newsArea_bgr p.tit{
+        padding: 0;
+    }
+    img.w_pic{
+        display: none;
+    }
+    .newsArea_bgr img.m_pic{
+        width: 240px;
+        margin: 0;
+        padding: 29px 0 0 15px;
+    }
+    .newsArea_bgr p.btn{
+        right: 22px;
+        left: inherit
+    }
+    section.coffee_slide{
+        height: inherit;
+    }
+    p.left_btn{
+        left: 1%;
+        top: 55%;
+        z-index: 2;
+        width: 30px;
+    }
+    p.right_btn{
+        right: 1%;
+        top: 55%;
+        z-index: 2;
+        width: 30px;
+    }
+    div.coffee_control_btn .control_inner{
+        top: 95%;
+        left: 47%;
+    }
+    div.coffee_control_btn .control_inner ul li img{
+        width: 80%;
+    }
+    div.coffee_control_btn .control_inner ul li{
+        margin-right: 3px;
+    }
+    /* -----------------index.html end----------------- */
+
 }
 /* 반응형 ~640px end */
