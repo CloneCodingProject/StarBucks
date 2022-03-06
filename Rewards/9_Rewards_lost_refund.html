@@ -73,7 +73,7 @@
         </div>
         <div id="lost_refund_body">
             <!-- 등록해지 메뉴 start-->
-                <!-- <ul>
+                <ul>
                     <li class="lost_refund_subtit">정의</li>
                     <li class="lost_refund_list">등록된 스타벅스 카드를 <a class="green_link"><span class="english">My</span>카드</a> 목록에서 삭제</li>
                 </ul>
@@ -91,7 +91,7 @@
                             <li class="lost_refund_sublist">- <span class="english">Gold</span>카드는 본인 외 타사용자 재등록불가</li>
                         </ul>
                     </li>
-                </ul> -->
+                </ul>
             <!-- 등록해지 메뉴 end -->
             <!-- 분실신고 메뉴 start -->
                 <!-- <ul>
@@ -119,30 +119,84 @@
                 </ul> -->
             <!-- 분실신고 메뉴 end -->
             <!-- 환불신청 메뉴 start -->
-            <ul>
-                <li class="lost_refund_subtit">정의</li>
-                <li class="lost_refund_list">카드의 잔액에 대해 매장 또는 홈페이지를 통해 환불 처리</li>
-            </ul>
-            <ul>
-                <li class="lost_refund_subtit">진행 방법</li>
-                <li class="lost_refund_list">온라인(홈페이지, 모바일 애플리케이션)에서 직접 조작</li>
-            </ul>
-            <ul>
-                <li class="lost_refund_subtit">유의사항</li>
-                <li class="lost_refund_list">미등록 카드와 동일하게 매장에서 사용이 가능하나, 카드사용에 대한 리워드 혜택이 제공되지 않음</li>
-                <li class="lost_refund_list">한 번 중지된 카드는 정상카드로 되돌릴 수 없음</li>
-                <li class="lost_refund_list">분실신고 후, 60일 이내 잔액이전 또는 환불신청 가능 (환불신청의 경우, 최종 충전 후 합계 잔액이 60%이상 사용된 경우에만 가능)</li>
-            </ul>
-            <ul>
-                <li class="lost_refund_subtit">카드 분실신고 안내</li>
-                <li class="lost_refund_list">분실신고는 등록된 카드에 한해 온라인에서만 신청 가능합니다. <a href="#" id="shortcut_report_transfer"><span>스타벅스카드 분실신고/잔액이전 바로가기</span></a></li>
-                <li class="lost_refund_list">미등록 스타벅스 카드는 무기명 카드로 분실신고 및 잔액 보호가 되지 않습니다.</li>
-                <li class="lost_refund_list">분실신고 후, 카드는 즉시 중지되며, 분실신고 해제는 불가합니다.</li>
-                <li class="lost_refund_list">중지된 카드의 잔액은 60일 이내, 등록된 다른 카드로의 잔액이전 또는 환불신청을 통해 돌려받을 수 있습니다.</li>
-                <li class="lost_refund_list">환불의 경우, 최종 충전 후 합계잔액 60% 이상인 경우에만 신청 가능하며, 환불신청일로부터 1주 이내 본인계좌로 입금됩니다.</li>
-                <li class="lost_refund_list">분실신고 후, 60일이 경과되면 카드에 남아있는 잔액의 관리권한이 스타벅스 코리아로 넘어갈 수 있습니다.</li>
-            </ul>
+                <!-- <ul>
+                    <li class="lost_refund_subtit">정의</li>
+                    <li class="lost_refund_list">카드의 잔액에 대해 매장 또는 홈페이지를 통해 환불 처리</li>
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">진행 방법</li>
+                    <li class="lost_refund_list">미등록카드 : 매장 직접 방문하여 즉시 환불</li>
+                    <li class="lost_refund_list">등록카드 : 매장에 직접 방문하여 즉시 환불 또는 온라인에서 본인 계좌로 환불신청</li>
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">유의사항</li>
+                    <li class="lost_refund_list">최종 충전 후, 합계잔액의 60%이상을 사용한 경우에만 환불 가능</li>
+                    <li class="lost_refund_list">온라인 환불 신청 시, 본인 계좌로 1주 이내 입금</li>
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">잔액환불</li>
+                    <li class="lost_refund_list">환불은 최종 충전 후 합계 잔액의60% 이상을 사용한 경우에 한하여, 매장 또는 온라인(홈페이지, 모바일 애플리케이션)에서 신청하실 수 있습니다.</li>
+                    <li class="lost_refund_list">미등록 카드의 경우, 매장에서만 환불 받으실 수 있습니다.</li>
+                    <li class="lost_refund_list">온라인 환불 신청의 경우, 영업일 기준 7일 이내 신청하신 계좌로 입금됩니다.</li>
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">충전취소</li>
+                    <li class="lost_refund_list">
+                        오프라인 충전
+                        <ul>
+                            <li class="lost_refund_sublist">- 충전 후 사용내역이 없는 경우에 한하여, 충전일로부터 14일 이내 해당 매장에서 충전을 취소할 수 있습니다.</li>
+                            <li class="lost_refund_sublist">- 충전 취소 시, 반드시 청전 영수증을 지참하여 직접 매장에 방문 해 주셔야 합니다.</li>
+                        </ul>
+                    </li>
+                    <li class="lost_refund_list">
+                        온라인 충전
+                        <ul>
+                            <li class="lost_refund_sublist">- 충전 후 사용 내역이 없는 경우에 한하여, 충전일로부터 최대 7일 내 온라인에서 충전 취소가 가능합니다.</li>
+                        </ul>
+                    </li>
+                </ul> -->
             <!-- 환불신청 메뉴 end -->
+            <!-- 고장신고 메뉴 start -->
+                <!-- <ul>
+                    <li class="lost_refund_subtit">정의</li>
+                    <li class="lost_refund_list">고장 등으로 사용 불가한 카드를 정상 카드로 교환</li>                
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">진행 방법</li>
+                    <li class="lost_refund_list">매장에 방문하여 즉시 교환</li>
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">유의사항</li>
+                    <li class="lost_refund_list">잔액이 없는 카드는 고정카드 교환 불가</li>
+                    <li class="lost_refund_list">스타벅스 카드 판매 매장에서만 교환 가능</li>
+                    <li class="lost_refund_list">매장의 스타벅스 카드 재고상황에 따라 교환이 불가할 수 있음</li>
+                    
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">고장카드 교환안내</li>
+                    <li class="deposit_content_text_green">정상 사용이 불가능한 스타벅스 카드는 매장에서 새로운 카드로 교환 해 드립니다.</li>
+                    <li class="lost_refund_list">고장카드 교환은 방문 매장에서 보유하고 있는 새로운 카드로만 가능합니다. (사용 중인 카드로 잔액이전은 불가)</li>
+                    <li class="lost_refund_list">고의적은 카드 파손 시에는 교환이 불가합니다.</li>
+                    <li class="lost_refund_list">새로운 카드로 교환 후, 고장카드는 사용 중지되어 재사용할 수 없습니다.</li>
+                    <li class="lost_refund_list">골드카드를 고장카드 교환 한 경우, 홈페이지에서 골드카드 재발급을 신청하실 수 있습니다. (재발급 신청시점이 골드레벨인 경우에 한함/연 2회 발급 가능)</li>
+                    <li class="lost_refund_list">잔액이 없는 고장카드는 교환이 불가하며, 카드 충전을 통해 새로운 카드를 발급받으실 수 있습니다.</li>
+                    <li class="lost_refund_list">고장카드 잔액 환불은 일반 카드 환불과 동일하게 스타벅스 카드 잔액환불 절차에 따라 진행됩니다.</li>
+                    <li class="lost_refund_list">교환 받은 새로운 카드는 반드시 계정에 등록해야만 기존의 스타벅스 리워드 혜택을 지속적으로 누릴 수 있습니다.</li>
+                </ul> -->
+            <!-- 고장신고 메뉴 end -->
+            <!-- 잔액조회 메뉴 start -->
+                <!-- <ul>
+                    <li class="lost_refund_subtit">잔액 및 사용내역 조회</li>
+                    <li class="lost_refund_list">카드를 충전하거나 사용할 때마다 영수증에서 현재 잔액을 확인할 수 있습니다.</li>
+                    <li class="lost_refund_list">언제든 ARS : 00308-132-271, 홈페이지 또는 모바일 애플리케이션 <a class="green_link"><span class="english">My</span>카드</a>에서 현재 잔액과 최근 사용내역을 조회하실 수 있습니다.</li>
+                </ul>
+                <ul>
+                    <li class="lost_refund_subtit">잔액이전 안내</li>
+                    <li class="lost_refund_list">중지된 카드의 잔액을 같은 계정에 등록된 다른 카드로 이전할 수 있는 서비스 입니다.</li>
+                    <li class="lost_refund_list">분실신고 등을 통해 중지된 카드의 잔액만 이전할 수 있으며, 정상카드의 잔액이전은 불가합니다.</li>
+                    <li class="lost_refund_list">중지된 카드의 잔액과 잔액을 이전 받는 카드의 잔액 합계가 55만원을 초과하는 경우에는 잔액이전이 불가합니다.</li>
+                </ul> -->
+            <!-- 잔액조회 메뉴 end -->
         </div>
     </div>
 </div>
